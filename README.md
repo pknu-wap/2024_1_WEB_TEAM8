@@ -21,13 +21,13 @@
   <tr>
     <td align="center">
       <a href="https://github.com/seongwon030" target="_blank"> 
-<!--         <img src="https://avatars.githubusercontent.com/u/94051599?v=4" width="120px;"/>  -->
+       <img src="https://avatars.githubusercontent.com/u/105052068?v=4" width="120px;"/>   
         <br />
         <a href="" title="Code">seongwon030 </a>
     </td>
     <td align="center">
       <a href="https://github.com/chanxami" target="_blank">
-<!--         <img src="https://avatars.githubusercontent.com/u/105052068?v=4" width="120px;"/> -->
+        <img src="https://avatars.githubusercontent.com/u/158177151?v=4" width="120px;"/> 
         <br />
         <a href="" title="Code">chanxami </a>
     </td>
@@ -39,13 +39,13 @@
     </td>
     <td align="center">
       <a href="https://github.com/Chaeeun1021" target="_blank">
-<!--         <img src="https://avatars.githubusercontent.com/u/98575563?v=4" width="120px;"/> -->
+        <img src="https://avatars.githubusercontent.com/u/92985089?v=4" width="120px;"/> 
         <br />
         <a href="" title="Code">Chaeeun1021 </a>
     </td>
     <td align="center">
       <a href="https://github.com/wnsmir" target="_blank">
-<!--         <img src="https://avatars.githubusercontent.com/u/69447072?v=4" width="120px;"/> -->
+        <img src="https://avatars.githubusercontent.com/u/163817041?v=4" width="120px;"/> 
         <br />
         <a href="" title="Code">wnsmir </a>
     </td> 
