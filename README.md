@@ -20,35 +20,35 @@
 <table>
   <tr>
     <td align="center">
-<!--       <a href="https://github.com" target="_blank"> -->
-<!--         <img src="https://avatars.githubusercontent.com/u/94051599?v=4" width="120px;"/> -->
+      <a href="https://github.com/seongwon030" target="_blank"> 
+<!--         <img src="https://avatars.githubusercontent.com/u/94051599?v=4" width="120px;"/>  -->
+        <br />
+        <a href="" title="Code">seongwon030 </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/chanxami" target="_blank">
+<!--         <img src="https://avatars.githubusercontent.com/u/105052068?v=4" width="120px;"/> -->
+        <br />
+        <a href="" title="Code">chanxami </a>
+    </td>
+     <td align="center">
+<!--       <a href="https://github.com/dogfood5" target="_blank"> -->
+<!--         <img src="https://avatars.githubusercontent.com/u/88235766?v=4" width="120px;"/> -->
 <!--         <br />
-        <a href="https://github.com/pknu-wap/2023_2_APP_TEAM1/commits/main?author=alstjr7437" title="Code">alstjr7437 </a>
+        <a href="https://github.com/pknu-wap/2023_2_APP_TEAM1/commits/main?author=dogfood5" title="Code">dogfood5 </a> -->
     </td>
     <td align="center">
-      <a href="https://github.com/seongwon030" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/105052068?v=4" width="120px;"/>
+      <a href="https://github.com/Chaeeun1021" target="_blank">
+<!--         <img src="https://avatars.githubusercontent.com/u/98575563?v=4" width="120px;"/> -->
         <br />
-        <a href="https://github.com/pknu-wap/2023_2_APP_TEAM1/commits/main?author=seongwon030" title="Code">seongwon030 </a>
-    </td> -->
-<!--     <td align="center">
-      <a href="https://github.com/dogfood5" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/88235766?v=4" width="120px;"/>
-        <br />
-        <a href="https://github.com/pknu-wap/2023_2_APP_TEAM1/commits/main?author=dogfood5" title="Code">dogfood5 </a>
+        <a href="" title="Code">Chaeeun1021 </a>
     </td>
     <td align="center">
-      <a href="https://github.com/Redish03" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/98575563?v=4" width="120px;"/>
+      <a href="https://github.com/wnsmir" target="_blank">
+<!--         <img src="https://avatars.githubusercontent.com/u/69447072?v=4" width="120px;"/> -->
         <br />
-        <a href="https://github.com/pknu-wap/2023_2_APP_TEAM1/commits/main?author=Redish03" title="Code">Redish03 </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/TaeO-Lee" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/69447072?v=4" width="120px;"/>
-        <br />
-        <a href="https://github.com/pknu-wap/2023_2_APP_TEAM1/commits/main?author=TaeO-Lee" title="Code">TaeO-Lee </a>
-    </td> -->
+        <a href="" title="Code">wnsmir </a>
+    </td> 
   </tr>
   <tr>
     <td align="center">서성원</td>
