@@ -12,7 +12,6 @@
 <img alt="MariaDB" src ="https://img.shields.io/badge/MariaDB-003545.svg?&style=for-the-badge&logo=MariaDB&logoColor=black"/>
 <br>
 <a href="https://www.notion.so/TEAM-82bbc3c1894246c9afcdb507448f6cd9" target="_blank"><img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/></a>
-<a href="https://github.com/pknu-wap/2024_1_WEB_TEAM8" target="_blank"><img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=Github&logoColor=white"/></a>
 
 </div><br>
 
