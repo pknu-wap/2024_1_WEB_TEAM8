@@ -1,0 +1,57 @@
+.firstPage {
+  padding-top: 20px;
+}
+
+.firstPage img {
+    margin-bottom: 10px;
+  }
+  
+  /* 첫 번째 페이지 체크박스 */
+  .num1 {
+    background-color: #8BBF9F;
+    border : 0.5px solid white;
+    border-radius: 10px;
+    border-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 22vh; 
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  /* 다음으로 넘어가는 버튼 */
+  .nextPage {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .nextPage button {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: gray;
+    padding: 10px 40px;
+    font-size: medium;
+    color: whitesmoke;
+    border-radius: 30px;
+  }
+
+  .nextPage button:hover {
+    background-color: rgb(100, 92, 92);
+  }
+  
+
+/* Progress 바 */
+
+.progress {
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  z-index: 1000;
+}

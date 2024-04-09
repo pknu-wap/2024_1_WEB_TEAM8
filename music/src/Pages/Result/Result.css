@@ -1,0 +1,49 @@
+.Top {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.Playlist {
+    margin-top: 40px;
+    text-align: center;
+    color: gray;
+}
+
+/* 알앤비 설명 */
+.RB { 
+    margin-bottom: 80px;
+}
+
+.Stack {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.caution {
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.Sub { 
+    margin-left: 50px;
+}
+
+.Sub button {
+    background-color: rgb(217, 220, 232);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.music {
+    background-color: white;
+}
+
+/* 말풍선 */
+#menu { 
+    width: 200px;
+    margin: 100px auto;
+    background: #f3f3f3;
+    border: 1px solid #d8d8d8;
+    text-align: center;
+  }

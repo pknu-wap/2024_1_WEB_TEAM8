@@ -1,0 +1,76 @@
+/* App */
+
+.Main {
+  background-color: whitesmoke;
+}
+
+/* Main */
+
+.Main .sound {
+  display: flex;
+  text-align: right;
+  margin-left: 75%;
+  margin-top: 100px;
+}
+
+.sound img {
+  margin: 15px;
+}
+
+.text1 {
+  text-align: center;
+  line-height: 50%;
+  margin-bottom: 30px;
+}
+
+.text2 {
+  text-align: center;
+  line-height: 50%;
+  margin-bottom: 50px;
+  color: rgb(179, 162, 175);
+  
+}
+
+.text3 {
+  text-align: center;
+  line-height: 10%;
+  font-size: small;
+  color: rgb(179, 162, 175);
+  margin-bottom: 50px;
+}
+
+.mainButton {
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.mainButton button {
+  background-color: gray;
+  padding: 10px 40px;
+  font-size: medium;
+  color: whitesmoke;
+}
+
+.mainButton button:hover{
+  background-color: rgb(100, 92, 92);
+}
+
+.text4 {
+  text-align: center;
+  font-size: small;
+  color: rgb(179, 162, 175);
+  margin-top: 70px;
+}
+
+/* 공유 버튼 */
+.share {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* 카카오톡 공유 이미지 */
+.share img { 
+  margin-right: 30px;
+}
+
