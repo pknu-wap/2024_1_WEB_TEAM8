@@ -1,0 +1,25 @@
+/* ScrollToTop.css */
+@keyframes scrollUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow-y: scroll;
+  }
+  
+  /* Apply animation to the body when ScrollToTop component mounts */
+  body {
+    animation: scrollUp 3,0s ease-in-out;
+  }
+  
