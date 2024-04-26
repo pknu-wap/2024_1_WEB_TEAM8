@@ -4,10 +4,8 @@
 
 <h3>Tech</h3>
 
-<img alt="Html" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> 
-<img alt="Css" src ="https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/> 
-<img alt="JavaScript" src ="https://img.shields.io/badge/JavaScriipt-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=black"/> 
-<img alt="React" src ="https://img.shields.io/badge/React-61DAFB.svg?&style=for-the-badge&logo=React&logoColor=black"/><br>
+<img alt="React" src ="https://img.shields.io/badge/React-61DAFB.svg?&style=for-the-badge&logo=React&logoColor=black"/>
+<img alt="JavaScript" src ="https://img.shields.io/badge/JavaScriipt-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=black"/></br>
 <img alt="Spring" src ="https://img.shields.io/badge/Spring-6DB33F.svg?&style=for-the-badge&logo=Spring&logoColor=black"/>
 <img alt="MariaDB" src ="https://img.shields.io/badge/MariaDB-003545.svg?&style=for-the-badge&logo=MariaDB&logoColor=black"/>
 <br>
@@ -32,10 +30,9 @@
         <a href="" title="Code">chanxami </a>
     </td>
      <td align="center">
-<!--       <a href="https://github.com/dogfood5" target="_blank"> -->
-<!--         <img src="https://avatars.githubusercontent.com/u/88235766?v=4" width="120px;"/> -->
-<!--         <br />
-        <a href="https://github.com/pknu-wap/2023_2_APP_TEAM1/commits/main?author=dogfood5" title="Code">dogfood5 </a> -->
+      <img src="Users/seoseong-won/Desktop/KakaoTalk_Photo_2024-04-06-17-39-07.jpeg" width="120px;" alt="Image Description"/> 
+      <br />
+      <a href="" title="Code">Your Name </a>
     </td>
     <td align="center">
       <a href="https://github.com/Chaeeun1021" target="_blank">
