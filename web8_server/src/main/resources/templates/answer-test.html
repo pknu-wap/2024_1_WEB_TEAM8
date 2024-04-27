@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<button type="button" onclick="selectRandom()">랜덤 선택</button>
+<form action="/answer" method="post">
+    <ul>
+        <li th:each="number : ${#numbers.sequence(1, 60)}">
+            <p th:text="${number}"></p>
+            <label th:each="option : ${#numbers.sequence(1, 5)}">
+                <input type="radio" th:name="${'question_' + number}" th:id="${'question_' + number + '_' + option}" th:value="${option}"/>
+                <span th:text="${option}"></span>
+            </label>
+        </li>
+    </ul>
+
+    <button type="submit">제출</button>
+</form>
+
+<script>
+    function selectRandom() {
+        // 각 문제당 하나의 라디오 버튼을 랜덤하게 선택하기 위한 반복문
+        for (var i = 1; i <= 60; i++) {
+            var randomOption = Math.floor(Math.random() * 5) + 1; // 1부터 5까지의 랜덤한 숫자 생성
+            var radioButtonId = "question_" + i + "_" + randomOption; // 라디오 버튼의 ID 생성
+            document.getElementById(radioButtonId).checked = true; // 랜덤하게 선택된 라디오 버튼 선택
+        }
+    }
+
+</script>
+</body>
+</html>
