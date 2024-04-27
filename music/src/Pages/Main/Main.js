@@ -81,7 +81,7 @@ const Main = () => {
                 <h2><span style={{fontStyle: 'italic', textShadow: '0 0 5px #848484'}}>사운드</span>와 함께 알아보기</h2>
             </div>
             <div className='text2'>
-                <h3>소리가 첨부된 음악테스트를 통해</h3>
+                <h3>소리가 첨부된 음악테스트를 통해 --작업--</h3>
                 <h3>자신의 음악장르를 찾아봐요!</h3>
             </div>
             <div className='text3'>
