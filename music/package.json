@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://startling-khapse-2742e4.netlify.app/",
+  "homepage": "https://wapmusictest.netlify.app/",
   "eslintConfig": {
     "extends": [
       "react-app",
