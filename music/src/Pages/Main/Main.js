@@ -16,7 +16,6 @@ import {
 
 } from "react-share"
 
-import KAKAO_KEY from "../../Components/key";
 
 const KakaoShareButton = styled.a`
     cursor: pointer;
@@ -59,7 +58,8 @@ const Main = () => {
 			// 중복 initialization 방지
 			if (!window.Kakao.isInitialized()) {
 				// 두번째 step 에서 가져온 javascript key 를 이용하여 initialize
-				window.Kakao.init(KAKAO_KEY);
+				window.Kakao.init(process.env.REACT_APP_KAKAO_KEY);
+
 			}
 		}
 	}, [status]);	    
