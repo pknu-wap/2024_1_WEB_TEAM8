@@ -1,22 +1,25 @@
 package hello.hellospring.Controller;
 
+import hello.hellospring.domain.GenreName;
+import hello.hellospring.domain.GenreValue;
+
 public class AnswerForm {
-    private String question;
-    private int option;
+    GenreName genreName;
+    GenreValue genreValue;
 
-    public String getQuestion() {
-        return question;
+    public GenreName getGenreName() {
+        return genreName;
     }
 
-    public void setQuestion(String question) {
-        this.question = question;
+    public void setGenreName(GenreName genreName) {
+        this.genreName = genreName;
     }
 
-    public int getOption() {
-        return option;
+    public GenreValue getGenreValue() {
+        return genreValue;
     }
 
-    public void setOption(int option) {
-        this.option = option;
+    public void setGenreValue(GenreValue genreValue) {
+        this.genreValue = genreValue;
     }
 }

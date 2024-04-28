@@ -22,7 +22,8 @@ dependencies {
 	//implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	//runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.4.1'
+	//implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.4.1'
+	runtimeOnly 'com.mysql:mysql-connector-j'
 	//implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
 }
 

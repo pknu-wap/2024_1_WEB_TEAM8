@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 public class Tendency {
     @Id
     private Long questionId;
-    private String totalDeviation;
+    private double deviation;
 
     public Long getQuestionId() {
         return questionId;
@@ -17,11 +17,11 @@ public class Tendency {
         this.questionId = questionId;
     }
 
-    public String getTotalDeviation() {
-        return totalDeviation;
+    public double getDeviation() {
+        return deviation;
     }
 
-    public void setTotalDeviation(String totalDeviation) {
-        this.totalDeviation = totalDeviation;
+    public void setDeviation(double deviation) {
+        this.deviation = deviation;
     }
 }

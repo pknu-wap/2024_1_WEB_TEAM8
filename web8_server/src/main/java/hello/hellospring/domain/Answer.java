@@ -2,26 +2,28 @@ package hello.hellospring.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 public class Answer {
+
     @Id
-    private Long questionId;
-    private String score;
+    private String genreName;
+    private int genreValue;
 
-    public Long getQuestionId() {
-        return questionId;
+    public String getGenreName() {
+        return genreName;
     }
 
-    public void setQuestionId(Long questionId) {
-        this.questionId = questionId;
+    public void setGenreName(String genreName) {
+        this.genreName = genreName;
     }
 
-    public String getScore() {
-        return score;
+    public int getGenreValue() {
+        return genreValue;
     }
 
-    public void setScore(String score) {
-        this.score = score;
+    public void setGenreValue(int genreValue) {
+        this.genreValue = genreValue;
     }
 }

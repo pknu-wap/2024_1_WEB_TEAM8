@@ -8,17 +8,17 @@
 <button type="button" onclick="selectRandom()">랜덤 선택</button>
 <form action="/answer" method="post">
     <ul>
-        <li th:each="number : ${#numbers.sequence(1, 60)}">
+        <li th:each="number, stat : ${#numbers.sequence(1, 60)}">
             <p th:text="${number}"></p>
-            <label th:each="option : ${#numbers.sequence(1, 5)}">
-                <input type="radio" th:name="${'question_' + number}" th:id="${'question_' + number + '_' + option}" th:value="${option}"/>
-                <span th:text="${option}"></span>
-            </label>
+            <div th:each="option : ${#numbers.sequence(1, 5)}">
+                <input type="radio" th:name="|answers[${stat.index}].option|" th:id="|question_${number}_${option}|" th:value="${option}" />
+                <label th:for="|question_${number}_${option}|" th:text="${option}"></label>
+            </div>
         </li>
     </ul>
-
     <button type="submit">제출</button>
 </form>
+
 
 <script>
     function selectRandom() {
