@@ -15,15 +15,14 @@ public class TendencyService {
     public TendencyService(TendencyRepository tendencyRepository) {
         this.tendencyRepository = tendencyRepository;
     }
-
-    public Long save(Tendency tendency) {
+    public String save(Tendency tendency) {
         tendencyRepository.save(tendency);
-        return tendency.getQuestionId();
+        return tendency.getGenreName();
     }
     public List<Tendency> findTendencies() {
         return tendencyRepository.findAll();
     }
-    public Optional<Tendency> findOne(Long questionId) {
-        return tendencyRepository.findById(questionId);
+    public Optional<Double> findOne(String genreName) {
+        return tendencyRepository.findOneDeviations(genreName);
     }
 }

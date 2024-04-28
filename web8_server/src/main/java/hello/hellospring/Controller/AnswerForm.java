@@ -1,8 +1,8 @@
 package hello.hellospring.Controller;
 
-import hello.hellospring.domain.GenreName;
-import hello.hellospring.domain.GenreValue;
-
+/*
+front에서 받는 데이터 형식, 변수명 맞추기
+ */
 public class AnswerForm {
     GenreName genreName;
     GenreValue genreValue;

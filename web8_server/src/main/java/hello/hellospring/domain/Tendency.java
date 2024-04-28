@@ -6,15 +6,15 @@ import jakarta.persistence.Id;
 @Entity
 public class Tendency {
     @Id
-    private Long questionId;
+    private String genreName;
     private double deviation;
 
-    public Long getQuestionId() {
-        return questionId;
+    public String getGenreName() {
+        return genreName;
     }
 
-    public void setQuestionId(Long questionId) {
-        this.questionId = questionId;
+    public void setGenreName(String genreName) {
+        this.genreName = genreName;
     }
 
     public double getDeviation() {
