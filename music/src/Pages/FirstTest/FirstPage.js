@@ -14,7 +14,7 @@ import "./FirstPage.css"
 const FirstPage = () => {
 
     const [isPlaying, setIsPlaying] = useState(false);
-    const audioRef = useRef(new Audio('./trap.mp3'));
+    const audioRef = useRef(new Audio('./ex.mp3'));
 
     const playMusic = () => {
         const audio = audioRef.current;

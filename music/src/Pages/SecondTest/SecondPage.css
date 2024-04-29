@@ -1,20 +1,44 @@
+.firstPage{
+  position: relative;
+  background-attachment: fixed;
+  background-image: url("/public/maindesign2.gif");
+  width: 1479px;
+  height:1950px;
+  margin-left: -12px;
+  margin-bottom: -100px;
+  padding-top: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* 두 번째 페이지 체크박스 */
   .num2 {
-    border : 1px solid gray;
     border-radius: 10px;
+    border: 3px solid #D6FF32;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    width:1200px;
     height: 20vh; 
     margin-top: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 15px;
+    margin-left: 100px;
+    margin-bottom: 200px;
+   
   }
+
+  .num2 span{
+    display: fixed;
+    color:white;
+    font-size: 60px;
+    top:110px;
+  }
+
+
+  .num2 h3 {
+    color: #D6FF32; 
+}
   
   /* 다음으로 넘어가는 버튼 */
   .linkBox {
@@ -25,10 +49,11 @@
   .linkBox button {
     margin-right: 10px;
     margin-left: 10px;
-    background-color: gray;
+    background-color:#D6FF32;
     padding: 10px 40px;
+    border-radius: 15px;
     font-size: medium;
-    color: whitesmoke;
+    color: black;
   }
   
 
