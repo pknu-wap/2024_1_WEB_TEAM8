@@ -38,28 +38,28 @@ const FirstPage = () => {
                 <Progress value={15} size='md' colorScheme='purple'/>
             </div>
             <div className="num1">
-                <img onClick={playMusic} src="./play.png" alt='Sound Icon'/>
-                <h3>1번 사운드가 당신의 마음에 드나요?</h3>
+                <img onClick={playMusic} src="./sound1.png" alt='Sound Icon'/>
+                <h3><span>1.</span><div class="q1">1번 사운드가 당신의 마음에 드나요?</div></h3>
                 <PopBox id="Pop1"/>
             </div>
             <div className="num1">
-                <img onClick={playMusic} src="./play.png" alt='Sound Icon'/>
-                <h3>2번 사운드가 당신의 마음에 드나요?</h3>
+                <img onClick={playMusic} src="./sound1.png" alt='Sound Icon'/>
+                <h3><span>2.</span><div class="q1">2번 사운드가 당신의 마음에 드나요?</div></h3>
                 <PopBox id="Pop2"/>
             </div>
             <div className="num1">
-                <img onClick={playMusic} src="./play.png" alt='Sound Icon'/>
-                <h3>3번 사운드가 당신의 마음에 드나요?</h3>
+                <img onClick={playMusic} src="./sound1.png" alt='Sound Icon'/>
+                <h3><span>3.</span><div class="q1">3번 사운드가 당신의 마음에 드나요?</div></h3>
                 <HipBox id="Hip1"/>
             </div>
             <div className="num1">
-                <img onClick={playMusic} src="./play.png" alt='Sound Icon'/>
-                <h3>4번 사운드가 당신의 마음에 드나요?</h3>
+                <img onClick={playMusic} src="./sound1.png" alt='Sound Icon'/>
+                <h3><span>4.</span><div class="q1">4번 사운드가 당신의 마음에 드나요?</div></h3>
                 <HipBox id="Hip2"/>
             </div>
             <div className="num1">
-                <img onClick={playMusic} src="./play.png" alt='Sound Icon'/>
-                <h3>5번 사운드가 당신의 마음에 드나요?</h3>
+                <img onClick={playMusic} src="./sound1.png" alt='Sound Icon'/>
+                <h3><span>5.</span><div class="q1">5번 사운드가 당신의 마음에 드나요?</div></h3>
                 <RockBox id="Rock1"/>
             </div>
             <div className='nextPage'>

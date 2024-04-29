@@ -1,76 +1,109 @@
 /* App */
-
-.Main {
-  background-color: whitesmoke;
-}
-
-/* Main */
-
-.Main .sound {
-  display: flex;
-  text-align: right;
-  margin-left: 75%;
-  margin-top: 100px;
-}
-
-.sound img {
-  margin: 15px;
-}
-
-.text1 {
-  text-align: center;
-  line-height: 50%;
-  margin-bottom: 30px;
-}
-
-.text2 {
-  text-align: center;
-  line-height: 50%;
-  margin-bottom: 50px;
-  color: rgb(179, 162, 175);
+body{
+    width:1000px;
+  }
+  .Main{
+    position: fixed;
+    background-image: url("/public/maindesign2.gif");
+    width: 1468px;
+    height:1300px;
+    top: -100px;
+    margin-left: -12px;
+    margin-bottom: 0px;
+    background-size: 102.5%;
+    background-repeat: no-repeat;
+  }
   
-}
-
-.text3 {
-  text-align: center;
-  line-height: 10%;
-  font-size: small;
-  color: rgb(179, 162, 175);
-  margin-bottom: 50px;
-}
-
-.mainButton {
-  margin-top: 80px;
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.mainButton button {
-  background-color: gray;
-  padding: 10px 40px;
-  font-size: medium;
-  color: whitesmoke;
-}
-
-.mainButton button:hover{
-  background-color: rgb(100, 92, 92);
-}
-
-.text4 {
-  text-align: center;
-  font-size: small;
-  color: rgb(179, 162, 175);
-  margin-top: 70px;
-}
-
-/* 공유 버튼 */
-.share {
-  margin-top: 30px;
-  text-align: center;
-}
-
-/* 카카오톡 공유 이미지 */
-.share img { 
-  margin-right: 30px;
-}
-
+  
+  /* Main */
+  .sound img{
+    position:relative;
+    top:450px;
+    left:1230px;
+    width: 60px;
+    height: 60px;
+  
+  
+  }
+  
+  .Main h2{
+    position: relative;
+    color:white;
+    width: 452px;
+    height: 82px;
+    top: 390px;
+    left: 898px;
+    font-size: 40px;
+    font-weight: lighter;
+  }
+  
+  .Main h1{
+    position: relative;
+    color:white;
+    font-size: 147.42px;
+    font-weight: 500;
+    line-height: 77.25px;
+    top: 270px;
+    left:990px;
+  }
+  
+  .sound img {
+    margin: 15px;
+  }
+  
+  .text1 {
+    line-height: 50%;
+  }
+  
+  .text2 {
+    text-align: center;
+    line-height: 50%;
+    margin-bottom: 50px;
+    color: rgb(179, 162, 175);
+    
+  }
+  
+  .text3 {
+    text-align: center;
+    line-height: 10%;
+    font-size: small;
+    color: rgb(179, 162, 175);
+    margin-bottom: 50px;
+  }
+  
+  .mainButton {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .mainButton button {
+  
+    background-color: #D6FF32;
+    border:#D6FF32;
+    border-radius: 15px;
+    padding: 10px 40px;
+  
+    font-size: medium;
+    color: black;
+    font-weight: bold;
+  
+    position: relative;
+    left: 473px;
+    top: 140px;
+  }
+  
+  .mainButton button:hover{
+    background-color: #d6ff328f;
+  }
+  
+  .text3 h4{
+    position: relative;
+    text-align: center;
+    font-size: small;
+    color: rgb(179, 162, 175);
+    top:250px;
+    left:137px;
+  }
+  
+  
