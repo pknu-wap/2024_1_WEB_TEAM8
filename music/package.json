@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://wapmusictest.netlify.app",
+  "homepage": "https://wapmusictest.netlify.app/",
   "eslintConfig": {
     "extends": [
       "react-app",
