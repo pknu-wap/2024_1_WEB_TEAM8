@@ -1,4 +1,3 @@
-/* ScrollToTop.css */
 @keyframes scrollUp {
     from {
       opacity: 0;
@@ -18,7 +17,6 @@
     overflow-y: scroll;
   }
   
-  /* Apply animation to the body when ScrollToTop component mounts */
   body {
     animation: scrollUp 3,0s ease-in-out;
   }
