@@ -25,5 +25,15 @@ public class SurveyResultService {
             surveyResult.setCount(1);
             surveyResultRepository.save(surveyResult);
         }
+
+    }
+    @Transactional(readOnly = true)
+    public int getTotalSurveyCount() {
+        Iterable<SurveyResult> allSurveyResults = surveyResultRepository.findAll();
+        int totalSurveyCount = 0;
+        for (SurveyResult result : allSurveyResults) {
+            totalSurveyCount += result.getCount();
+        }
+        return totalSurveyCount;
     }
 }
