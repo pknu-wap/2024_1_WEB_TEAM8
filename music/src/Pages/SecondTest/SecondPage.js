@@ -39,9 +39,6 @@ const SecondPage = () => {
                 <PopBox id="LatinPop1"/>
             </div>
             <div className='linkBox'>
-                <Link to="/firstPage1">
-                    <button>이전으로</button> 
-                </Link> 
                 <Link to="/SecondPage1">
                     <button>다음으로</button> 
                 </Link> 
