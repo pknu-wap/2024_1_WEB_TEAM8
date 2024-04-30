@@ -13,6 +13,18 @@ import { useRecoilValue } from "recoil";
 
 import "./SecondPage.css";
 
+function combineKeysValues(obj) {
+    const keys = Object.keys(obj);
+    const values = Object.values(obj);
+    const combined = {};
+
+    for (let i = 0; i < keys.length; i++) {
+        combined[keys[i]] = values[i];
+    }
+
+    return combined;
+}
+
 const SecondPage4 = () => {
 
     const PopCheckValue = useRecoilValue(PopValueState);
@@ -44,8 +56,36 @@ const SecondPage4 = () => {
 
     const completeButton = () => {
         console.log("결과 :" , Result);
-        console.log("장르 :", maxTotal)
+        console.log("장르 :", maxTotal);
+        sendDataToServer();
     };
+    const sendDataToServer = async () => {
+        const data = {
+            pop: combineKeysValues(PopCheckValue),
+            hip: combineKeysValues(HipCheckValue),
+            jazz: combineKeysValues(JazzCheckValue),
+            rb: combineKeysValues(RbCheckValue),
+            rock: combineKeysValues(RockCheckValue)
+        }
+        try {
+          const response = await fetch("/answer", {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          });
+      
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+      
+          const responseData = await response.json();
+          console.log('Server response:', responseData);
+        } catch (error) {
+          console.error('Error sending data:', error);
+        }
+      };      
 
     return (
         <ChakraProvider>
