@@ -23,7 +23,7 @@ import Rb from '../Pages/Result/Rb';
 export const Routers = () => {
     return (
     <RecoilRoot>
-    <BrowserRouter basename="/wapmusictest">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop/>
         <Routes>
           <Route path='/' element={<Main />} />
