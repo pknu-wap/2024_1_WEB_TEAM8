@@ -66,7 +66,7 @@ const SecondPage4 = () => {
             rock: combineKeysValues(RockCheckValue)
         }
         try {
-          const response = await fetch("http://34.47.87.233:8080/answer", {
+          const response = await fetch("/answer", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
