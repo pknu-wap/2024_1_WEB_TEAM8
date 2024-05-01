@@ -13,7 +13,6 @@
 
   /* 첫 번째 페이지 체크박스 */
   .num1 {
-    background-color: rgb(45, 44, 41);
     border-radius: 10px;
     border: 3px solid #D6FF32;
     display: flex;
