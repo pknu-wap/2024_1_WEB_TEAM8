@@ -66,7 +66,7 @@ const SecondPage4 = () => {
             rock: combineKeysValues(RockCheckValue)
         }
         try {
-          const response = await fetch("/answer", {
+          const response = await fetch("https://34.64.108.76.nip.io/answer", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
