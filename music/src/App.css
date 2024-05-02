@@ -18,12 +18,10 @@ body{
   /* Main */
   .sound img{
     position:relative;
-    top:450px;
+    top:430px;
     left:1230px;
     width: 60px;
     height: 60px;
-  
-  
   }
   
   .Main h2{
@@ -31,7 +29,7 @@ body{
     color:white;
     width: 452px;
     height: 82px;
-    top: 390px;
+    top: 370px;
     left: 898px;
     font-size: 40px;
     font-weight: lighter;
@@ -43,7 +41,7 @@ body{
     font-size: 147.42px;
     font-weight: 500;
     line-height: 77.25px;
-    top: 270px;
+    top: 250px;
     left:990px;
   }
   
@@ -60,7 +58,6 @@ body{
     line-height: 50%;
     margin-bottom: 50px;
     color: rgb(179, 162, 175);
-    
   }
   
   .text3 {
@@ -68,6 +65,7 @@ body{
     line-height: 10%;
     font-size: small;
     color: rgb(179, 162, 175);
+    margin-right: 20px;
     margin-bottom: 50px;
   }
   
@@ -78,11 +76,10 @@ body{
   }
   
   .mainButton button {
-  
     background-color: #D6FF32;
     border:#D6FF32;
     border-radius: 15px;
-    padding: 10px 40px;
+    padding: 15px 40px;
   
     font-size: medium;
     color: black;
