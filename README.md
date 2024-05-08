@@ -64,6 +64,3 @@
     <td align="center">Back</td>
   </tr>
 </table><br/>
-        
-## Git Flow
-<img width="637" alt="스크린샷 2024-04-30 10 48 41" src="https://github.com/pknu-wap/2024_1_WEB_TEAM8/assets/105052068/cebb8f04-9129-4894-b50e-ec6ed8e0caaf">
