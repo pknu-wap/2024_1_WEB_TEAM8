@@ -47,10 +47,26 @@ const Jazz = () => {
     FreeJazz = parseInt(FreeJazz / Total * 100);
     BibobJazz = parseInt(BibobJazz / Total * 100);
 
+    const maxPoint = Math.max(LatinJazz,SwingJazz,SoulJazz,FreeJazz,BibobJazz);
+    var maxGenre;
+    
+    if(maxPoint===LatinJazz){
+        maxGenre="라틴";
+    }if(maxPoint===SwingJazz){
+        maxGenre="스윙";
+    }if(maxPoint===SoulJazz){
+        maxGenre="스윙";
+    }if(maxPoint===FreeJazz){
+        maxGenre="스윙";
+    }if (maxPoint===BibobJazz){
+        maxGenre="비밥";
+    }
+
     return (
         <ChakraProvider>
         <div className="Top">
-            <h2>당신은 '재즈'를 좋아하실겁니다.</h2>
+            <h2>당신의 음악 DNA는 </h2>
+            <p><span>재즈에 속한 하위장르 중 {maxGenre}에 가깝군요</span>에 가깝군요</p>
         </div>
         <div className="Playlist">
             <h3>이 노래를 들어보세요!!</h3>
