@@ -1,5 +1,5 @@
 // 스프링 서버 전역적으로 CORS 설정
-package hello.hellospring;  // 이 패키지 선언을 기존 패키지와 일치시켜주세요.
+package hello.hellospring;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
