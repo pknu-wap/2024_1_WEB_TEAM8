@@ -61,8 +61,6 @@ public class AnswerController {
         }
         // tendency 저장: 편차 계산
         saveDeviation(getAverage());
-        // statistics 저장: 통계 계산
-        saveStatistics();
         return "Data received successfully";
     }
     private double getAverage() {
@@ -114,13 +112,6 @@ public class AnswerController {
                 tendencyService.save(newer);
             }
         }
-    }
-
-
-
-    public void saveStatistics() {
-        // 장르 중 가장 max 값을 가진 장르 찾아서 숫자 누적하기 - 예) LatinJazz1
-        // 총 사용자도 누적해야함
     }
 
 

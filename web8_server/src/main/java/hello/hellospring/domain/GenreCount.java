@@ -1,19 +1,15 @@
 package hello.hellospring.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "survey_result")
-public class SurveyResult {
-
+@Table(name = "survey_result") // survey_result 테이블과 매핑
+public class GenreCount {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "genre")
     private String genre;
-
-    @Column(name = "count")
     private int count;
 
     public void setGenre(String genre) {
@@ -23,8 +19,8 @@ public class SurveyResult {
     }
 
     public int getCount() {
-        return 0;
+        return count;
     }
 
-    // 생성자, 게터, 세터
+    // 생성자, getter, setter
 }
