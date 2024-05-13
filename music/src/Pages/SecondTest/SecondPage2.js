@@ -13,7 +13,7 @@ const SecondPage2 = () => {
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={75} size='md' colorScheme='purple' />
+                <Progress value={40} size='md' colorScheme='purple' />
             </div>
             <div className="num2">
                 <h3>난 험난했던 나의 출생지의 부심이 넘쳐. 

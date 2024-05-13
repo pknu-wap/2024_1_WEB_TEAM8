@@ -13,7 +13,7 @@ const SecondPage3 = () => {
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={90} size='md' colorScheme='purple' />
+                <Progress value={48} size='md' colorScheme='purple' />
             </div>
             <div className="num2">
                 <h3> 환상이 결합 된 환각적인 시공간을 넘나드는 듯한 실험적인 사운드
