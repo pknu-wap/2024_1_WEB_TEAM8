@@ -12,6 +12,8 @@ import SecondPage1 from '../Pages/SecondTest/SecondPage1';
 import SecondPage2 from '../Pages/SecondTest/SecondPage2';
 import SecondPage3 from '../Pages/SecondTest/SecondPage3';
 import SecondPage4 from '../Pages/SecondTest/SecondPage4';
+import SecondPage5 from '../Pages/SecondTest/SecondPage5';
+import SecondPage9 from '../Pages/SecondTest/SecondPage9';
 
 import Pop from '../Pages/Result/Pop';
 import Jazz from '../Pages/Result/Jazz';
@@ -34,6 +36,8 @@ export const Routers = () => {
           <Route path='SecondPage2' element={<SecondPage2/>} />
           <Route path='SecondPage3' element={<SecondPage3/>} />
           <Route path='SecondPage4' element={<SecondPage4/>} />
+          <Route path='SecondPage5' element={<SecondPage5/>} />
+          <Route path='SecondPage9' element={<SecondPage9/>} />
           <Route path='Pop' element={<Pop/>} />
           <Route path='Jazz' element={<Jazz/>} />
           <Route path='Hip' element={<Hip/>} />
