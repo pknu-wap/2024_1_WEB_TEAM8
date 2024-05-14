@@ -102,5 +102,108 @@ body{
     top:250px;
     left:137px;
   }
+
+  /*Ipad pro*/
+  @media(max-width:1300px) {
+    .Main{
+      position: fixed;
+      width: 168%;
+      height: 105%;
+      top:-7px;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .Main h1{
+      position: absolute;
+      top:340px;
+      left:600px;
+    }
+
+    .Main h2{
+      position: absolute;
+      top:360px;
+      left:510px;
+    }
+
+    .text3 h4{
+      position: relative;
+      top:480.5px;
+      left:-345px;
+    }
+
+    .mainButton{
+      position: absolute;
+      top:360px;
+      left:257px;
+      width: 140px;
+    }
+
+    .mainButton button{
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+  }
   
-  
+/*Tablet*/
+@media (max-width:820px) {
+  .Main{
+    position: fixed;
+    width: 168%;
+    height: 105%;
+    top:-7px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .Main h1{
+    position: absolute;
+    font-size: 100px;
+    left:520px;
+    top:400px;
+    margin-right: 20px;
+  }
+
+  .Main h2{
+    position: absolute;
+    font-size: 35px;
+    left:382px;
+    top:400px;
+  }
+
+  .text3 h4{
+    position: relative;
+    font-size: 12px;
+    left:-290px;
+    top:475px;
+    color: aliceblue;
+  }
+
+  .mainButton{
+    position: relative;
+    margin-top: 0px;
+    width: 100px;
+    height:80px;
+    padding: 3px;
+    left:90px;
+    top:250px;
+  }
+
+  .mainButton button{
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+
+/*mobile*/
+@media (max-width:698px) {
+  .Main{
+    position: fixed;
+    width: 168%;
+    height: 200%;
+    top:-7px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
