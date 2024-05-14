@@ -1,0 +1,49 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
+import { Progress } from "@chakra-ui/progress";
+
+import HipBox from "../../Components/HipBox";
+
+import "./SecondPage.css";
+
+const SecondPage6 = () => {
+
+    return (
+        <ChakraProvider>
+        <div className="firstPage">
+            <div className="progress">
+                <Progress value={72} size='md' colorScheme='purple' />
+            </div>
+            <div className="num2">
+                <h3> 잔인하고 거친 질감이 느껴지는 사운드와 총과 칼이 자주 표현되는 가사들은 잠재되어 있는 나의 야성을 잠시 깨워줘.</h3>
+                <HipBox id="DrillHip2"/>
+            </div>
+            <div className="num2">
+                <h3>마치 스포츠카의 시동을 건듯한 808 베이스!대교 위를 달리듯 거침없이 칫!칫!칫!칫! 거리는 하이햇! 돈과 섹슈얼한 가사!
+어두운 도시 속 빛줄기들이 연상되는 이런 음악은 나를 더 섹시하게 만들어줘.</h3>
+                <HipBox id="TrapHip2"/>
+            </div>
+            <div className="num2">
+                <h3>나는 기존에 있는 규칙을 무시한채 많은장르를 혼합해 독창적인 사운드와 조화롭게 랩하는 아티스트가 매력적이야.</h3>
+                <HipBox id="AlterHip2"/>
+            </div>
+            <div className="num2">
+                <h3>에너지가 뿜어나오는 듯한 강력한 신디사이저 사운드와 분노로 행진하는 듯한 랩과 전자드럼의 조합은 내 가슴을 뻥 뚫리게 해줘.</h3>
+                <HipBox id="RageHip2"/>
+            </div>
+            <div className="num2">
+                <h3>나도 모르게 드럼의 그루브를 타며 박자를 가지고 노는 보컬에 집중하다보면 골목벽에 그려진 알록달록한 그래피티 그림들이 떠올라.</h3>
+                <HipBox id="BoomHip2"/>
+            </div>
+            <div className='linkBox'>
+                <Link to="/SecondPage7">
+                    <button>다음으로</button> 
+                </Link> 
+            </div>
+        </div>
+        </ChakraProvider>
+    );
+};
+
+export default SecondPage6;
