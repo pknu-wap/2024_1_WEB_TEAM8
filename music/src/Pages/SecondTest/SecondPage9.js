@@ -52,31 +52,6 @@ const SecondPage9 = () => {
 
     const maxTotal = AllTotal[Result]; // 최대값
 
-      // 백엔드로 결과를 보내는 함수
-      const sendResultToBackend = async (result) => {
-        try {
-            const response = await fetch("https://34.64.108.76.nip.io/incrementScore", {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: new URLSearchParams({ genre: result })
-            });
-    
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-    
-            console.log('Result sent to backend successfully');
-        } catch (error) {
-            console.error('Error sending result to backend:', error);
-        }
-    };
-
-    const handleResult = () => {
-        sendResultToBackend(Result); // 백엔드로 결과 전송
-        };
-        
     const completeButton = () => {
         console.log("결과 :" , Result);
         console.log("장르 :", maxTotal);
@@ -108,12 +83,7 @@ const SecondPage9 = () => {
         } catch (error) {
           console.error('Error sending data:', error);
         }
-      };   
-      
-    const handleComplete = () => {
-        completeButton();
-        handleResult();
-    };
+      };      
 
     return (
         <ChakraProvider>
@@ -148,7 +118,7 @@ const SecondPage9 = () => {
             </div>
             <div className='linkBox'>
                 <Link to={`/${Result}`}>
-                    <button onClick={handleComplete}>완료</button> 
+                    <button onClick={completeButton}>완료</button> 
                 </Link>
             </div>
         </div>
