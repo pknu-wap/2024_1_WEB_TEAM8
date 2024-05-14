@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/2024_1_WEB_TEAM8.iml" filepath="$PROJECT_DIR$/.idea/2024_1_WEB_TEAM8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hello-spring.main.iml" filepath="$PROJECT_DIR$/.idea/modules/hello-spring.main.iml" />
     </modules>
   </component>
 </project>
