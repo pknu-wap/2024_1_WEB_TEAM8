@@ -50,7 +50,7 @@ public class AnswerController {
             }
         }
         */
-        // 상위장르 이름 필요없으면 이 방식 사용
+        // 상위장르 이름 필요 없으면 이 방식 사용
         // 프론트로부터 받아온 답변을 Map 형식으로 저장 (예시) { "pop1" : "2" }
         maps = new HashMap[]{answerForm.getHip(), answerForm.getPop(),
                 answerForm.getRb(), answerForm.getRock(), answerForm.getJazz()};
@@ -113,6 +113,5 @@ public class AnswerController {
             }
         }
     }
-
 
 }
