@@ -39,7 +39,7 @@ const SecondPage5 = () => {
                 <JazzBox id="BibobJazz2"/>
             </div>
             <div className='linkBox'>
-                <Link to="/SecondPage9">
+                <Link to="/SecondPage6">
                     <button>다음으로</button> 
                 </Link> 
             </div>
