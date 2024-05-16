@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {useState, useRef} from "react";
 import { Link } from "react-router-dom";
-import { Progress } from "@chakra-ui/progress";
 import { ChakraProvider } from '@chakra-ui/react';
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import PopBox from "../../Components/PopBox";
 import HipBox from "../../Components/HipBox";
 import RockBox from "../../Components/RockBox";
 
 import "./FirstPage.css"
-
+import testData from "../../Components/testData";
 
 const FirstPage = () => {
 
@@ -37,15 +37,28 @@ const FirstPage = () => {
         }
         
         setIsPlaying(!isPlaying);
-    };
+    };     
 
+    // 진행도 애니메이션
+    const [completed, setCompleted] = useState(0);
+
+      useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCompleted(testData[0].completed); 
+        }, 20); 
+    
+        return () => clearTimeout(timeout); // 컴포넌트가 언마운트되거나 재렌더링될 때 타임아웃을 클리어
+    }, []); // 처음 렌더링될 때만 실행
     
 
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={8} size='md' colorScheme='purple'/>
+                <ProgressBar
+                    key={0}
+                    bgcolor={testData[0].bgcolor}
+                    completed={completed}/>
             </div>
             <div className="num1">
                 <img onClick={() => playMusic(0)} src="./sound1.png" alt='Sound Icon'/>

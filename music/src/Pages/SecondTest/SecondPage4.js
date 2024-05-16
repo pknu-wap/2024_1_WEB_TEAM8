@@ -1,19 +1,34 @@
 import React from "react";
+import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import PopBox from "../../Components/PopBox";
+import testData from "../../Components/testData";
 
 import "./SecondPage.css";
 
 const SecondPage4 = () => {
 
+    const [completed, setCompleted] = useState(0);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCompleted(testData[6].completed); 
+        }, 20); 
+      
+        return () => clearTimeout(timeout); 
+    }, []); 
+
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={56} size='md' colorScheme='purple' />
+            <ProgressBar
+                    key={6}
+                    bgcolor={testData[6].bgcolor}
+                    completed={completed}/>
             </div>
             <div className="num2">
                 <h3>긍정적인 에너지를 뿜어내는 업템포 음악과 단순하면서 중독성이 강한 멜로디는 내 어깨를 들썩이게 해!</h3>

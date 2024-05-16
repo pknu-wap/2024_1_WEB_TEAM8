@@ -1,19 +1,35 @@
 import React from "react";
+import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import JazzBox from "../../Components/JazzBox";
+import testData from "../../Components/testData";
 
 import "./SecondPage.css";
 
 const SecondPage5 = () => {
 
+    const [completed, setCompleted] = useState(0);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCompleted(testData[7].completed); 
+        }, 20); 
+      
+        return () => clearTimeout(timeout); 
+    }, []); 
+
+
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={64} size='md' colorScheme='purple' />
+            <ProgressBar
+                    key={7}
+                    bgcolor={testData[7].bgcolor}
+                    completed={completed}/>
             </div>
             <div className="num2">
                 <h3>해모래알들이 부딪히는듯한 리듬과 차분하고 경쾌한 리듬, 따스한 햇살같은 멜로디.. 

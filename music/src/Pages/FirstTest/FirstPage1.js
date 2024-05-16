@@ -1,13 +1,14 @@
 import React from "react";
-import {useState, useRef} from "react";
+import {useState, useRef, useEffect} from "react";
 import { Link } from "react-router-dom";
-import { Progress } from "@chakra-ui/progress";
 import { ChakraProvider } from '@chakra-ui/react';
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import RockBox from "../../Components/RockBox";
 import RbBox from "../../Components/RbBox";
 import JazzBox from "../../Components/JazzBox";
 import "./FirstPage.css";
+import testData from "../../Components/testData";
 
 const FirstPage1 = () => {
 
@@ -37,11 +38,24 @@ const FirstPage1 = () => {
         setIsPlaying(!isPlaying);
     };
 
+    const [completed, setCompleted] = useState(0);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCompleted(testData[1].completed); 
+        }, 20); 
+      
+        return () => clearTimeout(timeout); 
+    }, []); 
+
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={16} size='md' colorScheme='purple' />       
+            <ProgressBar
+                    key={1}
+                    bgcolor={testData[1].bgcolor}
+                    completed={completed}/>
             </div>
             <div className="num1">
                 <img onClick={() => playMusic(0)} src="./sound1.png" alt='Sound Icon'/>

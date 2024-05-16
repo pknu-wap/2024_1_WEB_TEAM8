@@ -1,19 +1,34 @@
 import React from "react";
+import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import RbBox from "../../Components/RbBox";
+import testData from "../../Components/testData";
 
 import "./SecondPage.css";
 
 const SecondPage8 = () => {
 
+    const [completed, setCompleted] = useState(0);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCompleted(testData[10].completed); 
+        }, 20); 
+      
+        return () => clearTimeout(timeout); 
+    }, []); 
+
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={88} size='md' colorScheme='purple' />
+            <ProgressBar
+                    key={10}
+                    bgcolor={testData[10].bgcolor}
+                    completed={completed}/>
             </div>
             <div className="num2">
                 <h3>흑인의 색감이 진하게 나타는 섹시한 보컬과 그루브.
