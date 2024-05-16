@@ -1,19 +1,34 @@
 import React from "react";
+import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import RockBox from "../../Components/RockBox";
+import testData from "../../Components/testData";
 
 import "./SecondPage.css";
 
 const SecondPage3 = () => {
 
+    const [completed, setCompleted] = useState(0);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCompleted(testData[5].completed); 
+        }, 20); 
+      
+        return () => clearTimeout(timeout); 
+    }, []); 
+
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={48} size='md' colorScheme='purple' />
+            <ProgressBar
+                    key={5}
+                    bgcolor={testData[5].bgcolor}
+                    completed={completed}/>
             </div>
             <div className="num2">
                 <h3> 환상이 결합 된 환각적인 시공간을 넘나드는 듯한 실험적인 사운드

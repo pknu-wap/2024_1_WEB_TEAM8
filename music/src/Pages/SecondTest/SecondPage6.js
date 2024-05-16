@@ -1,19 +1,34 @@
 import React from "react";
+import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import HipBox from "../../Components/HipBox";
+import testData from "../../Components/testData";
 
 import "./SecondPage.css";
 
 const SecondPage6 = () => {
 
+    const [completed, setCompleted] = useState(0);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCompleted(testData[8].completed); 
+        }, 20); 
+      
+        return () => clearTimeout(timeout); 
+    }, []); 
+
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={72} size='md' colorScheme='purple' />
+            <ProgressBar
+                    key={8}
+                    bgcolor={testData[8].bgcolor}
+                    completed={completed}/>
             </div>
             <div className="num2">
                 <h3> 잔인하고 거친 질감이 느껴지는 사운드와 총과 칼이 자주 표현되는 가사들은 잠재되어 있는 나의 야성을 잠시 깨워줘.</h3>

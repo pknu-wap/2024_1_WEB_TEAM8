@@ -1,19 +1,34 @@
 import React from "react";
+import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import HipBox from "../../Components/HipBox";
+import testData from "../../Components/testData";
 
 import "./SecondPage.css";
 
 const SecondPage2 = () => {
 
+    const [completed, setCompleted] = useState(0);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCompleted(testData[4].completed); 
+        }, 20); 
+      
+        return () => clearTimeout(timeout); 
+    }, []); 
+
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={40} size='md' colorScheme='purple' />
+            <ProgressBar
+                    key={4}
+                    bgcolor={testData[4].bgcolor}
+                    completed={completed}/>
             </div>
             <div className="num2">
                 <h3>난 험난했던 나의 출생지의 부심이 넘쳐. 

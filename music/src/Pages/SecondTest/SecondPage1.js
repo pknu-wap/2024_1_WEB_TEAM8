@@ -1,19 +1,34 @@
 import React from "react";
+import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import JazzBox from "../../Components/JazzBox";
+import testData from "../../Components/testData";
 
 import "./SecondPage.css";
 
 const SecondPage1 = () => {
 
+    const [completed, setCompleted] = useState(0);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCompleted(testData[3].completed); 
+        }, 20); 
+      
+        return () => clearTimeout(timeout); 
+    }, []); 
+    
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={32} size='md' colorScheme='purple' />
+            <ProgressBar
+                    key={3}
+                    bgcolor={testData[3].bgcolor}
+                    completed={completed}/>
             </div>
             <div className="num2">
                 <h3>해변에서 하이볼을 홀짝이며 흰모래사장에서 석양이 떠오르는 차분한 선율

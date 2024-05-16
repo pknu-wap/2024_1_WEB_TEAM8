@@ -1,9 +1,11 @@
 import React from "react";
+import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import RbBox from "../../Components/RbBox";
+import testData from "../../Components/testData";
 import { PopValueState } from "../../Components/PopBox";
 import { HipValueState } from "../../Components/HipBox";
 import { JazzValueState } from "../../Components/JazzBox";
@@ -85,11 +87,24 @@ const SecondPage9 = () => {
         }
       };      
 
+    const [completed, setCompleted] = useState(0);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCompleted(testData[11].completed); 
+        }, 20); 
+      
+        return () => clearTimeout(timeout); 
+    }, []); 
+
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={100} size='md' colorScheme='purple' />
+                 <ProgressBar
+                    key={11}
+                    bgcolor={testData[11].bgcolor}
+                    completed={completed}/>
             </div>
             <div className="num2">
                 <h3>디지털한 사운드가 기반이 된 끈적한 사랑과 사회참여적인 가사를 담아낸 흑인들의 가사

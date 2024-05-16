@@ -1,19 +1,34 @@
 import React from "react";
+import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 import RockBox from "../../Components/RockBox";
+import testData from "../../Components/testData";
 
 import "./SecondPage.css";
 
 const SecondPage7 = () => {
 
+    const [completed, setCompleted] = useState(0);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setCompleted(testData[9].completed); 
+        }, 20); 
+      
+        return () => clearTimeout(timeout); 
+    }, []); 
+
     return (
         <ChakraProvider>
         <div className="firstPage">
             <div className="progress">
-                <Progress value={80} size='md' colorScheme='purple' />
+            <ProgressBar
+                    key={9}
+                    bgcolor={testData[9].bgcolor}
+                    completed={completed}/>
             </div>
             <div className="num2">
                 <h3>난 뭐든지 앞서가야해 ! 그렇기 때문에 예상치 못한 음악적 요소 속에 장시간 연주되는 악기의 솔로 연주가 멋있어보여.</h3>
