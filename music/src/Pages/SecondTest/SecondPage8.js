@@ -1,25 +1,17 @@
 import React from "react";
-import {useState, useEffect} from "react";
-import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import RbBox from "../../Components/RbBox";
 import testData from "../../Components/testData";
+import NextButton from "../../Components/NextButton";
+import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
 
 const SecondPage8 = () => {
 
-    const [completed, setCompleted] = useState(0);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setCompleted(testData[10].completed); 
-        }, 20); 
-      
-        return () => clearTimeout(timeout); 
-    }, []); 
+    const completed = useCompleted(0,10);
 
     return (
         <ChakraProvider>
@@ -56,11 +48,7 @@ Oh.. 오늘 너와 나를 더 끈적하게 만들어줄것 같아.</h3>
 힙스터인 나는 자신만의 색깔이 뚜렷한 이 음악에 더 공감이 생겨.</h3>
                 <RbBox id="AlterRB2"/>
             </div>
-            <div className='linkBox'>
-                <Link to="/SecondPage9">
-                    <button>다음으로</button> 
-                </Link> 
-            </div>
+            <NextButton to="/SecondPage9"/>
         </div>
         </ChakraProvider>
     );
