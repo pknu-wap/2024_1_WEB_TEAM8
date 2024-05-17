@@ -1,3 +1,125 @@
+.body{
+    position: relative;
+    background-color:rgb(59, 30, 98);
+    width:147%;
+    height: 1600px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;  
+    top:0px;
+}
+
+.Top{
+    margin-bottom: 50px;
+    color:white;
+   
+}
+
+.Top h2{
+    font-weight: 700;
+    font-size: 43.903px;
+    line-height: 52px;
+ 
+}
+
+.Top h3{
+    color:#D6FF32;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.Top span,.graph span{
+    color:#D6FF32;
+}
+
+.musictable table{
+    display: inline;
+    width:500px;
+    left:1000px;
+    top:20px;
+}
+
+.musictable hr {
+    border-color:#D6FF32 ;
+    width: 800px;
+}
+
+.musictable td{
+display: flex;
+text-align: center;
+align-items: center;
+}
+
+ .musictable table img{
+    width: 140px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.musictable .play1,.musictable .play{
+    color:#D6FF32;
+}
+
+.musictable .play1 {
+    position:relative;
+    display: inline;
+    text-align:center;
+    align-items: center;
+    margin-left: 400px;
+}
+
+.musictable .play2 {
+    position:flex;
+    text-align:center;
+    align-items: center;
+    left:1200px;
+}
+
+
+.musictable .play1 img,.musictable .play img {
+    position: relative;
+    display: flexbox;
+    width: 50px;
+    left:50px;
+    top:30px;
+    background-color: black;
+    border-radius: 24px;
+} 
+
+
+.RB span{
+    color:#D6FF32;
+    position: relative;
+    font-size: 28px;
+    font-weight: 700;
+    left:0px;
+    top: 0px;
+    margin-bottom: 30px;
+}
+
+
+.RB{
+    color:white;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 200px;
+    top:20px;
+}
+
+.singer table{
+    position: relative;
+    text-align: center;
+    margin-left: 200px;
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    opacity: 0.2px;
+    padding-top:10px;
+    height: 300px;
+}
+
+
 .Top {
     margin-top: 80px;
     text-align: center;
@@ -6,12 +128,29 @@
 .Playlist {
     margin-top: 40px;
     text-align: center;
-    color: gray;
+    color: white;
 }
 
-/* 알앤비 설명 */
-.RB { 
-    margin-bottom: 80px;
+.Playlist h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 45px;
+}
+
+.Playlist h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+
+.graph h2{
+    font-family: Pretendard;
+    font-size: 30px;
+    font-weight: 700;
+    color:white;
+    margin-bottom: 40px;
+    margin:20px;
 }
 
 .Stack {
