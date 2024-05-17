@@ -1,25 +1,17 @@
 import React from "react";
-import {useState, useEffect} from "react";
-import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import PopBox from "../../Components/PopBox";
 import testData from "../../Components/testData";
+import NextButton from "../../Components/NextButton";
+import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
 
 const SecondPage = () => {
-
-    const [completed, setCompleted] = useState(0);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setCompleted(testData[2].completed); 
-        }, 20); 
-      
-        return () => clearTimeout(timeout); 
-    }, []); 
+    
+    const completed = useCompleted(0,2);
 
     return (
         <ChakraProvider>
@@ -53,11 +45,7 @@ const SecondPage = () => {
                 <h3>멕시코나 스페인 클럽에서 나올듯한 탄탄한 리듬과 특유의 퍼커션이 나를 삼바춤을 추게해.</h3><br/>
                 <PopBox id="LatinPop1"/>
             </div>
-            <div className='linkBox'>
-                <Link to="/SecondPage1">
-                    <button>다음으로</button> 
-                </Link> 
-            </div>
+            <NextButton to="/SecondPage1"/>
         </div>
         </ChakraProvider>
     );

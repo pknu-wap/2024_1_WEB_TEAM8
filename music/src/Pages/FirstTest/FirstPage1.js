@@ -1,16 +1,19 @@
 import React from "react";
-import {useState, useRef, useEffect} from "react";
-import { Link } from "react-router-dom";
+import {useState, useRef} from "react";
 import { ChakraProvider } from '@chakra-ui/react';
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import RockBox from "../../Components/RockBox";
 import RbBox from "../../Components/RbBox";
 import JazzBox from "../../Components/JazzBox";
+import NextButton from "../../Components/NextButton";
+import useCompleted from "../../Components/useCompleted";
+
 import "./FirstPage.css";
 import testData from "../../Components/testData";
 
 const FirstPage1 = () => {
+    const completed = useCompleted(0,1);
 
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef([
@@ -37,16 +40,6 @@ const FirstPage1 = () => {
         
         setIsPlaying(!isPlaying);
     };
-
-    const [completed, setCompleted] = useState(0);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setCompleted(testData[1].completed); 
-        }, 20); 
-      
-        return () => clearTimeout(timeout); 
-    }, []); 
 
     return (
         <ChakraProvider>
@@ -82,11 +75,7 @@ const FirstPage1 = () => {
                 <h3><span>10.</span><div class="q1">10번 사운드가 당신의 마음에 드나요?</div></h3>
                 <JazzBox id="Jazz2"/>
             </div>
-            <div className='nextPage'>
-                <Link to="/secondPage">
-                    <button>다음으로</button>  
-                </Link> 
-            </div>
+            <NextButton to="/SecondPage"/>
         </div>
         </ChakraProvider>
     );

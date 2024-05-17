@@ -1,25 +1,17 @@
 import React from "react";
-import {useState, useEffect} from "react";
-import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import PopBox from "../../Components/PopBox";
 import testData from "../../Components/testData";
+import NextButton from "../../Components/NextButton";
+import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
 
 const SecondPage4 = () => {
 
-    const [completed, setCompleted] = useState(0);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setCompleted(testData[6].completed); 
-        }, 20); 
-      
-        return () => clearTimeout(timeout); 
-    }, []); 
+    const completed = useCompleted(0,6);
 
     return (
         <ChakraProvider>
@@ -54,11 +46,7 @@ const SecondPage4 = () => {
 마치 스페인 바닷가에서 개최한 뮤직 페스티벌에 와 있는것 같아서 정말 신나!</h3><br/>
                 <PopBox id="LatinPop2"/>
             </div>
-            <div className='linkBox'>
-                <Link to="/SecondPage5">
-                    <button>다음으로</button> 
-                </Link> 
-            </div>
+            <NextButton to="/SecondPage5"/>
         </div>
         </ChakraProvider>
     );

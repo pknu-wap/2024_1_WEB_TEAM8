@@ -1,5 +1,4 @@
 import React from "react";
-import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
@@ -12,6 +11,7 @@ import { JazzValueState } from "../../Components/JazzBox";
 import { RbValueState } from "../../Components/RbBox";
 import { RockValueState} from "../../Components/RockBox";
 import { useRecoilValue } from "recoil";
+import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
 
@@ -27,6 +27,9 @@ function combineKeysValues(obj) {
     return combined;
 }
 const SecondPage9 = () => {
+
+    const completed = useCompleted(0,11);
+
     const PopCheckValue = useRecoilValue(PopValueState); 
     const HipCheckValue = useRecoilValue(HipValueState);
     const JazzCheckValue = useRecoilValue(JazzValueState);
@@ -86,16 +89,6 @@ const SecondPage9 = () => {
           console.error('Error sending data:', error);
         }
       };      
-
-    const [completed, setCompleted] = useState(0);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setCompleted(testData[11].completed); 
-        }, 20); 
-      
-        return () => clearTimeout(timeout); 
-    }, []); 
 
     return (
         <ChakraProvider>

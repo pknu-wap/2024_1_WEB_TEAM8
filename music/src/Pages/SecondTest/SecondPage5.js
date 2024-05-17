@@ -1,26 +1,17 @@
 import React from "react";
-import {useState, useEffect} from "react";
-import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import JazzBox from "../../Components/JazzBox";
 import testData from "../../Components/testData";
+import NextButton from "../../Components/NextButton";
+import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
 
 const SecondPage5 = () => {
 
-    const [completed, setCompleted] = useState(0);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setCompleted(testData[7].completed); 
-        }, 20); 
-      
-        return () => clearTimeout(timeout); 
-    }, []); 
-
+    const completed = useCompleted(0,7);
 
     return (
         <ChakraProvider>
@@ -54,11 +45,7 @@ const SecondPage5 = () => {
                 <h3>주제 하나를 가지고 즉흥적으로 자유롭게 합을 맞추는 뮤지션들의 모습에서 섹시함이 느껴져. 이것이 진정한 고수가 아닐까? 예측 불가능한 음악의 흐름에 귀를 귀울이는게 나만의 재미야.</h3>
                 <JazzBox id="BibobJazz2"/>
             </div>
-            <div className='linkBox'>
-                <Link to="/SecondPage6">
-                    <button>다음으로</button> 
-                </Link> 
-            </div>
+            <NextButton to="/SecondPage6"/>
         </div>
         </ChakraProvider>
     );

@@ -1,25 +1,17 @@
 import React from "react";
-import {useState, useEffect} from "react";
-import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import RockBox from "../../Components/RockBox";
 import testData from "../../Components/testData";
+import NextButton from "../../Components/NextButton";
+import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
 
 const SecondPage7 = () => {
 
-    const [completed, setCompleted] = useState(0);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setCompleted(testData[9].completed); 
-        }, 20); 
-      
-        return () => clearTimeout(timeout); 
-    }, []); 
+    const completed = useCompleted(0,9);
 
     return (
         <ChakraProvider>
@@ -51,11 +43,7 @@ const SecondPage7 = () => {
 아이러니 하지만 이 음악에 집중하면 나 역시 환상속에 잠기는 것 같아.</h3>
                 <RockBox id="ShowRock2"/>
             </div>
-            <div className='linkBox'>
-                <Link to="/SecondPage8">
-                    <button>다음으로</button> 
-                </Link> 
-            </div>
+            <NextButton to="/SecondPage8"/>
         </div>
         </ChakraProvider>
     );

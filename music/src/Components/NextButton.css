@@ -1,0 +1,20 @@
+.nextPage {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .nextPage button {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color:#D6FF32;
+    padding: 10px 40px;
+    font-size: medium;
+    color: black;
+    border-radius: 15px;
+    font-weight: bold;
+  }
+
+  .nextPage button:hover {
+    background-color: rgb(100, 92, 92);
+  }

@@ -1,25 +1,17 @@
 import React from "react";
-import {useState, useEffect} from "react";
-import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import HipBox from "../../Components/HipBox";
 import testData from "../../Components/testData";
+import NextButton from "../../Components/NextButton";
+import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
 
 const SecondPage6 = () => {
 
-    const [completed, setCompleted] = useState(0);
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            setCompleted(testData[8].completed); 
-        }, 20); 
-      
-        return () => clearTimeout(timeout); 
-    }, []); 
+    const completed = useCompleted(0,8);
 
     return (
         <ChakraProvider>
@@ -51,11 +43,7 @@ const SecondPage6 = () => {
                 <h3>나도 모르게 드럼의 그루브를 타며 박자를 가지고 노는 보컬에 집중하다보면 골목벽에 그려진 알록달록한 그래피티 그림들이 떠올라.</h3>
                 <HipBox id="BoomHip2"/>
             </div>
-            <div className='linkBox'>
-                <Link to="/SecondPage7">
-                    <button>다음으로</button> 
-                </Link> 
-            </div>
+            <NextButton to="/SecondPage7"/>
         </div>
         </ChakraProvider>
     );
