@@ -15,7 +15,7 @@ import java.util.Map;
 @Controller
 public class AnswerController {
 
-    private int totalSize = 60; // 총 문항 개수
+    private static final int TOTAL_SIZE = 60; // 총 문항 개수
     HashMap<String, String>[] maps;
     HashMap<String, Map> answerMap = new HashMap<>();
     private final AnswerService answerService;
@@ -87,7 +87,7 @@ public class AnswerController {
         }
         System.out.println("가장 많은 점수를 받은 장르는 " + maxGenre + ", 점수는 " + maxValue);
         System.out.println("총 점수는 " + totalValue);
-        double average = (double)totalValue / totalSize;
+        double average = (double)totalValue / TOTAL_SIZE;
         return average;
     }
     private Integer getTotal(List<String> list) {

@@ -4,15 +4,14 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import java.io.IOException;
 import java.io.InputStream;
 
 @RestController
 public class MusicController {
-    @GetMapping("/music/{fileName}")
+    @PostMapping("/music/{fileName}")
     public ResponseEntity<byte[]> getMusic(@PathVariable("fileName") String fileName) throws IOException {
         // 클래스패스 상의 리소스를 로드
         Resource resource = new ClassPathResource("static/music/" + fileName + ".mp3");
