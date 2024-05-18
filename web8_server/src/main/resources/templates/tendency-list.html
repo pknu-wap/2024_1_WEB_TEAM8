@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <div>
+        <table border="1" cellspacing="0" width="250">
+            <thead>
+            <tr>
+                <th>경향 테이블</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="tendency : ${list}">
+                <td th:text="${tendency.genreName}"></td>
+                <td th:text="${tendency.deviation}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div> <!-- /container -->
+</body>
+</html>

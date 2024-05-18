@@ -5,6 +5,7 @@ import hello.hellospring.service.AnswerService;
 import hello.hellospring.service.TendencyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -14,7 +15,7 @@ import java.util.Map;
 @Controller
 public class AnswerController {
 
-    private int totalSize = 35; // 총 문항 개수
+    private int totalSize = 60; // 총 문항 개수
     HashMap<String, String>[] maps;
     HashMap<String, Map> answerMap = new HashMap<>();
     private final AnswerService answerService;
@@ -113,5 +114,10 @@ public class AnswerController {
             }
         }
     }
-
+    @GetMapping("/tendency")
+    public String showTendencyList(Model model) {
+        List<Tendency> list = tendencyService.findTendencies();
+        model.addAttribute("list", list);
+        return "tendency-list";
+    }
 }

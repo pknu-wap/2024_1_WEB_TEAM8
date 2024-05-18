@@ -1,33 +1,35 @@
 package hello.hellospring.Controller;
 
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
-import org.springframework.core.io.UrlResource;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+import java.io.IOException;
+import java.io.InputStream;
 
-import java.net.MalformedURLException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-@Controller
+@RestController
 public class MusicController {
     @GetMapping("/music/{fileName}")
-    public ResponseEntity<Resource> getMusic(@PathVariable("fileName") String fileName) throws MalformedURLException {
-        // 음악 파일의 경로를 가져오는 코드 (파일명은 URI로부터 가져온다고 가정)
-        String filePath = "C:/music/" + fileName + ".mp3";
+    public ResponseEntity<byte[]> getMusic(@PathVariable("fileName") String fileName) throws IOException {
+        // 클래스패스 상의 리소스를 로드
+        Resource resource = new ClassPathResource("static/music/" + fileName + ".mp3");
 
-        // 음악 파일을 Resource로 변환
-        Path path = Paths.get(filePath);
-        UrlResource resource = new UrlResource(path.toUri()); // URL을 통해 자원에 접근할 수 있게 함
+        // 리소스가 존재하는지 확인
+        if (resource.exists() && resource.isReadable()) {
+            // 리소스를 InputStream으로 읽어들임
+            InputStream inputStream = resource.getInputStream();
+            // InputStream에서 바이트 배열로 데이터를 읽어옴
+            byte[] audioBytes = inputStream.readAllBytes();
 
-        // 미디어 타입을 설정
-        MediaType mediaType = MediaType.parseMediaType("audio/mpeg");
-
-        return ResponseEntity.ok()
-                .contentType(mediaType)
-                .body(resource);
+            return ResponseEntity.ok()
+                    .contentType(MediaType.APPLICATION_OCTET_STREAM)
+                    .body(audioBytes);
+        } else {
+            // 파일이 존재하지 않거나 읽을 수 없는 경우 예외 처리
+            throw new RuntimeException("Could not read the file!");
+        }
     }
 }
