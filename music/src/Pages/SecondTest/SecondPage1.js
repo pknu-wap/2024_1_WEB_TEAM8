@@ -38,7 +38,7 @@ const SecondPage1 = () => {
                 <JazzBox id="SoulJazz1"/>
             </div>
             <div className="num2">
-                <h3>나는 길에서 증흥적으로 합을 맞추는 뮤지션들의 모습에 섹시함이 느껴져.<br/> 이것이 진정한
+                <h3>길에서 즉흥적으로 합을 맞추는 뮤지션들의 모습에 섹시함이 느껴져.<br/> 이것이 진정한
 고수가 아닐까? 예측 불가능한 음악의 흐름에 귀를 귀울이는게 나만의 재미야.</h3>
                 <JazzBox id="FreeJazz1"/>
             </div>
