@@ -109,13 +109,26 @@ text-align: left;
     margin-right: 20px;
 }
 
-.musictable #prohibit{
+.musictable #prohibit1{
   position: relative;
   width: 20px;
-  top:-15px;
-  left:-20px;
+  top:-13px;
+  left:-18px;
 }
 
+.musictable #prohibit2{
+    position: relative;
+    width: 20px;
+    top:-14px;
+    left:-48px;
+  }
+
+  .musictable #prohibit3{
+    position: relative;
+    width: 20px;
+    top:-14px;
+    left:-50px;
+  }
 /*플레이 버튼*/
 .musictable .play{
     position: absolute;

@@ -20,7 +20,7 @@ import SecondPage9 from '../Pages/SecondTest/SecondPage9';
 
 import Pop from '../Pages/Result/Pop';
 import Jazz from '../Pages/Result/Jazz';
-import Hip from '../Pages/Result/Jazz';
+import Hip from '../Pages/Result/Hip';
 import Rock from '../Pages/Result/Rock';
 import Rb from '../Pages/Result/Rb';
 
