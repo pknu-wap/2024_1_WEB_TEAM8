@@ -2,7 +2,7 @@
     position: relative;
     background-color:rgb(59, 30, 98);
     width:147%;
-    height: 1600px;
+    height: 2200px;
     text-align: center;
     align-items: center;
     justify-content: center;  
@@ -32,6 +32,49 @@
     color:#D6FF32;
 }
 
+/*추천 가수*/
+.singer table{
+    position: relative;
+    text-align: center;
+    margin-left: 200px;
+    background-color: #d8d8d884;
+    border-radius: 20px;
+    opacity: 0.2px;
+    padding-top:15px;
+    height: 300px;
+}
+
+.singer td{
+    color: white;
+    font-weight: 700;
+   font-size: 20px;
+}
+
+.singer td span{
+    color:#D6FF32;
+    font-weight: 700;
+    font-size: 20px;
+ }
+
+/*추천곡 모음*/
+.ques {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
+
+.ques h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.ques h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:#D6FF32
+}
+
 .musictable table{
     display: inline;
     width:500px;
@@ -48,109 +91,65 @@
 display: flex;
 text-align: center;
 align-items: center;
+color:white;
+font-weight: 400;
+font-size: 20px;
+text-align: left;
+}
+
+.musictable #song span{
+    color:#D6FF32;
+    font-size: 16px;
 }
 
  .musictable table img{
     width: 140px;
     margin-left: 30px;
     text-align: center;
+    margin-right: 20px;
 }
 
-.musictable .play1,.musictable .play{
+.musictable #prohibit{
+  position: relative;
+  width: 20px;
+  top:-15px;
+  left:-20px;
+}
+
+/*플레이 버튼*/
+.musictable .play{
+    position: absolute;
+    font-size: 15px;
+    margin-left:650px;
     color:#D6FF32;
+    align-items: center; 
 }
 
-.musictable .play1 {
-    position:relative;
-    display: inline;
-    text-align:center;
-    align-items: center;
-    margin-left: 400px;
-}
-
-.musictable .play2 {
-    position:flex;
-    text-align:center;
-    align-items: center;
-    left:1200px;
-}
-
-
-.musictable .play1 img,.musictable .play img {
+.musictable .play span{
+    display:flex;
     position: relative;
-    display: flexbox;
+    margin-left: 40px;
+}
+
+.musictable .play img{
+    display: inline;
     width: 50px;
     left:50px;
     top:30px;
     background-color: black;
     border-radius: 24px;
+    margin-right: 10px; 
 } 
 
 
-.RB span{
-    color:#D6FF32;
-    position: relative;
-    font-size: 28px;
-    font-weight: 700;
-    left:0px;
-    top: 0px;
-    margin-bottom: 30px;
-}
-
-
-.RB{
-    color:white;
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    margin-left: 200px;
-    top:20px;
-}
-
-.singer table{
-    position: relative;
-    text-align: center;
-    margin-left: 200px;
-    background-color: #d8d8d8;
-    border-radius: 20px;
-    opacity: 0.2px;
-    padding-top:10px;
-    height: 300px;
-}
-
-
-.Top {
-    margin-top: 80px;
-    text-align: center;
-}
-
-.Playlist {
-    margin-top: 40px;
-    text-align: center;
-    color: white;
-}
-
-.Playlist h2{
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 45px;
-}
-
-.Playlist h3{
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-
-
-.graph h2{
+/*결과 그래프*/
+.graph {
     font-family: Pretendard;
     font-size: 30px;
     font-weight: 700;
     color:white;
-    margin-bottom: 40px;
-    margin:20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .Stack {
@@ -162,6 +161,7 @@ align-items: center;
     text-align: center;
     color: gray;
     margin-bottom: 20px;
+    margin-top: 100px;
 }
 
 .Sub { 
