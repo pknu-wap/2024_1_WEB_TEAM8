@@ -28,7 +28,7 @@ const SecondPage = () => {
                 <PopBox id="DancePop1"/>
             </div>
             <div className="num2">
-                <h3>고음질의 전자적인 사운드와 다양한 신스사이저 
+                <h3>고음질의 전자적인 사운드와 다양한 신디사이저 
 마치 여기는 네온빛이 가득한 사이버펑크 세상에 온것 같아!</h3>
                 <PopBox id="ElecPop1"/>
             </div>
@@ -42,7 +42,7 @@ const SecondPage = () => {
                 <PopBox id="IndiPop1"/>
             </div>
             <div className="num2">
-                <h3>멕시코나 스페인 클럽에서 나올듯한 탄탄한 리듬과 특유의 퍼커션이 나를 삼바춤을 추게해.</h3><br/>
+                <h3>멕시코나 스페인 클럽에서 나올듯한 탄탄한 리듬과 특유의 타악기 소리가 나를 삼바춤을 추게해.</h3><br/>
                 <PopBox id="LatinPop1"/>
             </div>
             <NextButton to="/SecondPage1"/>
