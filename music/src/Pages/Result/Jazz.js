@@ -75,11 +75,11 @@ const Jazz = () => {
         <div class="singer">
         <table>
         <tr>
-        <td><span>LatinJazz</span><br/>< img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Stan Getz"/>Stan Getz</td>
-        <td><span>SwingJazz</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Benny Goodman" />Benny Goodman<br/></td>
-        <td><span>SoulJazz</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Jimmy smith" />Jimmy smith<br/></td>
-        <td><span>FreeJazz</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Ornette Coleman" />Ornette Coleman<br/></td>
-        <td><span>BibobJazz</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Charlie Parker" />Charlie Parker</td> 
+        <td><span>LatinJazz</span><br/>< img src="/jazz_singer1.png" alt="Stan Getz"/>Stan Getz</td>
+        <td><span>SwingJazz</span><br/><img src="/jazz_singer2.png" alt="Benny Goodman" />Benny Goodman<br/></td>
+        <td><span>SoulJazz</span><br/><img src="/jazz_singer3.png" alt="Jimmy smith" />Jimmy smith<br/></td>
+        <td><span>FreeJazz</span><br/><img src="/jazz_singer4.png" alt="Ornette Coleman" />Ornette Coleman<br/></td>
+        <td><span>BibobJazz</span><br/><img src="/jazz_singer5.png" alt="Charlie Parker" />Charlie Parker</td> 
         </tr>
         </table>
         </div>
@@ -93,32 +93,32 @@ const Jazz = () => {
        <table>
         <tr>
         <hr/><td>
-            <img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="D'Angelo"/>
+            <img src="/jazz_m1.jpg" id="albumcover" />
             <div id="song">The Girl From Ipanema<br/><span>Stan Getz</span></div>
             <div class="play"><img src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="SZA" />
+            <td><img src="/jazz_m2.jpg" id="albumcover"  />
             <div id="song">Sing Sing Sing<br/><span>Benny Goodman</span></div>
             <div class="play"><img src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Michael Jackson" />
+            <td><img src="/jazz_m3.jpg"id="albumcover" />
             <div id="song">Midnight Special<br/><span>Jimmy smith</span></div>
             <div class="play"><img src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Stevie Wonder" />
+            <td><img src="/jazz_m4.jpg" id="albumcover"  />
             <div id="song"> Lonely Woman<br/><span>Ornette Coleman</span></div>
             <div class="play"><img src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Frank ocean" />
+            <td><img src="/jazz_m5.jpg" id="albumcover" />
             <div id="song">Confirmation<br/><span>Charlie Parker</span></div>
             <div class="play"><img src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
