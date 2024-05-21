@@ -60,11 +60,11 @@ const Hip = () => {
         <div class="singer">
         <table>
         <tr>
-        <td><span>DrillHip</span><br/>< img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Pop Smoke"/>Pop Smoke</td>
-        <td><span>TrapHip</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Future" />Future<br/></td>
-        <td><span>AlterHiP</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Kanye west(Ye)" />Kanye west(Ye)<br/></td>
-        <td><span>RageHip</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Trippie Redd" />Trippie Redd<br/></td>
-        <td><span>BoomHip</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="B.I.G." />B.I.G.</td> 
+        <td><span>DrillHip</span><br/>< img src="/hip_singer1.png" alt="Pop Smoke"/>Pop Smoke</td>
+        <td><span>TrapHip</span><br/><img src="/hip_singer2.png" alt="Future" />Future<br/></td>
+        <td><span>AlterHiP</span><br/><img src="/hip_singer3.png" alt="Kanye west(Ye)" />Kanye west(Ye)<br/></td>
+        <td><span>RageHip</span><br/><img src="/hip_singer4.png" alt="Trippie Redd" />Trippie Redd<br/></td>
+        <td><span>BoomHip</span><br/><img src="/hip_singer5.png" alt="B.I.G." />B.I.G.</td> 
         </tr>
         </table>
         </div>
@@ -78,7 +78,7 @@ const Hip = () => {
        <table>
         <tr>
         <hr/><td>
-            <img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="D'Angelo"/>
+            <img src="/hip_m1.jpg" id="albumcover"/>
             <div id="song">DIOR<br/><span>Pop Smoke</span></div>
             <img src="/19.png" id="prohibit3"/>
             <div class="play"><img src="sound1.png" id="m1"/><span>play</span></div></td>
@@ -86,28 +86,28 @@ const Hip = () => {
         <hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="SZA" />
+            <td><img src="/hip_m2.jpg" id="albumcover"/>
             <div id="song">Mask Off<br/><span>Future</span></div>
             <img src="/19.png" id="prohibit1"/>
             <div class="play"><img src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Michael Jackson" />
+            <td><img src="/hip_m3.jpg"  id="albumcover" />
             <div id="song">Bound 2<br/><span>Kanye west(Ye)</span></div>
             <img src="/19.png" id="prohibit3"/>
             <div class="play"><img src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Stevie Wonder" />
+            <td><img src="hip_m4.webp"  id="albumcover"/>
             <div id="song">Miss The Rage<br/><span>Trippie Redd</span></div>
             <img src="/19.png" id="prohibit1"/>
             <div class="play"><img src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Frank ocean" />
+            <td><img src="hip_m5.webp" id="albumcover"/>
             <div id="song">Hypnotize<br/><span>B.I.G.</span></div>
             <img src="/19.png" id="prohibit1"/>
             <div class="play"><img src="sound1.png" id="m5"/><span>play</span></div>
@@ -160,7 +160,7 @@ const Hip = () => {
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbKaetJvGbjuo194EI9OfXi'}
                     ><img className="music" src="./music.png" alt="p"/></button>
-                </div>
+                </div>z
             </Box>
             <Box >
                 <Progress value={BoomHip} size='lg' colorScheme='blue'/>

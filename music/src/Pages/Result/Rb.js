@@ -58,11 +58,11 @@ const Rb = () => {
         <div class="singer">
         <table>
         <tr>
-        <td><span>NeoRB</span><br/>< img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="D'Angelo"/>D'Angelo</td>
-        <td><span>ComRB</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="SZA" />SZA<br/></td>
-        <td><span>PunkRB</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Michael Jackson" />Michael Jackson<br/></td>
-        <td><span>SoulRB</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Stevie Wonder" />Stevie Wonder<br/></td>
-        <td><span>AlterRB</span><br/><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Frank ocean" />Frank ocean</td> 
+        <td><span>NeoRB</span><br/>< img src="/rb_singer1.png" alt="D'Angelo"/>D'Angelo</td>
+        <td><span>ComRB</span><br/><img src="/rb_singer2.png" alt="SZA" />Beyoncé<br/></td>
+        <td><span>PunkRB</span><br/><img src="/rb_singer3.png" alt="Michael Jackson" />Michael Jackson<br/></td>
+        <td><span>SoulRB</span><br/><img src="/rb_singer4.png" alt="Stevie Wonder" />Stevie Wonder<br/></td>
+        <td><span>AlterRB</span><br/><img src="/rb_singer5.png" alt="Frank ocean" />Frank ocean</td> 
         </tr>
         </table>
         </div>
@@ -76,34 +76,34 @@ const Rb = () => {
     <table>
         <tr>
         <hr/><td>
-            <img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="D'Angelo"/>
-            <div id="song">1번곡 이름<br/><span>D'Angelo</span></div>
-            <img src="19.png" id="prohibit"/>
+            <img src="rb_m1.jpg"  id="albumcover"/>
+            <div id="song">Brown Sugar<br/><span>D'Angelo</span></div>
+            <img src="19.png" id="prohibit1"/>
             <div class="play"><img src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="SZA" />
-            <div id="song">2번곡의 이름<br/><span>SZA</span></div>
+            <td><img src="/rb_m2.jpg"  id="albumcover" />
+            <div id="song">Crazy In Love<br/><span>Beyoncé</span></div>
             <div class="play"><img src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Michael Jackson" />
-            <div id="song">3번곡 이름<br/><span>Michael Jackson</span></div>
+            <td><img src="/rb_m3.jpg"  id="albumcover"/>
+            <div id="song"> I Got You<br/><span>Michael Jackson</span></div>
             <div class="play"><img src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Stevie Wonder" />
-            <div id="song">4번곡 이름<br/><span>Stevie Wonder</span></div>
+            <td><img src="/rb_m4.jpg"  id="albumcover" />
+            <div id="song">You Send Me<br/><span>Stevie Wonder</span></div>
             <div class="play"><img src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
-            <td><img src="https://item.kakaocdn.net/do/0c5d8e3d0f5a44781ef255a1735482b19f17e489affba0627eb1eb39695f93dd" alt="Frank ocean" />
-            <div id="song">5번곡 이름<br/><span>Frank ocean</span></div>
+            <td><img src="/rb_m5.jpg"  id="albumcover" />
+            <div id="song">Self Control<br/><span>Frank ocean</span></div>
             <div class="play"><img src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
