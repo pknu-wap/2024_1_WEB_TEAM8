@@ -2,7 +2,7 @@
     position: relative;
     background-color:rgb(59, 30, 98);
     width:147%;
-    height: 2200px;
+    height: 2300px;
     text-align: center;
     align-items: center;
     justify-content: center;  
@@ -36,17 +36,23 @@
 .singer table{
     position: relative;
     text-align: center;
-    margin-left: 200px;
+    margin-left: 220px;
     background-color: #d8d8d884;
     border-radius: 20px;
     opacity: 0.2px;
-    padding-top:15px;
     height: 300px;
+    width: 1050px;
+}
+
+.singer img{
+    width:140px;
+    margin-left: 35px;
+    margin-right: 20px;
 }
 
 .singer td{
     color: white;
-    font-weight: 700;
+    font-weight: 500;
    font-size: 20px;
 }
 
@@ -102,18 +108,20 @@ text-align: left;
     font-size: 16px;
 }
 
- .musictable table img{
-    width: 140px;
-    margin-left: 30px;
+ .musictable table #albumcover{
+    width: 100px;
+    margin-left: 20px;
     text-align: center;
     margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .musictable #prohibit1{
   position: relative;
   width: 20px;
   top:-13px;
-  left:-18px;
+  left:14px;
 }
 
 .musictable #prohibit2{
@@ -129,11 +137,12 @@ text-align: left;
     top:-14px;
     left:-50px;
   }
+
 /*플레이 버튼*/
 .musictable .play{
     position: absolute;
     font-size: 15px;
-    margin-left:650px;
+    margin-left:680px;
     color:#D6FF32;
     align-items: center; 
 }
@@ -141,17 +150,14 @@ text-align: left;
 .musictable .play span{
     display:flex;
     position: relative;
-    margin-left: 40px;
+    margin-left: 12px;
 }
 
 .musictable .play img{
     display: inline;
     width: 50px;
-    left:50px;
-    top:30px;
     background-color: black;
-    border-radius: 24px;
-    margin-right: 10px; 
+    border-radius: 180px;
 } 
 
 
