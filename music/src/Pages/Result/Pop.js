@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./Result.css";
 
+import ProgressBar from "@ramonak/react-progress-bar";
 import { ChakraProvider,VStack,Box,StackDivider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
 import { PopValueState } from "../../Components/PopBox";
 import { useRecoilValue } from "recoil";
 
@@ -47,6 +47,7 @@ const Pop = () => {
     IndiPop = parseInt(IndiPop / Total * 100);
     LatinPop = parseInt(LatinPop / Total * 100);
     BritPop = parseInt(BritPop / Total * 100);
+
 
     return (
         <ChakraProvider>
@@ -114,7 +115,7 @@ const Pop = () => {
 
     <div class="graph">
         <h2>현재 <span>나의 음악 DNA</span>분포도</h2>
-        </div>
+    </div>
         
         <VStack
             className="Stack"
@@ -123,7 +124,7 @@ const Pop = () => {
             align='stretch'
             >
             <Box>
-                <Progress value={DancePop} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={DancePop}/>
                 <div className="Sub">
                     댄스팝 <button>장르설명</button> 
                     <button className="btn"
@@ -132,7 +133,7 @@ const Pop = () => {
                 </div>
             </Box>
             <Box>
-                <Progress value={ElecPop} size='lg' colorScheme='blue'/>
+                <ProgressBar completed={ElecPop}/>
                 <div className="Sub">
                     일렉트로닉팝 <button>장르설명</button>
                     <button className="btn"
@@ -141,7 +142,7 @@ const Pop = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={BritPop} size='lg' colorScheme='blue'/>
+                <ProgressBar completed={BritPop}/>
                 <div className="Sub">
                     브릿팝 <button>장르설명</button>
                 <button className="btn"
@@ -150,7 +151,7 @@ const Pop = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={IndiPop} size='lg' colorScheme='blue'/>
+                <ProgressBar completed={IndiPop}/>
                 <div className="Sub">
                     인디팝 <button>장르설명</button>
                 <button className="btn"
@@ -159,7 +160,7 @@ const Pop = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={LatinPop} size='lg' colorScheme='blue'/>
+                <ProgressBar completed={LatinPop}/>
                 <div className="Sub">
                     라틴팝 <button>장르설명</button>
                 <button className="btn"

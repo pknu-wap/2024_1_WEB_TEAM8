@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Result.css";
 
-import { ChakraProvider,VStack,Box,StackDivider, Tr } from "@chakra-ui/react";
+import { ChakraProvider,VStack,Box,StackDivider } from "@chakra-ui/react";
 import { Progress } from "@chakra-ui/progress";
 import { HipValueState } from "../../Components/HipBox";
 import { useRecoilValue } from "recoil";
