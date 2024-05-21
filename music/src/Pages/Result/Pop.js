@@ -50,25 +50,72 @@ const Pop = () => {
 
     return (
         <ChakraProvider>
-        <div className="Top">
-            <h2>당신은 '팝'을 좋아하실겁니다.</h2>
-        </div>
-        <div className="Playlist">
-            <h3>이 노래를 들어보세요!!</h3>
-            <h3>- 추천 플레이리스트 바로가기 -</h3>
-        </div>
-        (플레이리스트 링크)
-        <hr/>
-        <div className="RB">
+        <div className="body">
+        <br/><br/><br/><br/><br/>
 
+        <div className="Top">
+            <h3>당신의 음악 DNA는</h3>
+            <h2>'<span>POP</span>' 에 가깝군요</h2>
+        </div>    
+
+        <div class="singer">
+        <table>
+        <tr>
+        <td><span>DancePop</span><br/><br/>< img src="/pop_singer1.png" alt="Lady gaga"/>Lady gaga</td>
+        <td><span>ElecPop</span><br/><br/><img src="/pop_singer2.png" alt="Halsey" />Halsey<br/></td>
+        <td><span>IndiPop</span><br/><br/><img src="/pop_singer3.png" alt="The smtihs" />The smtihs<br/></td>
+        <td><span>LatinPop</span><br/><br/><img src="/pop_singer4.png" alt="Camila Cabello" />Camila Cabello<br/></td>
+        <td><span>BritPop</span><br/><br/><img src="/pop_singer5.png" alt="Oasis" />Oasis</td> 
+        </tr>
+        </table>
         </div>
+        
+        <div className="ques">
+            <h2>이 노래는 어떠신가요?</h2>
+            <h3>추천 플레이리스트 보기</h3>
+        </div>
+        <div class="musictable">
+    <table>
+        <tr>
+        <hr/><td>
+            <img src="/pop_m1.jpg" id="albumcover"/>
+            <div id="song">Just Dance<br/><span>Lady gaga</span></div>
+            <img src="19.png" id="prohibit1"/>
+            <div class="play"><img src="sound1.png" id="m1"/><span>play</span></div></td>
+            <hr/>
         <hr/>
-        <div className="caution">
-            <h3>수많은 장르 중 하나의 장르를 선별하는 테스트이므로</h3>
-            <h3>개발자의 주관적인 판단, 생각이 들어있습니다.</h3>
-            <h3>결과는 언제나 시간에 따라 달라질 수 있으며</h3>
-            <h3>절대적이지 않음을 말씀드립니다.</h3>
+        </tr>
+        <tr>
+            <td><img src="/pop_m2.jpg" id="albumcover"/>
+            <div id="song">Gasoline<br/><span>Halsey</span></div>
+            <div class="play"><img src="/sound1.png" id="m2"/><span>play</span></div>
+            </td><hr/>
+        </tr>
+        <tr>
+            <td><img src="/pop_m3.jpg"  id="albumcover" />
+            <div id="song">This Charming Man<br/><span>The smtihs</span></div>
+            <div class="play"><img src="sound1.png" id="m3"/><span>play</span></div>
+            </td><hr/>
+        </tr>
+        <tr>
+            <td><img src="/pop_m4.jpg"  id="albumcover" />
+            <div id="song">Havana<br/><span>Camila Cabello</span></div>
+            <div class="play"><img src="sound1.png" id="m4"/><span>play</span></div>
+            </td><hr/>
+        </tr>
+        <tr>
+            <td><img src="/pop_m5.webp"  id="albumcover"/>
+            <div id="song">Wonderwall<br/><span>Oasis</span></div>
+            <div class="play"><img src="sound1.png" id="m5"/><span>play</span></div>
+            </td><hr/> 
+        </tr>
+    </table>
+    </div>
+
+    <div class="graph">
+        <h2>현재 <span>나의 음악 DNA</span>분포도</h2>
         </div>
+        
         <VStack
             className="Stack"
             divider={<StackDivider borderColor='gray.300' />}
@@ -121,6 +168,11 @@ const Pop = () => {
                 </div>
             </Box>
         </VStack>
+        <div className="caution">
+            <h3>수많은 장르 중 하나의 장르를 선별하는 테스트이므로 개발자의 주관적인 판단, 생각이 들어있습니다.</h3>
+            <h3>결과는 언제나 시간에 따라 달라질 수 있으며 절대적이지 않음을 말씀드립니다.</h3>
+        </div>
+        </div>
         </ChakraProvider>
     );
 }
