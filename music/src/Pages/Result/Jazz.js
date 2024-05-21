@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./Result.css";
 
+import ProgressBar from "@ramonak/react-progress-bar";
 import { ChakraProvider,VStack,Box,StackDivider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
 import { JazzValueState } from "../../Components/JazzBox";
 import { useRecoilValue } from "recoil";
 
@@ -137,7 +137,7 @@ const Jazz = () => {
             align='stretch'
             >
             <Box>
-                <Progress value={LatinJazz} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={LatinJazz}/>
                 <div className="Sub">
                     라틴 <button>장르설명</button> 
                     <button className="btn"
@@ -146,7 +146,7 @@ const Jazz = () => {
                 </div>
             </Box>
             <Box>
-                <Progress value={SwingJazz} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={SwingJazz}/>
                 <div className="Sub">
                     스윙 <button>장르설명</button>
                     <button className="btn"
@@ -155,7 +155,7 @@ const Jazz = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={SoulJazz} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={SoulJazz}/>
                 <div className="Sub">
                     소울 <button>장르설명</button>
                     <button className="btn"
@@ -164,7 +164,7 @@ const Jazz = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={FreeJazz} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={FreeJazz}/>
                 <div className="Sub">
                     프리 <button>장르설명</button>
                     <button className="btn"
@@ -173,7 +173,7 @@ const Jazz = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={BibobJazz} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={BibobJazz}/>
                 <div className="Sub">
                     비밥 <button>장르설명</button>
                     <button className="btn"

@@ -1,7 +1,8 @@
 import React, {useEffect} from "react";
 import "./Result.css";
+
+import ProgressBar from "@ramonak/react-progress-bar";
 import { ChakraProvider,VStack,Box,StackDivider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
 import { RbValueState } from "../../Components/RbBox";
 import { useRecoilValue } from "recoil";
 
@@ -123,7 +124,7 @@ const Rb = () => {
             align='stretch'
             >
             <Box>
-                <Progress value={NeoRb} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={NeoRb}/>
                 <div className="Sub">
                     네오소울 <button>장르설명</button>
                 <button className="btn"
@@ -132,7 +133,7 @@ const Rb = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={ComtemRb} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={ComtemRb}/>
                 <div className="Sub">
                     컨템포러리 <button>장르설명</button>
                 <button className="btn"
@@ -141,7 +142,7 @@ const Rb = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={PunkRb} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={PunkRb}/>
                 <div className="Sub">
                     펑크 <button>장르설명</button>
                 <button className="btn"
@@ -150,7 +151,7 @@ const Rb = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={SoulRb} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={SoulRb}/>
                 <div className="Sub">
                     소울 <button>장르설명</button>
                 <button className="btn"
@@ -159,7 +160,7 @@ const Rb = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={AlterRb} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={AlterRb}/>
                 <div className="Sub">
                     얼터너티브 <button>장르설명</button>
                 <button className="btn"
