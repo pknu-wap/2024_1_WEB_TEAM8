@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Result.css";
 
 import { ChakraProvider,VStack,Box,StackDivider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
+import ProgressBar from "@ramonak/react-progress-bar";
 import { RockValueState } from "../../Components/RockBox";
 import { useRecoilValue } from "recoil";
 
@@ -121,7 +121,7 @@ const Rock = () => {
             align='stretch'
             >
             <Box>
-                <Progress value={ProRock} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={ProRock}/>
                 <div className="Sub">
                     프로그레시브 <button>장르설명</button>
                 <button className="btn"
@@ -130,7 +130,7 @@ const Rock = () => {
                 </div>
             </Box>
             <Box>
-                <Progress value={HeavyRock} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={HeavyRock}/>
                 <div className="Sub">
                     헤비 <button>장르설명</button>
                     <button className="btn"
@@ -139,7 +139,7 @@ const Rock = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={AlterRock} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={AlterRock}/>
                 <div className="Sub">
                     얼터너티브 <button>장르설명</button>
                 <button className="btn"
@@ -148,7 +148,7 @@ const Rock = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={PunkRock} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={PunkRock}/>
                 <div className="Sub">
                     펑크 <button>장르설명</button>
                 <button className="btn"
@@ -157,7 +157,7 @@ const Rock = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={ShowRock} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={ShowRock}/>
                 <div className="Sub">
                     쇼 <button>장르설명</button>
                 <button className="btn"
