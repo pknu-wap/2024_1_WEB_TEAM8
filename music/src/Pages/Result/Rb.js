@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import "./Result.css";
 
 import ProgressBar from "@ramonak/react-progress-bar";
-import { ChakraProvider,VStack,Box,StackDivider } from "@chakra-ui/react";
+import { ChakraProvider,VStack,Box } from "@chakra-ui/react";
 import { RbValueState } from "../../Components/RbBox";
 import { useRecoilValue } from "recoil";
 
@@ -110,69 +110,61 @@ const Rb = () => {
         </tr>
     </table>
     </div>
-
-
-
-        <div class="graph">
+    <div class="graph">
         <h2>현재 <span>나의 음악 DNA</span>분포도</h2>
-        </div>
-        
+    </div>
         <VStack
-            className="Stack"
-            divider={<StackDivider borderColor='gray.300' />}
             spacing={3}
             align='stretch'
+            marginLeft="335px"
+            marginRight="335px"
             >
-            <Box>
+            <Box w='800px'> 
             <ProgressBar completed={NeoRb}/>
                 <div className="Sub">
-                    네오소울 <button>장르설명</button>
+                    네오소울 
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYDejvhbWZoWsq6gd1ttD20'}
                     ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
-            <Box >
+            <Box w='800px'>
             <ProgressBar completed={ComtemRb}/>
                 <div className="Sub">
-                    컨템포러리 <button>장르설명</button>
+                    컨템포러리
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY2BZBQY_JBa2N6FraJL0su'}
                     ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
-            <Box >
+            <Box w='800px'>
             <ProgressBar completed={PunkRb}/>
                 <div className="Sub">
-                    펑크 <button>장르설명</button>
+                    펑크 
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYyy_jgPMM_gkmG3LJgdJ_G'}
                     ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
-            <Box >
+            <Box w='800px'>
             <ProgressBar completed={SoulRb}/>
                 <div className="Sub">
-                    소울 <button>장르설명</button>
+                    소울 
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyhmm-4g_T2xdeSrQJ6r0O'}
                     ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
-            <Box >
+            <Box w='800px'>
             <ProgressBar completed={AlterRb}/>
                 <div className="Sub">
-                    얼터너티브 <button>장르설명</button>
+                    얼터너티브 
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MblTfvFXrghM3DHYXyAkiG0'}
                     ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
         </VStack>
-        <div className="caution">
-            <h3>수많은 장르 중 하나의 장르를 선별하는 테스트이므로 개발자의 주관적인 판단, 생각이 들어있습니다.</h3>
-            <h3>결과는 언제나 시간에 따라 달라질 수 있으며 절대적이지 않음을 말씀드립니다.</h3>
-        </div>
         </div>
         </ChakraProvider>
     );

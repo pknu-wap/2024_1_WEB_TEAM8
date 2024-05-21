@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Result.css";
 
 import ProgressBar from "@ramonak/react-progress-bar";
-import { ChakraProvider,VStack,Box,StackDivider } from "@chakra-ui/react";
+import { ChakraProvider,VStack,Box } from "@chakra-ui/react";
 import { PopValueState } from "../../Components/PopBox";
 import { useRecoilValue } from "recoil";
 
@@ -112,67 +112,61 @@ const Pop = () => {
         </tr>
     </table>
     </div>
-
     <div class="graph">
         <h2>현재 <span>나의 음악 DNA</span>분포도</h2>
-    </div>
-        
+    </div>  
         <VStack
-            className="Stack"
-            divider={<StackDivider borderColor='gray.300' />}
             spacing={3}
             align='stretch'
+            marginLeft="335px"
+            marginRight="335px"
             >
-            <Box>
+            <Box w='800px'>
             <ProgressBar completed={DancePop}/>
                 <div className="Sub">
-                    댄스팝 <button>장르설명</button> 
+                    댄스팝
                     <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY-2SwIhakiK3khw88oHzwc'}
                     ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
-            <Box>
+            <Box w='800px'>
                 <ProgressBar completed={ElecPop}/>
                 <div className="Sub">
-                    일렉트로닉팝 <button>장르설명</button>
+                일렉트로닉팝
                     <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mai4CdplvjIRFf-znKkJ7_l'}
                     ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
-            <Box >
+            <Box w='800px'>
                 <ProgressBar completed={BritPop}/>
                 <div className="Sub">
-                    브릿팝 <button>장르설명</button>
+                    브릿팝
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbfvh0blv_vISpJ5lqZUlZy'}
                     ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
-            <Box >
+            <Box w='800px'>
                 <ProgressBar completed={IndiPop}/>
                 <div className="Sub">
-                    인디팝 <button>장르설명</button>
+                    인디팝
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbf-zGpf43gE5pfW8_ycXnR'}
                     ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
-            <Box >
+            <Box w='800px'>
                 <ProgressBar completed={LatinPop}/>
                 <div className="Sub">
-                    라틴팝 <button>장르설명</button>
+                    라틴팝
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaAWCbd2HcokoqH5sv44OJP'}
                     ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
         </VStack>
-        <div className="caution">
-            <h3>수많은 장르 중 하나의 장르를 선별하는 테스트이므로 개발자의 주관적인 판단, 생각이 들어있습니다.</h3>
-            <h3>결과는 언제나 시간에 따라 달라질 수 있으며 절대적이지 않음을 말씀드립니다.</h3>
-        </div>
         </div>
         </ChakraProvider>
     );
