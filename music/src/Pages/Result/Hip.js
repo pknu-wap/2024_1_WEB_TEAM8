@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./Result.css";
 
-import { ChakraProvider,VStack,Box,StackDivider } from "@chakra-ui/react";
-import { Progress } from "@chakra-ui/progress";
+import ProgressBar from "@ramonak/react-progress-bar";
+import { ChakraProvider,VStack,Box,StackDivider, Tr } from "@chakra-ui/react";
 import { HipValueState } from "../../Components/HipBox";
 import { useRecoilValue } from "recoil";
 
@@ -127,7 +127,7 @@ const Hip = () => {
             align='stretch'
             >
             <Box>
-                <Progress value={DrillHip} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={DrillHip}/>
                 <div className="Sub">
                     드릴 <button>장르설명</button> 
                 <button className="btn"
@@ -136,7 +136,7 @@ const Hip = () => {
                 </div>
             </Box>
             <Box>
-                <Progress value={TrapHip} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={TrapHip}/>
                 <div className="Sub">
                     트랩 <button>장르설명</button>
                     <button className="btn"
@@ -145,7 +145,7 @@ const Hip = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={AlterHip} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={AlterHip}/>
                 <div className="Sub">
                     얼터너티브 <button>장르설명</button>
                 <button className="btn"
@@ -154,7 +154,7 @@ const Hip = () => {
                 </div>
             </Box>
             <Box >
-                <Progress value={RageHip} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={RageHip}/>
                 <div className="Sub">
                     레이지 <button>장르설명</button>
                 <button className="btn"
@@ -163,7 +163,7 @@ const Hip = () => {
                 </div>z
             </Box>
             <Box >
-                <Progress value={BoomHip} size='lg' colorScheme='blue'/>
+            <ProgressBar completed={BoomHip}/>
                 <div className="Sub">
                     붐뱁 <button>장르설명</button>
                     <button className="btn"
