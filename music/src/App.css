@@ -1,153 +1,109 @@
 /* App */
 body{
-    width:1000px;
-  }
-  .Main{
-    position: fixed;
-    background-image: url("/public/maindesign4.gif");
-    width: 1480px;
-    height:1300px;
-    top: -100px;
-    margin-left: -12px;
-    margin-bottom: 0px;
-    background-size: 102.5%;
-    background-repeat: no-repeat;
-  }
-  
-  
-  /* Main */
-  .sound img{
-    position:relative;
-    top:430px;
-    left:1230px;
-    width: 60px;
-    height: 60px;
-  }
-  
-  .Main h2{
-    position: relative;
-    color:white;
-    width: 452px;
-    height: 82px;
-    top: 370px;
-    left: 898px;
-    font-size: 40px;
-    font-weight: lighter;
-  }
-  
-  .Main h1{
-    position: relative;
-    color:white;
-    font-size: 147.42px;
-    font-weight: 500;
-    line-height: 77.25px;
-    top: 250px;
-    left:990px;
-  }
-  
-  .sound img {
-    margin: 15px;
-  }
-  
-  .text1 {
-    line-height: 50%;
-  }
-  
-  .text2 {
-    text-align: center;
-    line-height: 50%;
-    margin-bottom: 50px;
-    color: rgb(179, 162, 175);
-  }
-  
-  .text3 {
-    text-align: center;
-    line-height: 10%;
-    font-size: small;
-    color: rgb(179, 162, 175);
-    margin-right: 20px;
-    margin-bottom: 50px;
-  }
-  
-  .mainButton {
-    margin-top: 80px;
-    text-align: center;
-    margin-bottom: 80px;
-  }
-  
-  .mainButton button {
-    background-color: #D6FF32;
-    border:#D6FF32;
-    border-radius: 15px;
-    padding: 15px 40px;
-  
-    font-size: medium;
-    color: black;
-    font-weight: bold;
-  
-    position: relative;
-    left: 473px;
-    top: 140px;
-  }
-  
-  .mainButton button:hover{
-    background-color: #d6ff328f;
-  }
-  
-  .text3 h4{
-    position: relative;
-    text-align: center;
-    font-size: small;
-    color: rgb(179, 162, 175);
-    top:250px;
-    left:137px;
-  }
+  width:1000px;
+}
+.Main{
+  position: fixed;
+  background-image: url("/public/maindesign4.gif");
+  width: 1480px;
+  height:1300px;
+  top: -100px;
+  margin-left: -12px;
+  margin-bottom: 0px;
+  background-repeat: no-repeat;
+}
 
-  /*Ipad pro*/
-  @media(max-width:1300px) {
-    .Main{
-      position: fixed;
-      width: 168%;
-      height: 105%;
-      top:-7px;
-      background-size: cover;
-      background-attachment: fixed;
-    }
 
-    .Main h1{
-      position: absolute;
-      top:340px;
-      left:600px;
-    }
+/* Main */
+.sound img{
+  position:relative;
+  top:430px;
+  left:1230px;
+  width: 60px;
+  height: 60px;
+}
 
-    .Main h2{
-      position: absolute;
-      top:360px;
-      left:510px;
-    }
+.Main h2{
+  position: relative;
+  color:white;
+  width: 452px;
+  height: 82px;
+  top: 370px;
+  left: 898px;
+  font-size: 40px;
+  font-weight: lighter;
+}
 
-    .text3 h4{
-      position: relative;
-      top:480.5px;
-      left:-345px;
-    }
+.Main h1{
+  position: relative;
+  color:white;
+  font-size: 147.42px;
+  font-weight: 500;
+  line-height: 77.25px;
+  top: 250px;
+  left:990px;
+}
 
-    .mainButton{
-      position: absolute;
-      top:360px;
-      left:257px;
-      width: 140px;
-    }
+.sound img {
+  margin: 15px;
+}
 
-    .mainButton button{
-      font-size: 13px;
-      white-space: nowrap;
-    }
+.text1 {
+  line-height: 50%;
+}
 
-  }
-  
-/*ipad Air*/
-@media (max-width:820px) {
+.text2 {
+  text-align: center;
+  line-height: 50%;
+  margin-bottom: 50px;
+  color: rgb(179, 162, 175);
+}
+
+.text3 {
+  text-align: center;
+  line-height: 10%;
+  font-size: small;
+  color: rgb(179, 162, 175);
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.mainButton {
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.mainButton button {
+  background-color: #D6FF32;
+  border:#D6FF32;
+  border-radius: 15px;
+  padding: 15px 40px;
+
+  font-size: medium;
+  color: black;
+  font-weight: bold;
+
+  position: relative;
+  left: 473px;
+  top: 140px;
+}
+
+.mainButton button:hover{
+  background-color: #d6ff328f;
+}
+
+.text3 h4{
+  position: relative;
+  text-align: center;
+  font-size: small;
+  color: rgb(179, 162, 175);
+  top:250px;
+  left:137px;
+}
+
+/*Ipad pro*/
+@media(max-width:1300px) {
   .Main{
     position: fixed;
     width: 168%;
@@ -159,102 +115,151 @@ body{
 
   .Main h1{
     position: absolute;
-    font-size: 100px;
-    left:520px;
-    top:700px;
-    margin-right: 20px;
+    top:900px;
+    left:600px;
   }
 
   .Main h2{
     position: absolute;
-    font-size: 35px;
-    left:382px;
-    top:700px;
+    top:900px;
+    left:510px;
   }
 
   .text3 h4{
     position: relative;
-    font-size: 12px;
-    left:-290px;
-    top:775px;
-    color: aliceblue;
+    top:1050px;
+    left:-345px;
   }
 
   .mainButton{
-    position: relative;
-    margin-top: 0px;
-    width: 100px;
-    height:80px;
-    padding: 3px;
-    left:100px;
-    top:550px;
+    position: absolute;
+    top:930px;
+    left:257px;
+    width: 140px;
   }
 
   .mainButton button{
     font-size: 13px;
     white-space: nowrap;
   }
+
+}
+
+
+/*ipad Air*/
+@media (width:820px){
+.Main{
+  position: fixed;
+  width: 168%;
+  top:-7px;
+  background-size: cover;
+
+}
+
+.Main h1{
+  position: absolute;
+  font-size: 100px;
+  left:520px;
+  top:700px;
+  margin-right: 20px;
+}
+
+.Main h2{
+  position: absolute;
+  font-size: 35px;
+  left:382px;
+  top:700px;
+}
+
+.text3 h4{
+  position: relative;
+  font-size: 12px;
+  left:-290px;
+  top:775px;
+  color: aliceblue;
+}
+
+.mainButton{
+  position: relative;
+  margin-top: 0px;
+  width: 100px;
+  height:80px;
+  padding: 3px;
+  left:100px;
+  top:550px;
+}
+
+.mainButton button{
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.sound img{
+  position: relative;
+  left:-400px;
+}
+
 }
 
 /*ipad Air 가로*/
-@media (max-width:1180px) {
-  .Main{
-    position: fixed;
-    width: 168%;
-    height: 105%;
-    top:-7px;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  .Main h1{
-    position: absolute;
-    font-size: 100px;
-    left:850px;
-    top:500px;
-    margin-right: 20px;
-  }
-
-  .Main h2{
-    position: absolute;
-    font-size: 35px;
-    left:732px;
-    top:500px;
-  }
-
-  .text3 h4{
-    position: relative;
-    font-size: 12px;
-    left:-290px;
-    top:575px;
-    color: aliceblue;
-  }
-
-  .mainButton{
-    position: relative;
-    margin-top: 0px;
-    width: 100px;
-    height:80px;
-    padding: 3px;
-    left:420px;
-    top:350px;
-  }
-
-  .mainButton button{
-    font-size: 13px;
-    white-space: nowrap;
-  }
-  
+@media (width:1180px) and (height:820px){
+.Main{
+  position: fixed;
+  width: 168%;
+  height: 105%;
+  top:-7px;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
+.Main h1{
+  position: absolute;
+  font-size: 100px;
+  left:840px;
+  top:500px;
+  margin-right: 20px;
+}
+
+.Main h2{
+  position: absolute;
+  font-size: 35px;
+  left:732px;
+  top:500px;
+}
+
+.text3 h4{
+  position: relative;
+  font-size: 12px;
+  left:-290px;
+  top:575px;
+  color: aliceblue;
+}
+
+.mainButton{
+  position: relative;
+  margin-top: 0px;
+  width: 100px;
+  height:80px;
+  padding: 3px;
+  left:420px;
+  top:350px;
+}
+
+.mainButton button{
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+} 
 
 /*mobile*/
 @media (max-width:698px) {
-  .Main{
-    position: fixed;
-    width: 168%;
-    height: 200%;
-    top:-7px;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+.Main{
+  position: fixed;
+  width: 168%;
+  height: 200%;
+  top:-7px;
+  background-size: cover;
+  background-attachment: fixed;
+}
 }
