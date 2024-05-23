@@ -146,7 +146,7 @@ body{
 
   }
   
-/*Tablet*/
+/*ipad Air*/
 @media (max-width:820px) {
   .Main{
     position: fixed;
@@ -194,6 +194,57 @@ body{
     font-size: 13px;
     white-space: nowrap;
   }
+}
+
+/*ipad Air 가로*/
+@media (max-width:1180px) {
+  .Main{
+    position: fixed;
+    width: 168%;
+    height: 105%;
+    top:-7px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .Main h1{
+    position: absolute;
+    font-size: 100px;
+    left:850px;
+    top:500px;
+    margin-right: 20px;
+  }
+
+  .Main h2{
+    position: absolute;
+    font-size: 35px;
+    left:732px;
+    top:500px;
+  }
+
+  .text3 h4{
+    position: relative;
+    font-size: 12px;
+    left:-290px;
+    top:575px;
+    color: aliceblue;
+  }
+
+  .mainButton{
+    position: relative;
+    margin-top: 0px;
+    width: 100px;
+    height:80px;
+    padding: 3px;
+    left:420px;
+    top:350px;
+  }
+
+  .mainButton button{
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  
 }
 
 /*mobile*/
