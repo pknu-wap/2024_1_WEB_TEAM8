@@ -161,7 +161,7 @@ body{
     position: absolute;
     font-size: 100px;
     left:520px;
-    top:400px;
+    top:800px;
     margin-right: 20px;
   }
 
@@ -169,14 +169,14 @@ body{
     position: absolute;
     font-size: 35px;
     left:382px;
-    top:400px;
+    top:800px;
   }
 
   .text3 h4{
     position: relative;
     font-size: 12px;
     left:-290px;
-    top:475px;
+    top:875px;
     color: aliceblue;
   }
 
@@ -186,8 +186,8 @@ body{
     width: 100px;
     height:80px;
     padding: 3px;
-    left:90px;
-    top:250px;
+    left:100px;
+    top:650px;
   }
 
   .mainButton button{
