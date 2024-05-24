@@ -36,10 +36,49 @@ function LatinPopModalBody() {
   삼바, 메렝게, 레게톤, 쿠바노, 플라멩코 등 다양한 리듬이 사용되는 것이 특징이다.</p>;
 }
 
+function LatinJazzModalBody() {
+    return <p>1940년대 라틴 아메리카 음악과 재즈음악의 만남으로 재즈의 형태 속 라틴 아메리카의
+(클라베, 탱고, 살사, 삼바 등) 특유한 리듬 패턴이 첨가됨 음악이다.
+대표적으로 아프로큐반 재즈(Afro-Cubanjazz)는 쿠바, 보사노바(Bossa nova)는 브라질
+곧 라틴아메라카의 속한 나라에서 탄생했으며 특히 퍼커션 악기의 사운드가 두드러지는 것이 특징이다.</p>;
+}
+
+function SwingJazzModalBody() {
+    return <p>1930년대 미국에서 발전한 재즈 스타일이며 셔플리듬과 비슷하나 미묘하게 강세가 다르다.
+    "Swing"음악은 마치 '그루브'라는 표현처럼
+    본능적으로 발을 두드리거나 머리를 끄덕이게 만드는게 중요하다.
+    1930~40년대에는 스윙댄스가 유행했으며 리듬을 느끼며 춤추기에 적합한 것이 특징이다.</p>;
+}
+
+function SoulJazzModalBody() {
+    return <p>1950년대 흑인만의 풍부한 펑키(Funky)한 소울과 재즈가 결합된 음악이다.
+    펑키 재즈(Funcky jazz)라고도 부를 수 있으며
+    하드 밥(Hard Bop) 의 파생물이자 흑인 음악인 블루스(Blues), 소울(Soul), 가스펠(Gaspel)의
+    강한 영향을 받은것이 특징이다.</p>;
+}
+
+function FreeJazzModalBody() {
+    return <p>1960년대 중반 기존 재즈구조와 규칙에 매너리즘에 빠져 탄생한
+    창작적 자유가 담긴 즉흥 스타일의 재즈이며 아방가르드 재즈(Avant-garade jazz) 라고도 부른다.
+    정통을 무시한채 구조화 된 조성,박자에 구애받지 않는 것이 특징이다.
+    또한 당시 흑인인권차별에 대한 "Free"를 외치는 정치적 의미가 담겨 있다.</p>;
+}
+
+function BibobJazzModalBody() {
+    return <p>1940년대 초중반 스윙재즈에 대항하여 발전한 재즈 스타일로
+    빠른 템포, 역동적인 코드 변경, 수많은 조 변경, 당김음을 포함시킨 음악이다.
+    악기별 창의적인 솔로 연주와 악기의 화려한 기교가 들어간다는 것이 특징이다.</p>;
+}
+
 export {
   DancePopModalBody,
   ElecPopModalBody,
   BritPopModalBody,
   IndiPopModalBody,
-  LatinPopModalBody
+  LatinPopModalBody,
+  LatinJazzModalBody,
+  SwingJazzModalBody,
+  SoulJazzModalBody,
+  FreeJazzModalBody,
+  BibobJazzModalBody,
 };

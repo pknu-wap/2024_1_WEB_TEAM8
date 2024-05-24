@@ -1,10 +1,17 @@
 import React, { useEffect } from "react";
 import "./Result.css";
+import CommonModal from './Modal';
 
 import ProgressBar from "@ramonak/react-progress-bar";
-import { ChakraProvider,VStack,Box } from "@chakra-ui/react";
+import { ChakraProvider,VStack,Box, useDisclosure, Button} from "@chakra-ui/react";
 import { JazzValueState } from "../../Components/JazzBox";
 import { useRecoilValue } from "recoil";
+import {
+    LatinJazzModalBody,
+    SwingJazzModalBody,
+    SoulJazzModalBody,
+    FreeJazzModalBody,
+    BibobJazzModalBody} from "./ModalCon"
 
 const Jazz = () => {
      
@@ -61,6 +68,12 @@ const Jazz = () => {
     }if (maxPoint===BibobJazz){
         maxGenre="비밥";
     }
+
+    const { isOpen: isLatinJazzOpen, onOpen: onLatinJazzOpen, onClose: onLatinJazzClose } = useDisclosure();
+    const { isOpen: isSwingJazzOpen, onOpen: onSwingJazzOpen, onClose: onSwingJazzClose } = useDisclosure();
+    const { isOpen: isSoulJazzOpen, onOpen: onSoulJazzOpen, onClose: onSoulJazzClose } = useDisclosure();
+    const { isOpen: isFreeJazzOpen, onOpen: onFreeJazzOpen, onClose: onFreeJazzClose } = useDisclosure();
+    const { isOpen: isBibobJazzOpen, onOpen: onBibobJazzOpen, onClose: onBibobJazzClose } = useDisclosure();
 
     return (
         <ChakraProvider>
@@ -138,7 +151,10 @@ const Jazz = () => {
             <Box w='800px'>
             <ProgressBar completed={LatinJazz}/>
                 <div className="Sub">
-                    라틴 
+                <Button onClick={onLatinJazzOpen}>라틴</Button>
+                    <CommonModal isOpen={isLatinJazzOpen} onClose={onLatinJazzClose} title="LatinJazz">
+                        <LatinJazzModalBody />
+                    </CommonModal>
                     <button className="btn"
                             onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYz-ulK000LqaLp6XPVVD6s'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -147,7 +163,10 @@ const Jazz = () => {
             <Box w='800px'>
             <ProgressBar completed={SwingJazz}/>
                 <div className="Sub">
-                    스윙 
+                <Button onClick={onSwingJazzOpen}>스윙</Button>
+                    <CommonModal isOpen={isSwingJazzOpen} onClose={onSwingJazzClose} title="SwingJazz">
+                        <SwingJazzModalBody />
+                    </CommonModal>
                     <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYu0VZR6fElTGZLEeq5olcL'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -156,7 +175,10 @@ const Jazz = () => {
             <Box w='800px'>
             <ProgressBar completed={SoulJazz}/>
                 <div className="Sub">
-                    소울 
+                <Button onClick={onSoulJazzOpen}>소울</Button>
+                    <CommonModal isOpen={isSoulJazzOpen} onClose={onSoulJazzClose} title="SoulJazz">
+                        <SoulJazzModalBody />
+                    </CommonModal>
                     <button className="btn"
                             onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYDB57IXkCJN8NiMLeq0xmM'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -165,7 +187,10 @@ const Jazz = () => {
             <Box w='800px'>
             <ProgressBar completed={FreeJazz}/>
                 <div className="Sub">
-                    프리 
+                <Button onClick={onFreeJazzOpen}>프리</Button>
+                    <CommonModal isOpen={isFreeJazzOpen} onClose={onFreeJazzClose} title="FreeJazz">
+                        <FreeJazzModalBody />
+                    </CommonModal>
                     <button className="btn"
                             onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaS65mSke-ouu9Nz5PJLLXw'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -174,7 +199,10 @@ const Jazz = () => {
             <Box w='800px'>
             <ProgressBar completed={BibobJazz}/>
                 <div className="Sub">
-                    비밥 
+                <Button onClick={onBibobJazzOpen}>비밥</Button>
+                    <CommonModal isOpen={isBibobJazzOpen} onClose={onBibobJazzClose} title="BiboaJazz">
+                        <BibobJazzModalBody />
+                    </CommonModal>
                     <button className="btn"
                             onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaWk1QneIEshUvxCa9aBKEv'}
                     ><img className="music" src="./music.png" alt="p"/></button>
