@@ -138,6 +138,40 @@ function ShowRockModalBody() {
   때론  "Dream pop"이라고도 불린다.</p>;
 }
 
+function NeoRbModalBody() {
+  return <p>1990년대 전통적인 소울과 R&B의 요소를 현대적으로 재해석해 생겨난 음악 양식을 홍보 및 설명
+  하고자 만들어진 용어이다. 많은 장르에 걸쳐 다양한 요소가 합해져있으며 좀 더 소울스러운 흑인만의 색감이
+  나타나는것이 특징이다.</p>;
+}
+
+function ComtemRbModalBody() {
+  return <p>1980년대 미국에서 대중화됐으며 이전에 있던 전통 R&B와 구분하기 위해 만들어진 이름이다.
+  기존의 R&B의 틀에서 다른 많은 장르를 융합시켜 시간의 흐름에 따라 다양한 변주가 있는 장르이다.
+  거기에 현대적인 프로덕션 기술과 뛰어난 보컬의 조화로 풍성하고 세련된 사운드가 특징이다.</p>;
+}
+
+function PunkRbModalBody() {
+  return <p>펑크는 1960년대 중반 아프리카계 미국인들 사이에 유행했으며
+  '강한 냄새' 곧 신체적 노력으로 인한 체취가 느껴지는 음악이라는 뜻이다.
+  다양한 음악 장르를 혼합해 끈적한 그루브와 리듬이 강조된 음악이라
+  그루브를 느끼며 춤추기 쉬운 새로운 형태의 리듬적 역할이 강한 음악이다.</p>;
+}
+
+function SoulRbModalBody() {
+  return <p> 1950년대 후반 민권운동의 시작으로 등장했고 블루스(Blues)의 정신과
+  가스펠(Gaspel)의 영향이 더해져 R&B(알앤비)의 뿌리가 되는 음악이다.
+  당시 백인들만의 음악은 로큰롤(Rock'n Rll)이였다면 흑인들만의 음악은 소울(Soul)음악이었다.
+  그리고 아프리카계 미국인이 소유한 최초의 레코드 레이블인 "모타운(Motown)"이 등장해
+  흑인 음악이 대중화가 되는데 큰기여를 했다.</p>;
+}
+
+function AlterRbModalBody() {
+  return <p>2000년대 중후반에 등장한 장르로 Progressvie R&B(프로그레시브 알앤비),PB R&B(피비 알앤비),
+  Hipster R&B(힙스터 알앤비) 등으로 불리기도 해 유래와 탄생이 명확하지 않다.
+  EDM, 록, 힙합 등을 결합을 서슴지 않고 시도해 실험적인. 변칙적인 사운드를 탄생시켜 귀를 매료시키는 음악이다.
+  대부분 나긋한 멜로디 위에 신디사이저(Synth)를 활용한 몽환적인 사운드가 특징이다.</p>;
+}
+
 export {
   DancePopModalBody,
   ElecPopModalBody,
@@ -159,4 +193,9 @@ export {
   AlterRockModalBody,
   PunkRockModalBody,
   ShowRockModalBody,
+  NeoRbModalBody,
+  ComtemRbModalBody,
+  PunkRbModalBody,
+  SoulRbModalBody,
+  AlterRbModalBody,
 };

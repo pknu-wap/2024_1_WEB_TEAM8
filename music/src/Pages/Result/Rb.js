@@ -1,10 +1,17 @@
 import React, {useEffect} from "react";
 import "./Result.css";
+import CommonModal from './Modal';
 
 import ProgressBar from "@ramonak/react-progress-bar";
-import { ChakraProvider,VStack,Box } from "@chakra-ui/react";
+import { ChakraProvider,VStack,Box, Button, useDisclosure } from "@chakra-ui/react";
 import { RbValueState } from "../../Components/RbBox";
 import { useRecoilValue } from "recoil";
+import {
+    NeoRbModalBody,
+    ComtemRbModalBody,
+    PunkRbModalBody,
+    SoulRbModalBody,
+    AlterRbModalBody} from "./ModalCon"
 
 const Rb = () => {
     const RbValue = useRecoilValue(RbValueState);
@@ -44,6 +51,12 @@ const Rb = () => {
     PunkRb = parseInt(PunkRb / Total * 100);
     SoulRb = parseInt(SoulRb / Total * 100);
     AlterRb = parseInt(AlterRb / Total * 100);
+
+    const { isOpen: isNeoRbOpen, onOpen: onNeoRbOpen, onClose: onNeoRbClose } = useDisclosure();
+    const { isOpen: isComtemRbOpen, onOpen: onComtemRbOpen, onClose: onComtemRbClose } = useDisclosure();
+    const { isOpen: isPunkRbOpen, onOpen: onPunkRbOpen, onClose: onPunkRbClose } = useDisclosure();
+    const { isOpen: isSoulRbOpen, onOpen: onSoulRbOpen, onClose: onSoulRbClose } = useDisclosure();
+    const { isOpen: isAlterRbOpen, onOpen: onAlterRbOpen, onClose: onAlterRbClose } = useDisclosure();
 
 
     return (
@@ -122,7 +135,10 @@ const Rb = () => {
             <Box w='800px'> 
             <ProgressBar completed={NeoRb}/>
                 <div className="Sub">
-                    네오소울 
+                <Button onClick={onNeoRbOpen}>네오</Button>
+                <CommonModal isOpen={isNeoRbOpen} onClose={onNeoRbClose} title="Neo R&B">
+                <NeoRbModalBody />
+                </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYDejvhbWZoWsq6gd1ttD20'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -131,7 +147,10 @@ const Rb = () => {
             <Box w='800px'>
             <ProgressBar completed={ComtemRb}/>
                 <div className="Sub">
-                    컨템포러리
+                <Button onClick={onComtemRbOpen}>컨템포러리</Button>
+                <CommonModal isOpen={isComtemRbOpen} onClose={onComtemRbClose} title="Contemporary R&B">
+                <ComtemRbModalBody />
+                </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY2BZBQY_JBa2N6FraJL0su'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -140,7 +159,10 @@ const Rb = () => {
             <Box w='800px'>
             <ProgressBar completed={PunkRb}/>
                 <div className="Sub">
-                    펑크 
+                <Button onClick={onPunkRbOpen}>펑크</Button>
+                <CommonModal isOpen={isPunkRbOpen} onClose={onPunkRbClose} title="Punk R&B">
+                <PunkRbModalBody />
+                </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYyy_jgPMM_gkmG3LJgdJ_G'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -149,7 +171,10 @@ const Rb = () => {
             <Box w='800px'>
             <ProgressBar completed={SoulRb}/>
                 <div className="Sub">
-                    소울 
+                <Button onClick={onSoulRbOpen}>소울</Button>
+                <CommonModal isOpen={isSoulRbOpen} onClose={onSoulRbClose} title="Soul R&B">
+                <SoulRbModalBody />
+                </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyhmm-4g_T2xdeSrQJ6r0O'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -158,7 +183,10 @@ const Rb = () => {
             <Box w='800px'>
             <ProgressBar completed={AlterRb}/>
                 <div className="Sub">
-                    얼터너티브 
+                <Button onClick={onAlterRbOpen}>얼터너티브</Button>
+                <CommonModal isOpen={isAlterRbOpen} onClose={onAlterRbClose} title="Alternative R&B">
+                <AlterRbModalBody />
+                </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MblTfvFXrghM3DHYXyAkiG0'}
                     ><img className="music" src="./music.png" alt="p"/></button>
