@@ -1,10 +1,18 @@
 import React, { useEffect } from "react";
 import "./Result.css";
+import CommonModal from './Modal';
 
-import { ChakraProvider,VStack,Box } from "@chakra-ui/react";
+import { ChakraProvider,VStack,Box, Button, useDisclosure } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { RockValueState } from "../../Components/RockBox";
 import { useRecoilValue } from "recoil";
+import {
+    ProRockModalBody,
+    HeavyRockModalBody,
+    AlterRockModalBody,
+    PunkRockModalBody,
+    ShowRockModalBody
+} from "./ModalCon";
 
 const Rock = () => {
      
@@ -46,6 +54,12 @@ const Rock = () => {
     AlterRock = parseInt(AlterRock / Total * 100);
     PunkRock = parseInt(PunkRock / Total * 100);
     ShowRock = parseInt(ShowRock / Total * 100);
+
+    const { isOpen: isProRockOpen, onOpen: onProRockOpen, onClose: onProRockClose } = useDisclosure();
+    const { isOpen: isHeavyRockOpen, onOpen: onHeavyRockOpen, onClose: onHeavyRockClose } = useDisclosure();
+    const { isOpen: isAlterRockOpen, onOpen: onAlterRockOpen, onClose: onAlterRockClose } = useDisclosure();
+    const { isOpen: isPunkRockOpen, onOpen: onPunkRockOpen, onClose: onPunkRockClose } = useDisclosure();
+    const { isOpen: isShowRockOpen, onOpen: onShowRockOpen, onClose: onShowRockClose } = useDisclosure();
 
     return (
         <ChakraProvider>
@@ -122,7 +136,10 @@ const Rock = () => {
             <Box w='800px'>
             <ProgressBar completed={ProRock}/>
                 <div className="Sub">
-                    프로그레시브
+                <Button onClick={onProRockOpen}>프로그레시브</Button>
+                <CommonModal isOpen={isProRockOpen} onClose={onProRockClose} title="Pro Rock">
+                    <ProRockModalBody />
+                </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZUIbKyS_2yQJ2JPZPSrzO0'}
                     ><img className="music" src="./Music.png" alt="p"/></button>
@@ -131,7 +148,10 @@ const Rock = () => {
             <Box w='800px'>
             <ProgressBar completed={HeavyRock}/>
                 <div className="Sub">
-                    헤비 
+                <Button onClick={onHeavyRockOpen}>헤비</Button>
+                <CommonModal isOpen={isHeavyRockOpen} onClose={onHeavyRockClose} title="Heavy Rock">
+                    <HeavyRockModalBody />
+                </CommonModal>
                     <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mabu4H5mTkcfBopJhvYqLYZ'}
                     ><img className="music" src="./Music.png" alt="p"/></button>
@@ -140,7 +160,10 @@ const Rock = () => {
             <Box w='800px'>
             <ProgressBar completed={AlterRock}/>
                 <div className="Sub">
-                    얼터너티브 
+                <Button onClick={onAlterRockOpen}>얼터너티브</Button>
+                <CommonModal isOpen={isAlterRockOpen} onClose={onAlterRockClose} title="Alter Rock">
+                    <AlterRockModalBody />
+                </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbTbdOhM-X-OLPTs18AsV3s'}
                     ><img className="music" src="./Music.png" alt="p"/></button>
@@ -149,7 +172,10 @@ const Rock = () => {
             <Box w='800px'>
             <ProgressBar completed={PunkRock}/>
                 <div className="Sub">
-                    펑크 
+                <Button onClick={onPunkRockOpen}>펑크</Button>
+                <CommonModal isOpen={isPunkRockOpen} onClose={onPunkRockClose} title="Punk Rock">
+                    <PunkRockModalBody />
+                </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbB05x1nVG1wAGYp9lyW_sZ'}
                     ><img className="music" src="./Music.png" alt="p"/></button>
@@ -158,7 +184,10 @@ const Rock = () => {
             <Box w='800px'>
             <ProgressBar completed={ShowRock}/>
                 <div className="Sub">
-                    쇼 
+                <Button onClick={onShowRockOpen}>슈게이징</Button>
+                <CommonModal isOpen={isShowRockOpen} onClose={onShowRockClose} title="Show Rock">
+                    <ShowRockModalBody />
+                </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZ9gE5dJgB9lO_tbSNK6m59'}
                     ><img className="music" src="./Music.png" alt="p"/></button>

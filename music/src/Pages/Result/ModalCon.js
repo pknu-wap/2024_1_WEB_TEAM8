@@ -105,6 +105,39 @@ function BoomHipModalBody() {
     사용하는 것이 특징이다.</p>;
 }
 
+function ProRockModalBody() {
+  return <p>1960대에 등장한 음악 장르이며 클래식 음악, 재즈, 포크 등 많은 문화적, 음악적 요소를 결합한 장르이다.
+  가사는 시적이거나 철학적인 요소가  담겨 있으며 전반적으로 곡이 되게 복잡하고 긴 진행구조이다.
+  그래서 다양한 악기의 연주와 긴 솔로가 특징이다.</p>;
+}
+
+function HeavyRockModalBody() {
+  return <p>1960년대 후반 하드록(Hard rock),블루스 록(Blues rock)장르의 아티스트들이 발전시킨 장르이다.
+  장르 이름에서 느껴지는 그대로 빠른템포와 강력하고 찢어지는 듯한 높은 음량,
+  복잡한 기타 리프, 강렬한 드럼 비트, 보컬의 샤우팅이 특징이다.</p>;
+}
+
+function AlterRockModalBody() {
+  return <p>1960년대 등장해 포스트 펑크(Post Punk)의 DIY(Do it yourself)정신의 영향을 받아
+  전통적이고 대중화된 록 사운드의 "대안"(Alternative) 으로 만들어진 장르이다.
+  기존의 록만의 구성 방식을 실험적으로 바꿔 많은 하위장르를 탄생시킨 것이 특징이다..</p>;
+}
+
+function PunkRockModalBody() {
+  return <p>1970년대 등장한 펑크 록은 문화 운동으로 시작되었다.
+  "DIY(Do It Yourself)" 정신과 이념의 시발점이다.
+  그래서  펑크 운동의 원칙중 하나로 빠르고 간결한 곡구조와
+  사회문제의 대한 직설적인 가사전달이 특징이다.</p>;
+}
+
+function ShowRockModalBody() {
+  return <p>1980년대 말 영국에서 등장했으며 Shoe(신발) + gaze(응시하다)의 합성어로 관객과의 소통없이
+  기타 이펙트 페달을 밟는 발만 내내 내려다보며 연주한다는 이유로 이와 같은 이름이 탄생했다.
+  그래서 강한 리벌브와 딜레이 효과가 걸려있어 환상적에 있는 듯한 장황한 기타리프가 특징이다.
+  그리고 보컬의 뭉게지는 듯한 사운드와 여운이 느껴지는 멜로디와 가사가 특징이다.
+  때론  "Dream pop"이라고도 불린다.</p>;
+}
+
 export {
   DancePopModalBody,
   ElecPopModalBody,
@@ -121,4 +154,9 @@ export {
   AlterHipModalBody,
   RageHipModalBody,
   BoomHipModalBody,
+  ProRockModalBody,
+  HeavyRockModalBody,
+  AlterRockModalBody,
+  PunkRockModalBody,
+  ShowRockModalBody,
 };
