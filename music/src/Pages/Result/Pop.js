@@ -1,15 +1,31 @@
 import React, { useEffect } from "react";
 import "./Result.css";
+import CommonModal from './Modal';
 
 import ProgressBar from "@ramonak/react-progress-bar";
-import { ChakraProvider,VStack,Box } from "@chakra-ui/react";
+import { ChakraProvider,VStack,Box, useDisclosure, Button } from "@chakra-ui/react";
 import { PopValueState } from "../../Components/PopBox";
 import { useRecoilValue } from "recoil";
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+  } from '@chakra-ui/react'
+import {
+    DancePopModalBody,
+    ElecPopModalBody,
+    BritPopModalBody,
+    IndiPopModalBody,
+    LatinPopModalBody
+} from "./ModalCon";
 
 const Pop = () => {
-     
+    
     const PopValue = useRecoilValue(PopValueState);
-
 
     useEffect(()=>{
         console.log(PopValue);
@@ -48,6 +64,12 @@ const Pop = () => {
     LatinPop = parseInt(LatinPop / Total * 100);
     BritPop = parseInt(BritPop / Total * 100);
 
+    // 모달 상태관리
+     const { isOpen: isDancePopOpen, onOpen: onDancePopOpen, onClose: onDancePopClose } = useDisclosure();
+  const { isOpen: isElecPopOpen, onOpen: onElecPopOpen, onClose: onElecPopClose } = useDisclosure();
+  const { isOpen: isBritPopOpen, onOpen: onBritPopOpen, onClose: onBritPopClose } = useDisclosure();
+  const { isOpen: isIndiPopOpen, onOpen: onIndiPopOpen, onClose: onIndiPopClose } = useDisclosure();
+  const { isOpen: isLatinPopOpen, onOpen: onLatinPopOpen, onClose: onLatinPopClose } = useDisclosure();
 
     return (
         <ChakraProvider>
@@ -120,11 +142,14 @@ const Pop = () => {
             align='stretch'
             marginLeft="335px"
             marginRight="335px"
-            >
+            >1
             <Box w='800px'>
             <ProgressBar completed={DancePop}/>
                 <div className="Sub">
-                    댄스팝
+                    <Button onClick={onDancePopOpen}>댄스팝</Button>
+                    <CommonModal isOpen={isDancePopOpen} onClose={onDancePopClose} title="DancePop">
+                        <DancePopModalBody />
+                    </CommonModal>
                     <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY-2SwIhakiK3khw88oHzwc'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -133,7 +158,10 @@ const Pop = () => {
             <Box w='800px'>
                 <ProgressBar completed={ElecPop}/>
                 <div className="Sub">
-                일렉트로닉팝
+                    <Button onClick={onElecPopOpen}>일렉트로닉팝</Button>
+                    <CommonModal isOpen={isElecPopOpen} onClose={onElecPopClose} title="EletronicPop">
+                        <ElecPopModalBody />
+                    </CommonModal>
                     <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mai4CdplvjIRFf-znKkJ7_l'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -142,7 +170,10 @@ const Pop = () => {
             <Box w='800px'>
                 <ProgressBar completed={BritPop}/>
                 <div className="Sub">
-                    브릿팝
+                <Button onClick={onBritPopOpen}>브릿팝</Button>
+                    <CommonModal isOpen={isBritPopOpen} onClose={onBritPopClose} title="BritPop">
+                        <BritPopModalBody />
+                    </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbfvh0blv_vISpJ5lqZUlZy'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -151,7 +182,10 @@ const Pop = () => {
             <Box w='800px'>
                 <ProgressBar completed={IndiPop}/>
                 <div className="Sub">
-                    인디팝
+                <Button onClick={onIndiPopOpen}>인디팝</Button>
+                    <CommonModal isOpen={isIndiPopOpen} onClose={onIndiPopClose} title="IndiPop">
+                        <IndiPopModalBody />
+                    </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbf-zGpf43gE5pfW8_ycXnR'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -160,7 +194,10 @@ const Pop = () => {
             <Box w='800px'>
                 <ProgressBar completed={LatinPop}/>
                 <div className="Sub">
-                    라틴팝
+                <Button onClick={onLatinPopOpen}>라틴팝</Button>
+                    <CommonModal isOpen={isLatinPopOpen} onClose={onLatinPopClose} title="LatinPop">
+                        <LatinPopModalBody />
+                    </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaAWCbd2HcokoqH5sv44OJP'}
                     ><img className="music" src="./music.png" alt="p"/></button>
