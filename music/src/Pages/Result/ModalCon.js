@@ -70,6 +70,41 @@ function BibobJazzModalBody() {
     악기별 창의적인 솔로 연주와 악기의 화려한 기교가 들어간다는 것이 특징이다.</p>;
 }
 
+function DrillHipModalBody() {
+    return <p>2010년대 초반에 시카고에 트랩(Trap) 아티스트들이 발전시킨 음악이며
+    '누군가를 쏘다' 속어인 "Drill"은 트랩보다 훨씬 폭력적이고 전투적인 가사와
+    주로 범죄와 관련된 잔혹한 삶을 음악에 담는다.
+    2010년대 후반부터는 유럽 전역에서 유행이 시작돼 "UK Drill" 이 탄생한다.
+    UK드릴은 그라임(Grime) , 개러지(UK Garage)의 영향을 받았으며
+    빠른 Bpm, 단조의 어두운 분위기, 트레실로(Tresillo) 하이햇 패턴, 글라이딩 기술의 808베이스 등이 특징이다.</p>;
+}
+
+function TrapHipModalBody() {
+    return <p>1990년 대 등장하여 마약을 제조 판매하던 "Trap house"에서 이름이 탄생했다.
+    그래서 모든 아티스트가 그런것은 아니지만 대부분
+    약물. 도시폭력, 성관련 적인 가사를 직접적으로  표출한다.
+    또한 신디사이저 드럼에 빠르고 복잡한 하이햇 패턴이 특징이다.</p>;
+}
+
+function AlterHipModalBody() {
+    return <p>1980년대 초 얼터너티브 록(Alternative rock)과 비슷한 시기에 시작됐다고 볼 수 있다.
+    "얼터너티브(Alternative)" 뜻처럼 "대안적인" 음악이며 기존  힙합장르의 뼈대에서
+    여러부분을 실험적인 사운드로 채워 아티스트 마다 특색이 보다 더욱 들어나는것이 특징이다.</p>;
+}
+
+function RageHipModalBody() {
+    return <p>2021년 Trippie Redd라는 아티스트 트랙인 "Miss the Rage"에서 이름을 따왔다.
+    "Trap(트랩)"의 하위장르 이지만 또 "Hyper pop(하이퍼 팝)"와 밀접한 장르이기에 에너지가 느껴지는
+    신디사이저와 분노를 표출하는 듯한 가사가 특징이다.</p>;
+}
+
+function BoomHipModalBody() {
+    return <p>1990년대 힙합 전성기 시절 동부 힙합(East Coast hip hop)에서 두드러진 장르이자 음악 제작 스타일이다.
+    드럼소리를 의성어로 표현해 '붐 뱁 붐붐 뱁 붐' 같은 드럼의 소리에서 따온것이다. 그만큼 드럼의 그루브와 역할의
+    비중이 큰 음악이다. 그래서 대부분 느긋하고 단조로운 드럼의 그루브를 느낄 수 있으며 또한 올드한 질감의 샘플링을
+    사용하는 것이 특징이다.</p>;
+}
+
 export {
   DancePopModalBody,
   ElecPopModalBody,
@@ -81,4 +116,9 @@ export {
   SoulJazzModalBody,
   FreeJazzModalBody,
   BibobJazzModalBody,
+  DrillHipModalBody,
+  TrapHipModalBody,
+  AlterHipModalBody,
+  RageHipModalBody,
+  BoomHipModalBody,
 };
