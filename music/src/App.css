@@ -10,6 +10,7 @@ body{
   top: -100px;
   margin-left: -12px;
   margin-bottom: 0px;
+  background-size: 102.5%;
   background-repeat: no-repeat;
 }
 
@@ -115,26 +116,26 @@ body{
 
   .Main h1{
     position: absolute;
-    top:900px;
-    left:600px;
+    top:670px;
+    left:410px;
   }
 
   .Main h2{
     position: absolute;
-    top:900px;
-    left:510px;
+    top:670px;
+    left:320px;
   }
 
   .text3 h4{
     position: relative;
-    top:1050px;
-    left:-345px;
+    top:480.5px;
+    left:-2000px;
   }
 
   .mainButton{
-    position: absolute;
-    top:930px;
-    left:257px;
+    position:relative;
+    top:670px;
+    left:207px;
     width: 140px;
   }
 
@@ -142,67 +143,69 @@ body{
     font-size: 13px;
     white-space: nowrap;
   }
-
 }
 
-
-/*ipad Air*/
-@media (width:820px){
-.Main{
-  position: fixed;
-  width: 168%;
-  top:-7px;
-  background-size: cover;
-
-}
-
+/*ipad Air 세로*/
+@media (max-width:820px) {
+  
 .Main h1{
-  position: absolute;
-  font-size: 100px;
-  left:520px;
-  top:700px;
-  margin-right: 20px;
+    position: absolute;
+    top:655px;
+    left:410px;
+}
+.text2 {
+text-align: center;
+line-height: 50%;
+margin-bottom: 50px;
+color: rgb(179, 162, 175);
 }
 
-.Main h2{
-  position: absolute;
-  font-size: 35px;
-  left:382px;
-  top:700px;
+.text3 {
+text-align: center;
+line-height: 10%;
+font-size: small;
+color: rgb(179, 162, 175);
+margin-right: 20px;
+margin-bottom: 50px;
+}
+
+.mainButton {
+margin-top: 80px;
+text-align: center;
+margin-bottom: 80px;
+}
+
+.mainButton button {
+background-color: #D6FF32;
+border:#D6FF32;
+border-radius: 15px;
+padding: 15px 40px;
+
+font-size: medium;
+color: black;
+font-weight: bold;
+
+position: relative;
+left: 373px;
+top: 0px;
+}
+
+.mainButton button:hover{
+background-color: #d6ff328f;
 }
 
 .text3 h4{
-  position: relative;
-  font-size: 12px;
-  left:-290px;
-  top:775px;
-  color: aliceblue;
+position: relative;
+text-align: center;
+font-size: small;
+color: rgb(179, 162, 175);
+top:780px;
+left:-300px;
 }
-
-.mainButton{
-  position: relative;
-  margin-top: 0px;
-  width: 100px;
-  height:80px;
-  padding: 3px;
-  left:100px;
-  top:550px;
-}
-
-.mainButton button{
-  font-size: 13px;
-  white-space: nowrap;
-}
-
-.sound img{
-  position: relative;
-  left:-400px;
-}
-
 }
 
 /*ipad Air 가로*/
-@media (width:1180px) and (height:820px){
+@media (min-width: 821px) and (max-width: 1180px){
 .Main{
   position: fixed;
   width: 168%;
@@ -215,8 +218,8 @@ body{
 .Main h1{
   position: absolute;
   font-size: 100px;
-  left:840px;
-  top:480px;
+  left:850px;
+  top:450px;
   margin-right: 20px;
 }
 
@@ -224,14 +227,14 @@ body{
   position: absolute;
   font-size: 35px;
   left:732px;
-  top:470px;
+  top:450px;
 }
 
 .text3 h4{
   position: relative;
   font-size: 12px;
   left:-290px;
-  top:545px;
+  top:525px;
   color: aliceblue;
 }
 
@@ -242,15 +245,9 @@ body{
   height:80px;
   padding: 3px;
   left:420px;
-  top:320px;
+  top:300px;
 }
-
-.mainButton button{
-  font-size: 13px;
-  white-space: nowrap;
 }
-
-} 
 
 /*mobile*/
 @media (max-width:698px) {
