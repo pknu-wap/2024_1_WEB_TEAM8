@@ -7,15 +7,6 @@ import { ChakraProvider,VStack,Box, useDisclosure, Button } from "@chakra-ui/rea
 import { PopValueState } from "../../Components/PopBox";
 import { useRecoilValue } from "recoil";
 import {
-    Modal,
-    ModalOverlay,
-    ModalContent,
-    ModalHeader,
-    ModalFooter,
-    ModalBody,
-    ModalCloseButton,
-  } from '@chakra-ui/react'
-import {
     DancePopModalBody,
     ElecPopModalBody,
     BritPopModalBody,
@@ -65,11 +56,11 @@ const Pop = () => {
     BritPop = parseInt(BritPop / Total * 100);
 
     // 모달 상태관리
-     const { isOpen: isDancePopOpen, onOpen: onDancePopOpen, onClose: onDancePopClose } = useDisclosure();
-  const { isOpen: isElecPopOpen, onOpen: onElecPopOpen, onClose: onElecPopClose } = useDisclosure();
-  const { isOpen: isBritPopOpen, onOpen: onBritPopOpen, onClose: onBritPopClose } = useDisclosure();
-  const { isOpen: isIndiPopOpen, onOpen: onIndiPopOpen, onClose: onIndiPopClose } = useDisclosure();
-  const { isOpen: isLatinPopOpen, onOpen: onLatinPopOpen, onClose: onLatinPopClose } = useDisclosure();
+    const { isOpen: isDancePopOpen, onOpen: onDancePopOpen, onClose: onDancePopClose } = useDisclosure();
+    const { isOpen: isElecPopOpen, onOpen: onElecPopOpen, onClose: onElecPopClose } = useDisclosure();
+    const { isOpen: isBritPopOpen, onOpen: onBritPopOpen, onClose: onBritPopClose } = useDisclosure();
+    const { isOpen: isIndiPopOpen, onOpen: onIndiPopOpen, onClose: onIndiPopClose } = useDisclosure();
+    const { isOpen: isLatinPopOpen, onOpen: onLatinPopOpen, onClose: onLatinPopClose } = useDisclosure();
 
     return (
         <ChakraProvider>
