@@ -1,10 +1,17 @@
 import React, { useEffect } from "react";
 import "./Result.css";
+import CommonModal from './Modal';
 
 import ProgressBar from "@ramonak/react-progress-bar";
-import { ChakraProvider,VStack,Box} from "@chakra-ui/react";
+import { ChakraProvider,VStack,Box, Button, useDisclosure} from "@chakra-ui/react";
 import { HipValueState } from "../../Components/HipBox";
 import { useRecoilValue } from "recoil";
+import {
+    DrillHipModalBody,
+    TrapHipModalBody,
+    AlterHipModalBody,
+    RageHipModalBody,
+    BoomHipModalBody} from "./ModalCon"
 
 const Hip = () => {
      
@@ -46,6 +53,12 @@ const Hip = () => {
     AlterHip = parseInt(AlterHip / Total * 100);
     RageHip = parseInt(RageHip / Total * 100);
     BoomHip = parseInt(BoomHip / Total * 100);
+
+    const { isOpen: isDrillHipOpen, onOpen: onDrillHipOpen, onClose: onDrillHipClose } = useDisclosure();
+    const { isOpen: isTrapHipOpen, onOpen: onTrapHipOpen, onClose: onTrapHipClose } = useDisclosure();
+    const { isOpen: isAlterHipOpen, onOpen: onAlterHipOpen, onClose: onAlterHipClose } = useDisclosure();
+    const { isOpen: isRageHipOpen, onOpen: onRageHipOpen, onClose: onRageHipClose } = useDisclosure();
+    const { isOpen: isBoomHipOpen, onOpen: onBoomHipOpen, onClose: onBoomHipClose } = useDisclosure();
 
     return (
         <ChakraProvider>
@@ -128,7 +141,10 @@ const Hip = () => {
            <Box w='800px'>
             <ProgressBar completed={DrillHip}/>
                 <div className="Sub">
-                    드릴 
+                <Button onClick={onDrillHipOpen}>드릴</Button>
+                    <CommonModal isOpen={isDrillHipOpen} onClose={onDrillHipClose} title="DrillHip">
+                        <DrillHipModalBody />
+                    </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Ma9DKt1sslE4gieQcTHhRwr'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -137,7 +153,10 @@ const Hip = () => {
             <Box w='800px'>
             <ProgressBar completed={TrapHip}/>
                 <div className="Sub">
-                    트랩 
+                <Button onClick={onTrapHipOpen}>트랩</Button>
+                    <CommonModal isOpen={isTrapHipOpen} onClose={onTrapHipClose} title="TrapHip">
+                        <TrapHipModalBody />
+                    </CommonModal>
                     <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYL6EFzJvB0MR0L5mJIwLFf'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -146,7 +165,10 @@ const Hip = () => {
             <Box w='800px'>
             <ProgressBar completed={AlterHip}/>
                 <div className="Sub">
-                    얼터너티브 
+                <Button onClick={onAlterHipOpen}>얼터너티브</Button>
+                    <CommonModal isOpen={isAlterHipOpen} onClose={onAlterHipClose} title="AlterHip">
+                        <AlterHipModalBody />
+                    </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyq1Ry3FaRHdmkcI6f5BHK'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -155,7 +177,10 @@ const Hip = () => {
             <Box w='800px'>
             <ProgressBar completed={RageHip}/>
                 <div className="Sub">
-                    레이지 
+                <Button onClick={onRageHipOpen}>레이지</Button>
+                    <CommonModal isOpen={isRageHipOpen} onClose={onRageHipClose} title="RageHip">
+                        <RageHipModalBody />
+                    </CommonModal>
                 <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbKaetJvGbjuo194EI9OfXi'}
                     ><img className="music" src="./music.png" alt="p"/></button>
@@ -164,7 +189,10 @@ const Hip = () => {
             <Box w='800px'>
             <ProgressBar completed={BoomHip}/>
                 <div className="Sub">
-                    붐뱁 
+                <Button onClick={onBoomHipOpen}>붐뱁</Button>
+                    <CommonModal isOpen={isBoomHipOpen} onClose={onBoomHipClose} title="BoomHip">
+                        <BoomHipModalBody />
+                    </CommonModal>
                     <button className="btn"
                         onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaSwB65jkuc1vDC0BWsmpRvhttps://www.youtube.com/playlist?list=PLCqnvhwU67MaSwB65jkuc1vDC0BWsmpRv'}
                     ><img className="music" src="./music.png" alt="p"/></button>
