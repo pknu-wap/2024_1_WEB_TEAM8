@@ -153,6 +153,7 @@ body{
     top:655px;
     left:410px;
 }
+
 .text2 {
 text-align: center;
 line-height: 50%;
@@ -206,47 +207,51 @@ left:-300px;
 
 /*ipad Air 가로*/
 @media (min-width: 821px) and (max-width: 1180px){
-.Main{
-  position: fixed;
-  width: 168%;
-  height: 105%;
-  top:-7px;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.Main h1{
-  position: absolute;
-  font-size: 100px;
-  left:850px;
-  top:450px;
-  margin-right: 20px;
-}
-
-.Main h2{
-  position: absolute;
-  font-size: 35px;
-  left:732px;
-  top:450px;
-}
-
-.text3 h4{
-  position: relative;
-  font-size: 12px;
-  left:-290px;
-  top:525px;
-  color: aliceblue;
-}
-
-.mainButton{
-  position: relative;
-  margin-top: 0px;
-  width: 100px;
-  height:80px;
-  padding: 3px;
-  left:420px;
-  top:300px;
-}
+  .Main{
+    position: fixed;
+    width: 168%;
+    height: 105%;
+    top:-7px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .Main h1{
+    position: absolute;
+    font-size: 100px;
+    left:850px;
+    top:470px;
+    margin-right: 20px;
+  }
+  
+  .Main h2{
+    position: absolute;
+    font-size: 35px;
+    left:732px;
+    top:470px;
+  }
+  .sound img{
+    position: relative;
+    top:450px;
+    left:1020px;
+  }
+  .text3 h4{
+    position: relative;
+    font-size: 12px;
+    left:-290px;
+    top:545px;
+    color: aliceblue;
+  }
+  
+  .mainButton{
+    position: relative;
+    margin-top: 0px;
+    width: 100px;
+    height:80px;
+    padding: 3px;
+    left:420px;
+    top:320px;
+  }
 }
 
 /*mobile*/
@@ -254,9 +259,50 @@ left:-300px;
 .Main{
   position: fixed;
   width: 168%;
-  height: 200%;
+  height: 1600px;
   top:-7px;
   background-size: cover;
   background-attachment: fixed;
 }
+
+.Main h1{
+  position: absolute;
+  font-size: 55px;
+  left:160px;
+  top:190px;
+  margin-right: 20px;
+}
+.Main h2{
+  position: absolute;
+  font-size: 25px;
+  left:120px;
+  top:180px;
+}
+.sound img{
+  position: relative;
+  width: 28px;
+  height: 30px;
+  top:245px;
+  left:280px;
+}
+.text3 h4{
+  position: relative;
+  font-size: 8px;
+  left:-130px;
+  top:695px;
+  color: aliceblue;
+}
+
+.mainButton{
+  position: relative;
+  height:80px;
+  left:-300px;
+  top:510px;
+}
+
+.mainButton button{
+  font-size: small;
+  padding:10px 100px 10px 100px;
+}
+
 }
