@@ -294,7 +294,7 @@ left:-300px;
 }
 
 .mainButton{
-  position: absolute;
+  position: fixed;
   height:80px;
   left:-330px;
   top:470px;
