@@ -90,7 +90,7 @@ const FirstPage1 = () => {
                 <JazzBox id="Jazz2"/>
                 <audio ref={el => audioRefs.current[10] = el} />
             </div>
-            <NextButton to="/SecondPage"/>
+            <NextButton to="/SecondPage" />
         </div>
         </ChakraProvider>
     );
