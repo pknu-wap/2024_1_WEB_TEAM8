@@ -28,7 +28,7 @@ public class MusicController {
                     .body(audioBytes);
         } else {
             // 파일이 존재하지 않거나 읽을 수 없는 경우 예외 처리
-            throw new RuntimeException("Could not read the file!");
+            throw new RuntimeException("파일을 읽을 수 없습니다.");
         }
     }
 }
