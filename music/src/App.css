@@ -161,7 +161,7 @@ margin-bottom: 50px;
 color: rgb(179, 162, 175);
 }
 
-.text3 {
+.text3{
 text-align: center;
 line-height: 10%;
 font-size: small;
@@ -268,14 +268,14 @@ left:-300px;
 .Main h1{
   position: absolute;
   font-size: 55px;
-  left:160px;
+  left:140px;
   top:140px;
   margin-right: 20px;
 }
 .Main h2{
   position: absolute;
   font-size: 25px;
-  left:120px;
+  left:100px;
   top:130px;
 }
 .sound img{
@@ -283,15 +283,28 @@ left:-300px;
   width: 28px;
   height: 30px;
   top:200px;
-  left:280px;
+  left:270px;
 }
-.text3 h4{
-  position: relative;
+.text3 {
+  display: flex;
+}
+
+.text3 .h4-1 {
+  position: fixed;
   font-size: 8px;
-  left:-90px;
-  top:555px;
+  left: 55px;
+  top: 595px;
   color: aliceblue;
 }
+
+.text3 .h4-2 {
+  position: fixed;
+  font-size: 8px;
+  left: 55px;
+  top: 615px;
+  color: aliceblue;
+}
+
 
 .mainButton{
   position: fixed;
