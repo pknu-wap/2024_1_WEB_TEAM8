@@ -38,8 +38,27 @@ const CheckBoxCnt = styled.div`
         box-sizing: border-box;
         cursor: pointer;
         z-index: 1;
-       
-    }`
+    }
+    @media (max-width: 820px) {
+        input[type=checkbox] + label {
+            top: 50px;
+            font-size: 1.2rem;
+            padding: 8px 8px;
+            width: 40px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        input[type=checkbox] + label {
+            top: 30px;
+            font-size: 1rem;
+            padding: 5px 5px;
+            width: 30px;
+        }
+
+    }
+`;
+    
 
 
 export default CheckBoxCnt;
