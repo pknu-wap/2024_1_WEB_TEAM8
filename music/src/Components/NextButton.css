@@ -18,10 +18,3 @@
   .nextPage button:hover {
     background-color: rgb(100, 92, 92);
   }
-
-  @media (max-width:820px) {
-    .nextPage button{
-      position: absolute;
-      left: 330px;
-    }
-  }

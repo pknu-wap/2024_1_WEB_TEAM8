@@ -1,5 +1,6 @@
 .firstPage{
   position: relative;
+  background-attachment: fixed;
   background-image: url("/public/maindesign4.gif");
   width: 1485px;
   height:1950px;
@@ -61,41 +62,3 @@
   width: 90%;
   z-index: 1000;
 }
-
-/*ipad Air 세로*/
-@media (max-width:820px) {
-  .firstPage {
-    position: fixed;
-    display: inline-table;
-    top:-30px;
-  }
-
-   .num1{
-     width: 680px;
-     height: 10vh;
-   }
-   
-   .num1 span{
-    display: none;
-   }
-
-   .num1 .q1{
-    font-size: 20px;
-    padding-top: 45px;
-   }
-
-  .num1 img{
-    position: relative;
-    top:20px;
-    left:330px;
-  }
-
-
-}
-
-/*ipad Air 가로*/
-@media (min-width: 821px) and (max-width: 1180px){}
-
-/*mobile*/
-@media (max-width:698px) {}
-  
