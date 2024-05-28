@@ -18,3 +18,13 @@
   .nextPage button:hover {
     background-color: rgb(100, 92, 92);
   }
+
+/*ipad Air 세로*/
+@media (max-width:820px) {
+   .nextPage button{
+    position: absolute;
+    top: 1660px;
+    left: 350px;
+    margin-top: 40px;
+   }
+}
