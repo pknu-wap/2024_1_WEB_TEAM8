@@ -113,7 +113,7 @@
     position: fixed;
     top: 0;
     left: -30px;
-    width: 70%;
+    width: 75%;
     z-index: 1000;
   }
 
@@ -128,10 +128,16 @@
     height: 1200px;
   }
 
+  .num1 .q1{
+    font-size: 15px;
+    padding-top: 45px;
+    padding-bottom: 9px;
+   }
+
   .num1 img{
     width: 60px;
     left:180px;
-    top:20px;
+    top:30px;
   }
 
 }
