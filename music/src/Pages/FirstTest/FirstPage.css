@@ -98,5 +98,38 @@
 @media (min-width: 821px) and (max-width: 1180px){}
 
 /*mobile*/
-@media (max-width:698px) {}
+@media (max-width: 698px) {
+  .firstPage {
+    position: fixed;
+    background-image: url('/public/mobile.gif') !important;
+    width: 10px !important;
+    height: 2300px !important;
+    background-size: 10% auto; 
+}
+
+  .progress {
+    margin-top: 20px;
+    margin-right: 10px;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    z-index: 1000;
+  }
+
+  .num1{
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+  
+  body{
+    width: 300px;
+  }
+
+  .num1 img{
+    width: 60px;
+    left:180px;
+  }
+
+}
   
