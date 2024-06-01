@@ -74,11 +74,11 @@ const Rock = () => {
         <div class="singer">
         <table>
         <tr>
-        <td><span>ProRock</span><br/><br/>< img src="/rock_singer1.png" alt="Yes"/>Yes</td>
-        <td><span>HeavyRock</span><br/><br/><img src="/rock_singer2.png" alt="Metallica" />Metallica<br/></td>
-        <td><span>AlterRock</span><br/><br/><img src="/rock_singer3.png" alt="Nirvana" />Nirvana<br/></td>
-        <td><span>PunkRock</span><br/><br/><img src="/rock_singer4.png" alt="Sex pistols" />Sex pistols<br/></td>
-        <td><span>ShowRock</span><br/><br/><img src="/rock_singer5.png" alt="Slow dive" />Slow dive</td> 
+        <td><span>Progressive</span><br/><br/>< img src="/rock_singer1.png" alt="Yes"/>Yes</td>
+        <td><span>Heavy Metal</span><br/><br/><img src="/rock_singer2.png" alt="Metallica" />Metallica<br/></td>
+        <td><span>Alternative</span><br/><br/><img src="/rock_singer3.png" alt="Nirvana" />Nirvana<br/></td>
+        <td><span>Punk</span><br/><br/><img src="/rock_singer4.png" alt="Sex pistols" />Sex pistols<br/></td>
+        <td><span>Shoegaze</span><br/><br/><img src="/rock_singer5.png" alt="Slow dive" />Slow dive</td> 
         </tr>
         </table>
         </div>

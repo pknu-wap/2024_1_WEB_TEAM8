@@ -73,11 +73,11 @@ const Hip = () => {
         <div class="singer">
         <table>
         <tr>
-        <td><span>DrillHip</span><br/>< img src="/hip_singer1.png" alt="Pop Smoke"/>Pop Smoke</td>
-        <td><span>TrapHip</span><br/><img src="/hip_singer2.png" alt="Future" />Future<br/></td>
-        <td><span>AlterHiP</span><br/><img src="/hip_singer3.png" alt="Kanye west(Ye)" />Kanye west(Ye)<br/></td>
-        <td><span>RageHip</span><br/><img src="/hip_singer4.png" alt="Trippie Redd" />Trippie Redd<br/></td>
-        <td><span>BoomHip</span><br/><img src="/hip_singer5.png" alt="B.I.G." />B.I.G.</td> 
+        <td><span>Drill</span><br/>< img src="/hip_singer1.png" alt="Pop Smoke"/>Pop Smoke</td>
+        <td><span>Trap</span><br/><img src="/hip_singer2.png" alt="Future" />Future<br/></td>
+        <td><span>Alternative</span><br/><img src="/hip_singer3.png" alt="Kanye west(Ye)" />Kanye west(Ye)<br/></td>
+        <td><span>Rage</span><br/><img src="/hip_singer4.png" alt="Trippie Redd" />Trippie Redd<br/></td>
+        <td><span>Boom Bap</span><br/><img src="/hip_singer5.png" alt="B.I.G." />B.I.G.</td> 
         </tr>
         </table>
         </div>
