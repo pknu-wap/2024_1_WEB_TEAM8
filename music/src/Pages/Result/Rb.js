@@ -136,7 +136,7 @@ const Rb = () => {
             <ProgressBar completed={NeoRb}/>
                 <div className="Sub">
                 <Button onClick={onNeoRbOpen}>네오</Button>
-                <CommonModal isOpen={isNeoRbOpen} onClose={onNeoRbClose} title="Neo R&B">
+                <CommonModal isOpen={isNeoRbOpen} onClose={onNeoRbClose} title="네오">
                 <NeoRbModalBody />
                 </CommonModal>
                 <button className="btn"
@@ -148,7 +148,7 @@ const Rb = () => {
             <ProgressBar completed={ComtemRb}/>
                 <div className="Sub">
                 <Button onClick={onComtemRbOpen}>컨템포러리</Button>
-                <CommonModal isOpen={isComtemRbOpen} onClose={onComtemRbClose} title="Contemporary R&B">
+                <CommonModal isOpen={isComtemRbOpen} onClose={onComtemRbClose} title="컨템포러리">
                 <ComtemRbModalBody />
                 </CommonModal>
                 <button className="btn"
@@ -160,7 +160,7 @@ const Rb = () => {
             <ProgressBar completed={PunkRb}/>
                 <div className="Sub">
                 <Button onClick={onPunkRbOpen}>펑크</Button>
-                <CommonModal isOpen={isPunkRbOpen} onClose={onPunkRbClose} title="Punk R&B">
+                <CommonModal isOpen={isPunkRbOpen} onClose={onPunkRbClose} title="펑크">
                 <PunkRbModalBody />
                 </CommonModal>
                 <button className="btn"
@@ -172,7 +172,7 @@ const Rb = () => {
             <ProgressBar completed={SoulRb}/>
                 <div className="Sub">
                 <Button onClick={onSoulRbOpen}>소울</Button>
-                <CommonModal isOpen={isSoulRbOpen} onClose={onSoulRbClose} title="Soul R&B">
+                <CommonModal isOpen={isSoulRbOpen} onClose={onSoulRbClose} title="소울">
                 <SoulRbModalBody />
                 </CommonModal>
                 <button className="btn"
@@ -184,7 +184,7 @@ const Rb = () => {
             <ProgressBar completed={AlterRb}/>
                 <div className="Sub">
                 <Button onClick={onAlterRbOpen}>얼터너티브</Button>
-                <CommonModal isOpen={isAlterRbOpen} onClose={onAlterRbClose} title="Alternative R&B">
+                <CommonModal isOpen={isAlterRbOpen} onClose={onAlterRbClose} title="얼터너티브">
                 <AlterRbModalBody />
                 </CommonModal>
                 <button className="btn"

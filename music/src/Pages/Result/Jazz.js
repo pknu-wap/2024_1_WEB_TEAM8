@@ -152,7 +152,7 @@ const Jazz = () => {
             <ProgressBar completed={LatinJazz}/>
                 <div className="Sub">
                 <Button onClick={onLatinJazzOpen}>라틴</Button>
-                    <CommonModal isOpen={isLatinJazzOpen} onClose={onLatinJazzClose} title="LatinJazz">
+                    <CommonModal isOpen={isLatinJazzOpen} onClose={onLatinJazzClose} title="라틴">
                         <LatinJazzModalBody />
                     </CommonModal>
                     <button className="btn"
@@ -164,7 +164,7 @@ const Jazz = () => {
             <ProgressBar completed={SwingJazz}/>
                 <div className="Sub">
                 <Button onClick={onSwingJazzOpen}>스윙</Button>
-                    <CommonModal isOpen={isSwingJazzOpen} onClose={onSwingJazzClose} title="SwingJazz">
+                    <CommonModal isOpen={isSwingJazzOpen} onClose={onSwingJazzClose} title="스윙">
                         <SwingJazzModalBody />
                     </CommonModal>
                     <button className="btn"
@@ -176,7 +176,7 @@ const Jazz = () => {
             <ProgressBar completed={SoulJazz}/>
                 <div className="Sub">
                 <Button onClick={onSoulJazzOpen}>소울</Button>
-                    <CommonModal isOpen={isSoulJazzOpen} onClose={onSoulJazzClose} title="SoulJazz">
+                    <CommonModal isOpen={isSoulJazzOpen} onClose={onSoulJazzClose} title="소울">
                         <SoulJazzModalBody />
                     </CommonModal>
                     <button className="btn"
@@ -188,7 +188,7 @@ const Jazz = () => {
             <ProgressBar completed={FreeJazz}/>
                 <div className="Sub">
                 <Button onClick={onFreeJazzOpen}>프리</Button>
-                    <CommonModal isOpen={isFreeJazzOpen} onClose={onFreeJazzClose} title="FreeJazz">
+                    <CommonModal isOpen={isFreeJazzOpen} onClose={onFreeJazzClose} title="프리">
                         <FreeJazzModalBody />
                     </CommonModal>
                     <button className="btn"
@@ -200,7 +200,7 @@ const Jazz = () => {
             <ProgressBar completed={BibobJazz}/>
                 <div className="Sub">
                 <Button onClick={onBibobJazzOpen}>비밥</Button>
-                    <CommonModal isOpen={isBibobJazzOpen} onClose={onBibobJazzClose} title="BiboaJazz">
+                    <CommonModal isOpen={isBibobJazzOpen} onClose={onBibobJazzClose} title="비밥">
                         <BibobJazzModalBody />
                     </CommonModal>
                     <button className="btn"
