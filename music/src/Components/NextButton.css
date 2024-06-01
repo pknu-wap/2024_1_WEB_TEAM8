@@ -30,11 +30,10 @@
 }
 
 /*mobile*/
-
 @media (max-width: 698px) {
   .nextPage button{
     position: absolute;
-    top: 1660px;
+    top: 1560px;
     left: 140px;
     margin-top: 40px;
    }
