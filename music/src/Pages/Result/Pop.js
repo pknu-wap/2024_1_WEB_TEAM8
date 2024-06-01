@@ -75,11 +75,11 @@ const Pop = () => {
         <div class="singer">
         <table>
         <tr>
-        <td><span>DancePop</span><br/><br/>< img src="/pop_singer1.png" alt="Lady gaga"/>Lady gaga</td>
-        <td><span>ElecPop</span><br/><br/><img src="/pop_singer2.png" alt="Halsey" />Halsey<br/></td>
-        <td><span>IndiPop</span><br/><br/><img src="/pop_singer3.png" alt="The smtihs" />The smtihs<br/></td>
-        <td><span>LatinPop</span><br/><br/><img src="/pop_singer4.png" alt="Camila Cabello" />Camila Cabello<br/></td>
-        <td><span>BritPop</span><br/><br/><img src="/pop_singer5.png" alt="Oasis" />Oasis</td> 
+        <td><span>Dance</span><br/><br/>< img src="/pop_singer1.png" alt="Lady gaga"/>Lady gaga</td>
+        <td><span>Electro</span><br/><br/><img src="/pop_singer2.png" alt="Halsey" />Halsey<br/></td>
+        <td><span>Indie</span><br/><br/><img src="/pop_singer3.png" alt="The smtihs" />The smtihs<br/></td>
+        <td><span>Latin</span><br/><br/><img src="/pop_singer4.png" alt="Camila Cabello" />Camila Cabello<br/></td>
+        <td><span>Brit</span><br/><br/><img src="/pop_singer5.png" alt="Oasis" />Oasis</td> 
         </tr>
         </table>
         </div>

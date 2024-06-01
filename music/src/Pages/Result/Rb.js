@@ -72,11 +72,11 @@ const Rb = () => {
         <div class="singer">
         <table>
         <tr>
-        <td><span>NeoRB</span><br/>< img src="/rb_singer1.png" alt="D'Angelo"/>D'Angelo</td>
-        <td><span>ComRB</span><br/><img src="/rb_singer2.png" alt="SZA" />Beyoncé<br/></td>
-        <td><span>PunkRB</span><br/><img src="/rb_singer3.png" alt="Michael Jackson" />Michael Jackson<br/></td>
-        <td><span>SoulRB</span><br/><img src="/rb_singer4.png" alt="Stevie Wonder" />Stevie Wonder<br/></td>
-        <td><span>AlterRB</span><br/><img src="/rb_singer5.png" alt="Frank ocean" />Frank ocean</td> 
+        <td><span>Neo Soul</span><br/>< img src="/rb_singer1.png" alt="D'Angelo"/>D'Angelo</td>
+        <td><span>Contemporary</span><br/><img src="/rb_singer2.png" alt="SZA" />Beyoncé<br/></td>
+        <td><span>Funk</span><br/><img src="/rb_singer3.png" alt="Michael Jackson" />Michael Jackson<br/></td>
+        <td><span>Soul</span><br/><img src="/rb_singer4.png" alt="Stevie Wonder" />Stevie Wonder<br/></td>
+        <td><span>Alternative</span><br/><img src="/rb_singer5.png" alt="Frank ocean" />Frank ocean</td> 
         </tr>
         </table>
         </div>

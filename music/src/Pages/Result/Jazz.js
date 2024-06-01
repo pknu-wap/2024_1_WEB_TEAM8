@@ -88,11 +88,11 @@ const Jazz = () => {
         <div class="singer">
         <table>
         <tr>
-        <td><span>LatinJazz</span><br/>< img src="/jazz_singer1.png" alt="Stan Getz"/>Stan Getz</td>
-        <td><span>SwingJazz</span><br/><img src="/jazz_singer2.png" alt="Benny Goodman" />Benny Goodman<br/></td>
-        <td><span>SoulJazz</span><br/><img src="/jazz_singer3.png" alt="Jimmy smith" />Jimmy smith<br/></td>
-        <td><span>FreeJazz</span><br/><img src="/jazz_singer4.png" alt="Ornette Coleman" />Ornette Coleman<br/></td>
-        <td><span>BibobJazz</span><br/><img src="/jazz_singer5.png" alt="Charlie Parker" />Charlie Parker</td> 
+        <td><span>Latin</span><br/>< img src="/jazz_singer1.png" alt="Stan Getz"/>Stan Getz</td>
+        <td><span>Swing</span><br/><img src="/jazz_singer2.png" alt="Benny Goodman" />Benny Goodman<br/></td>
+        <td><span>Soul</span><br/><img src="/jazz_singer3.png" alt="Jimmy smith" />Jimmy smith<br/></td>
+        <td><span>Free</span><br/><img src="/jazz_singer4.png" alt="Ornette Coleman" />Ornette Coleman<br/></td>
+        <td><span>Bebop</span><br/><img src="/jazz_singer5.png" alt="Charlie Parker" />Charlie Parker</td> 
         </tr>
         </table>
         </div>
