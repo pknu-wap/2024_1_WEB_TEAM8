@@ -96,9 +96,6 @@ const Rb = () => {
                 <CommonModal isOpen={isNeoRbOpen} onClose={onNeoRbClose} title="네오">
                 <NeoRbModalBody />
                 </CommonModal>
-                <button className="btn"
-                        onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYDejvhbWZoWsq6gd1ttD20'}
-                    ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
             <Box w='800px'>
@@ -108,9 +105,6 @@ const Rb = () => {
                 <CommonModal isOpen={isComtemRbOpen} onClose={onComtemRbClose} title="컨템포러리">
                 <ComtemRbModalBody />
                 </CommonModal>
-                <button className="btn"
-                        onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY2BZBQY_JBa2N6FraJL0su'}
-                    ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
             <Box w='800px'>
@@ -120,9 +114,6 @@ const Rb = () => {
                 <CommonModal isOpen={isPunkRbOpen} onClose={onPunkRbClose} title="펑크">
                 <PunkRbModalBody />
                 </CommonModal>
-                <button className="btn"
-                        onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYyy_jgPMM_gkmG3LJgdJ_G'}
-                    ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
             <Box w='800px'>
@@ -132,9 +123,6 @@ const Rb = () => {
                 <CommonModal isOpen={isSoulRbOpen} onClose={onSoulRbClose} title="소울">
                 <SoulRbModalBody />
                 </CommonModal>
-                <button className="btn"
-                        onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyhmm-4g_T2xdeSrQJ6r0O'}
-                    ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
             <Box w='800px'>
@@ -144,9 +132,6 @@ const Rb = () => {
                 <CommonModal isOpen={isAlterRbOpen} onClose={onAlterRbClose} title="얼터너티브">
                 <AlterRbModalBody />
                 </CommonModal>
-                <button className="btn"
-                        onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MblTfvFXrghM3DHYXyAkiG0'}
-                    ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
         </VStack>
@@ -161,32 +146,32 @@ const Rb = () => {
             <img src="rb_m1.jpg"  id="albumcover"/>
             <div id="song">Brown Sugar<br/><span>D'Angelo</span></div>
             <img src="19.png" id="prohibit1"/>
-            <div class="play"><img src="sound1.png" id="m1"/><span>play</span></div></td>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYDejvhbWZoWsq6gd1ttD20'} src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
         <tr>
             <td><img src="/rb_m2.jpg"  id="albumcover" />
             <div id="song">Crazy In Love<br/><span>Beyoncé</span></div>
-            <div class="play"><img src="/sound1.png" id="m2"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY2BZBQY_JBa2N6FraJL0su'} src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rb_m3.jpg"  id="albumcover"/>
             <div id="song"> I Got You<br/><span>Michael Jackson</span></div>
-            <div class="play"><img src="sound1.png" id="m3"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYyy_jgPMM_gkmG3LJgdJ_G'} src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rb_m4.jpg"  id="albumcover" />
             <div id="song">You Send Me<br/><span>Stevie Wonder</span></div>
-            <div class="play"><img src="sound1.png" id="m4"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyhmm-4g_T2xdeSrQJ6r0O'} src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rb_m5.jpg"  id="albumcover" />
             <div id="song">Self Control<br/><span>Frank ocean</span></div>
-            <div class="play"><img src="sound1.png" id="m5"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MblTfvFXrghM3DHYXyAkiG0'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
     </table>
