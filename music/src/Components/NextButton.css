@@ -28,3 +28,14 @@
     margin-top: 40px;
    }
 }
+
+/*mobile*/
+
+@media (max-width: 698px) {
+  .nextPage button{
+    position: absolute;
+    top: 1660px;
+    left: 140px;
+    margin-top: 40px;
+   }
+}
