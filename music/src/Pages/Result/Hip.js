@@ -97,9 +97,6 @@ const Hip = () => {
                     <CommonModal isOpen={isDrillHipOpen} onClose={onDrillHipClose} title="드릴">
                         <DrillHipModalBody />
                     </CommonModal>
-                <button className="btn"
-                        onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Ma9DKt1sslE4gieQcTHhRwr'}
-                    ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
             <Box w='800px'>
@@ -109,9 +106,6 @@ const Hip = () => {
                     <CommonModal isOpen={isTrapHipOpen} onClose={onTrapHipClose} title="트랩">
                         <TrapHipModalBody />
                     </CommonModal>
-                    <button className="btn"
-                        onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYL6EFzJvB0MR0L5mJIwLFf'}
-                    ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
             <Box w='800px'>
@@ -121,9 +115,6 @@ const Hip = () => {
                     <CommonModal isOpen={isAlterHipOpen} onClose={onAlterHipClose} title="얼터너티브">
                         <AlterHipModalBody />
                     </CommonModal>
-                <button className="btn"
-                        onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyq1Ry3FaRHdmkcI6f5BHK'}
-                    ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
             <Box w='800px'>
@@ -133,10 +124,7 @@ const Hip = () => {
                     <CommonModal isOpen={isRageHipOpen} onClose={onRageHipClose} title="레이지">
                         <RageHipModalBody />
                     </CommonModal>
-                <button className="btn"
-                        onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbKaetJvGbjuo194EI9OfXi'}
-                    ><img className="music" src="./music.png" alt="p"/></button>
-                </div>z
+                </div>
             </Box>
             <Box w='800px'>
             <ProgressBar completed={BoomHip}/>
@@ -145,14 +133,10 @@ const Hip = () => {
                     <CommonModal isOpen={isBoomHipOpen} onClose={onBoomHipClose} title="붐뱁">
                         <BoomHipModalBody />
                     </CommonModal>
-                    <button className="btn"
-                        onClick={() => window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaSwB65jkuc1vDC0BWsmpRvhttps://www.youtube.com/playlist?list=PLCqnvhwU67MaSwB65jkuc1vDC0BWsmpRv'}
-                    ><img className="music" src="./music.png" alt="p"/></button>
                 </div>
             </Box>
         </VStack>
         <div className="ques">
-            <h2>이 노래는 어떠신가요?</h2>
             <h3>추천 플레이리스트 보기</h3>
         </div>
         
@@ -163,7 +147,7 @@ const Hip = () => {
             <img src="/hip_m1.jpg" id="albumcover"/>
             <div id="song">DIOR<br/><span>Pop Smoke</span></div>
             <img src="/19.png" id="prohibit3"/>
-            <div class="play"><img src="sound1.png" id="m1"/><span>play</span></div></td>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Ma9DKt1sslE4gieQcTHhRwr'} src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
@@ -171,28 +155,28 @@ const Hip = () => {
             <td><img src="/hip_m2.jpg" id="albumcover"/>
             <div id="song">Mask Off<br/><span>Future</span></div>
             <img src="/19.png" id="prohibit1"/>
-            <div class="play"><img src="/sound1.png" id="m2"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYL6EFzJvB0MR0L5mJIwLFf'} src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/hip_m3.jpg"  id="albumcover" />
             <div id="song">Bound 2<br/><span>Kanye west(Ye)</span></div>
             <img src="/19.png" id="prohibit3"/>
-            <div class="play"><img src="sound1.png" id="m3"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyq1Ry3FaRHdmkcI6f5BHK'} src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="hip_m4.webp"  id="albumcover"/>
             <div id="song">Miss The Rage<br/><span>Trippie Redd</span></div>
             <img src="/19.png" id="prohibit1"/>
-            <div class="play"><img src="sound1.png" id="m4"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbKaetJvGbjuo194EI9OfXi'} src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="hip_m5.webp" id="albumcover"/>
             <div id="song">Hypnotize<br/><span>B.I.G.</span></div>
             <img src="/19.png" id="prohibit1"/>
-            <div class="play"><img src="sound1.png" id="m5"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaSwB65jkuc1vDC0BWsmpRv'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
     </table>
