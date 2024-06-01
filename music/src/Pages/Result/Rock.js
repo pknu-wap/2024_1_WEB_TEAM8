@@ -137,7 +137,7 @@ const Rock = () => {
             <ProgressBar completed={ProRock}/>
                 <div className="Sub">
                 <Button onClick={onProRockOpen}>프로그레시브</Button>
-                <CommonModal isOpen={isProRockOpen} onClose={onProRockClose} title="Pro Rock">
+                <CommonModal isOpen={isProRockOpen} onClose={onProRockClose} title="프로그레시브">
                     <ProRockModalBody />
                 </CommonModal>
                 <button className="btn"
@@ -149,7 +149,7 @@ const Rock = () => {
             <ProgressBar completed={HeavyRock}/>
                 <div className="Sub">
                 <Button onClick={onHeavyRockOpen}>헤비</Button>
-                <CommonModal isOpen={isHeavyRockOpen} onClose={onHeavyRockClose} title="Heavy Rock">
+                <CommonModal isOpen={isHeavyRockOpen} onClose={onHeavyRockClose} title="헤비">
                     <HeavyRockModalBody />
                 </CommonModal>
                     <button className="btn"
@@ -161,7 +161,7 @@ const Rock = () => {
             <ProgressBar completed={AlterRock}/>
                 <div className="Sub">
                 <Button onClick={onAlterRockOpen}>얼터너티브</Button>
-                <CommonModal isOpen={isAlterRockOpen} onClose={onAlterRockClose} title="Alter Rock">
+                <CommonModal isOpen={isAlterRockOpen} onClose={onAlterRockClose} title="얼터너티브">
                     <AlterRockModalBody />
                 </CommonModal>
                 <button className="btn"
@@ -173,7 +173,7 @@ const Rock = () => {
             <ProgressBar completed={PunkRock}/>
                 <div className="Sub">
                 <Button onClick={onPunkRockOpen}>펑크</Button>
-                <CommonModal isOpen={isPunkRockOpen} onClose={onPunkRockClose} title="Punk Rock">
+                <CommonModal isOpen={isPunkRockOpen} onClose={onPunkRockClose} title="펑크">
                     <PunkRockModalBody />
                 </CommonModal>
                 <button className="btn"
@@ -185,7 +185,7 @@ const Rock = () => {
             <ProgressBar completed={ShowRock}/>
                 <div className="Sub">
                 <Button onClick={onShowRockOpen}>슈게이징</Button>
-                <CommonModal isOpen={isShowRockOpen} onClose={onShowRockClose} title="Show Rock">
+                <CommonModal isOpen={isShowRockOpen} onClose={onShowRockClose} title="슈게이징">
                     <ShowRockModalBody />
                 </CommonModal>
                 <button className="btn"

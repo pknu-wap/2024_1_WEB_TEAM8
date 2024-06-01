@@ -137,8 +137,9 @@ const Pop = () => {
             <Box w='800px'>
             <ProgressBar completed={DancePop}/>
                 <div className="Sub">
-                    <Button onClick={onDancePopOpen}>댄스팝</Button>
-                    <CommonModal isOpen={isDancePopOpen} onClose={onDancePopClose} title="DancePop">
+                    <Button 
+                    onClick={onDancePopOpen}>댄스팝</Button>
+                    <CommonModal isOpen={isDancePopOpen} onClose={onDancePopClose} title="댄스">
                         <DancePopModalBody />
                     </CommonModal>
                     <button className="btn"
@@ -150,7 +151,7 @@ const Pop = () => {
                 <ProgressBar completed={ElecPop}/>
                 <div className="Sub">
                     <Button onClick={onElecPopOpen}>일렉트로닉팝</Button>
-                    <CommonModal isOpen={isElecPopOpen} onClose={onElecPopClose} title="EletronicPop">
+                    <CommonModal isOpen={isElecPopOpen} onClose={onElecPopClose} title="일렉트로닉">
                         <ElecPopModalBody />
                     </CommonModal>
                     <button className="btn"
@@ -162,7 +163,7 @@ const Pop = () => {
                 <ProgressBar completed={BritPop}/>
                 <div className="Sub">
                 <Button onClick={onBritPopOpen}>브릿팝</Button>
-                    <CommonModal isOpen={isBritPopOpen} onClose={onBritPopClose} title="BritPop">
+                    <CommonModal isOpen={isBritPopOpen} onClose={onBritPopClose} title="브릿">
                         <BritPopModalBody />
                     </CommonModal>
                 <button className="btn"
@@ -174,7 +175,7 @@ const Pop = () => {
                 <ProgressBar completed={IndiPop}/>
                 <div className="Sub">
                 <Button onClick={onIndiPopOpen}>인디팝</Button>
-                    <CommonModal isOpen={isIndiPopOpen} onClose={onIndiPopClose} title="IndiPop">
+                    <CommonModal isOpen={isIndiPopOpen} onClose={onIndiPopClose} title="인디">
                         <IndiPopModalBody />
                     </CommonModal>
                 <button className="btn"
@@ -186,7 +187,7 @@ const Pop = () => {
                 <ProgressBar completed={LatinPop}/>
                 <div className="Sub">
                 <Button onClick={onLatinPopOpen}>라틴팝</Button>
-                    <CommonModal isOpen={isLatinPopOpen} onClose={onLatinPopClose} title="LatinPop">
+                    <CommonModal isOpen={isLatinPopOpen} onClose={onLatinPopClose} title="라티">
                         <LatinPopModalBody />
                     </CommonModal>
                 <button className="btn"

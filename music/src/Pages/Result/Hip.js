@@ -142,7 +142,7 @@ const Hip = () => {
             <ProgressBar completed={DrillHip}/>
                 <div className="Sub">
                 <Button onClick={onDrillHipOpen}>드릴</Button>
-                    <CommonModal isOpen={isDrillHipOpen} onClose={onDrillHipClose} title="DrillHip">
+                    <CommonModal isOpen={isDrillHipOpen} onClose={onDrillHipClose} title="드릴">
                         <DrillHipModalBody />
                     </CommonModal>
                 <button className="btn"
@@ -154,7 +154,7 @@ const Hip = () => {
             <ProgressBar completed={TrapHip}/>
                 <div className="Sub">
                 <Button onClick={onTrapHipOpen}>트랩</Button>
-                    <CommonModal isOpen={isTrapHipOpen} onClose={onTrapHipClose} title="TrapHip">
+                    <CommonModal isOpen={isTrapHipOpen} onClose={onTrapHipClose} title="트랩">
                         <TrapHipModalBody />
                     </CommonModal>
                     <button className="btn"
@@ -166,7 +166,7 @@ const Hip = () => {
             <ProgressBar completed={AlterHip}/>
                 <div className="Sub">
                 <Button onClick={onAlterHipOpen}>얼터너티브</Button>
-                    <CommonModal isOpen={isAlterHipOpen} onClose={onAlterHipClose} title="AlterHip">
+                    <CommonModal isOpen={isAlterHipOpen} onClose={onAlterHipClose} title="얼터너티브">
                         <AlterHipModalBody />
                     </CommonModal>
                 <button className="btn"
@@ -178,7 +178,7 @@ const Hip = () => {
             <ProgressBar completed={RageHip}/>
                 <div className="Sub">
                 <Button onClick={onRageHipOpen}>레이지</Button>
-                    <CommonModal isOpen={isRageHipOpen} onClose={onRageHipClose} title="RageHip">
+                    <CommonModal isOpen={isRageHipOpen} onClose={onRageHipClose} title="레이지">
                         <RageHipModalBody />
                     </CommonModal>
                 <button className="btn"
@@ -190,7 +190,7 @@ const Hip = () => {
             <ProgressBar completed={BoomHip}/>
                 <div className="Sub">
                 <Button onClick={onBoomHipOpen}>붐뱁</Button>
-                    <CommonModal isOpen={isBoomHipOpen} onClose={onBoomHipClose} title="BoomHip">
+                    <CommonModal isOpen={isBoomHipOpen} onClose={onBoomHipClose} title="붐뱁">
                         <BoomHipModalBody />
                     </CommonModal>
                     <button className="btn"
