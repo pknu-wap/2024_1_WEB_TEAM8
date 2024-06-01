@@ -83,49 +83,7 @@ const Pop = () => {
         </tr>
         </table>
         </div>
-        
-        <div className="ques">
-            <h2>이 노래는 어떠신가요?</h2>
-            <h3>추천 플레이리스트 보기</h3>
-        </div>
-        <div class="musictable">
-    <table>
-        <tr>
-        <hr/><td>
-            <img src="/pop_m1.jpg" id="albumcover"/>
-            <div id="song">Just Dance<br/><span>Lady gaga</span></div>
-            <img src="19.png" id="prohibit1"/>
-            <div class="play"><img src="sound1.png" id="m1"/><span>play</span></div></td>
-            <hr/>
-        <hr/>
-        </tr>
-        <tr>
-            <td><img src="/pop_m2.jpg" id="albumcover"/>
-            <div id="song">Gasoline<br/><span>Halsey</span></div>
-            <div class="play"><img src="/sound1.png" id="m2"/><span>play</span></div>
-            </td><hr/>
-        </tr>
-        <tr>
-            <td><img src="/pop_m3.jpg"  id="albumcover" />
-            <div id="song">This Charming Man<br/><span>The smtihs</span></div>
-            <div class="play"><img src="sound1.png" id="m3"/><span>play</span></div>
-            </td><hr/>
-        </tr>
-        <tr>
-            <td><img src="/pop_m4.jpg"  id="albumcover" />
-            <div id="song">Havana<br/><span>Camila Cabello</span></div>
-            <div class="play"><img src="sound1.png" id="m4"/><span>play</span></div>
-            </td><hr/>
-        </tr>
-        <tr>
-            <td><img src="/pop_m5.webp"  id="albumcover"/>
-            <div id="song">Wonderwall<br/><span>Oasis</span></div>
-            <div class="play"><img src="sound1.png" id="m5"/><span>play</span></div>
-            </td><hr/> 
-        </tr>
-    </table>
-    </div>
-    <div class="graph">
+        <div class="graph">
         <h2>현재 <span>나의 음악 DNA</span>분포도</h2>
     </div>  
         <VStack
@@ -196,6 +154,47 @@ const Pop = () => {
                 </div>
             </Box>
         </VStack>
+        <div className="ques">
+            <h3>추천 플레이리스트 보기</h3>
+        </div>
+        <div class="musictable">
+    <table>
+        <tr>
+        <hr/><td>
+            <img src="/pop_m1.jpg" id="albumcover"/>
+            <div id="song">Just Dance<br/><span>Lady gaga</span></div>
+            <img src="19.png" id="prohibit1"/>
+            <div class="play"><img src="sound1.png" id="m1"/><span>play</span></div></td>
+            <hr/>
+        <hr/>
+        </tr>
+        <tr>
+            <td><img src="/pop_m2.jpg" id="albumcover"/>
+            <div id="song">Gasoline<br/><span>Halsey</span></div>
+            <div class="play"><img src="/sound1.png" id="m2"/><span>play</span></div>
+            </td><hr/>
+        </tr>
+        <tr>
+            <td><img src="/pop_m3.jpg"  id="albumcover" />
+            <div id="song">This Charming Man<br/><span>The smtihs</span></div>
+            <div class="play"><img src="sound1.png" id="m3"/><span>play</span></div>
+            </td><hr/>
+        </tr>
+        <tr>
+            <td><img src="/pop_m4.jpg"  id="albumcover" />
+            <div id="song">Havana<br/><span>Camila Cabello</span></div>
+            <div class="play"><img src="sound1.png" id="m4"/><span>play</span></div>
+            </td><hr/>
+        </tr>
+        <tr>
+            <td><img src="/pop_m5.webp"  id="albumcover"/>
+            <div id="song">Wonderwall<br/><span>Oasis</span></div>
+            <div class="play"><img src="sound1.png" id="m5"/><span>play</span></div>
+            </td><hr/> 
+        </tr>
+    </table>
+    </div>
+    
         </div>
         </ChakraProvider>
     );

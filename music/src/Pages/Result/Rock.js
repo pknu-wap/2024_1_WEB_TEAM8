@@ -82,49 +82,7 @@ const Rock = () => {
         </tr>
         </table>
         </div>
-        
-        <div className="ques">
-            <h2>이 노래는 어떠신가요?</h2>
-            <h3>추천 플레이리스트 보기</h3>
-        </div>
-        <div class="musictable">
-    <table>
-        <tr>
-        <hr/><td>
-            <img src="/rock_m1.jpg" id="albumcover"/>
-            <div id="song">Owner of a Lonely Heart<br/><span>Yes</span></div>
-            <div class="play"><img src="sound1.png" id="m1"/><span>play</span></div></td>
-            <hr/>
-        <hr/>
-        </tr>
-        <tr>
-            <td><img src="/rock_m2.webp" id="albumcover"/>
-            <div id="song">Enter Sandman<br/><span>Metallica</span></div>
-            <div class="play"><img src="/sound1.png" id="m2"/><span>play</span></div>
-            </td><hr/>
-        </tr>
-        <tr>
-            <td><img src="/rock_m3.webp"  id="albumcover" />
-            <div id="song">Smells Like Teen Spirit<br/><span>Nirvana</span></div>
-            <div class="play"><img src="sound1.png" id="m3"/><span>play</span></div>
-            </td><hr/>
-        </tr>
-        <tr>
-            <td><img src="/rock_m4.jpg"  id="albumcover" />
-            <div id="song">God Save The Queen<br/><span>Sex pistols</span></div>
-            <div class="play"><img src="sound1.png" id="m4"/><span>play</span></div>
-            </td><hr/>
-        </tr>
-        <tr>
-            <td><img src="/rock_m5.jpg"  id="albumcover"/>
-            <div id="song">When the Sun Hits<br/><span>Slow dive</span></div>
-            <div class="play"><img src="sound1.png" id="m5"/><span>play</span></div>
-            </td><hr/> 
-        </tr>
-    </table>
-    </div>
-
-    <div class="graph">
+        <div class="graph">
         <h2>현재 <span>나의 음악 DNA</span>분포도</h2>
     </div>
         <VStack
@@ -194,6 +152,45 @@ const Rock = () => {
                 </div>
             </Box>
         </VStack>
+        <div className="ques">
+            <h3>추천 플레이리스트 보기</h3>
+        </div>
+        <div class="musictable">
+    <table>
+        <tr>
+        <hr/><td>
+            <img src="/rock_m1.jpg" id="albumcover"/>
+            <div id="song">Owner of a Lonely Heart<br/><span>Yes</span></div>
+            <div class="play"><img src="sound1.png" id="m1"/><span>play</span></div></td>
+            <hr/>
+        <hr/>
+        </tr>
+        <tr>
+            <td><img src="/rock_m2.webp" id="albumcover"/>
+            <div id="song">Enter Sandman<br/><span>Metallica</span></div>
+            <div class="play"><img src="/sound1.png" id="m2"/><span>play</span></div>
+            </td><hr/>
+        </tr>
+        <tr>
+            <td><img src="/rock_m3.webp"  id="albumcover" />
+            <div id="song">Smells Like Teen Spirit<br/><span>Nirvana</span></div>
+            <div class="play"><img src="sound1.png" id="m3"/><span>play</span></div>
+            </td><hr/>
+        </tr>
+        <tr>
+            <td><img src="/rock_m4.jpg"  id="albumcover" />
+            <div id="song">God Save The Queen<br/><span>Sex pistols</span></div>
+            <div class="play"><img src="sound1.png" id="m4"/><span>play</span></div>
+            </td><hr/>
+        </tr>
+        <tr>
+            <td><img src="/rock_m5.jpg"  id="albumcover"/>
+            <div id="song">When the Sun Hits<br/><span>Slow dive</span></div>
+            <div class="play"><img src="sound1.png" id="m5"/><span>play</span></div>
+            </td><hr/> 
+        </tr>
+    </table>
+    </div>
         </div>
         </ChakraProvider>
     );
