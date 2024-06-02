@@ -186,3 +186,74 @@ text-align: left;
     border: 1px solid #d8d8d8;
     text-align: center;
   }
+
+  @media (max-width:698px) {
+
+    body{
+        width: 500px;
+        height: 1800px;
+    }
+    .body{
+        width:500px;
+        height: 1800px;
+    }
+
+    .Top h2{
+        text-align: left;
+        font-size: 30px;
+        margin-left: 50px;
+      }
+
+    .Top h3{
+        font-size: 14px;
+        text-align: left;
+        margin-left: 120px;
+    }
+
+    .singer table{
+        width: 340px;
+        height: 120px;
+        margin-left: 70px;
+    }
+
+    .singer img{
+        width: 40px;
+        margin-left: 10px;
+    }
+    .singer td,.singer td span{
+        font-size: 10px;
+    }
+    
+    .graph{
+        text-align: left;
+        margin-left: 30px;
+    }
+   
+    .musictable hr{
+        width:300px;
+    }
+
+    .musictable table #albumcover{
+        width: 40px;
+    }
+
+    .musictable td{
+        font-size: 13px;
+    }
+
+    .musictable #song span{
+        font-size: 10px;
+    }
+
+
+    .musictable .play img{
+        position: relative;
+        width:25px;
+        left:-420px;
+    }
+
+    .musictable .play span{
+        left:-430px;
+        font-size: 10px;
+    }
+  }
