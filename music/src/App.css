@@ -212,6 +212,7 @@ left:-300px;
     width: 168%;
     height: 105%;
     top:-7px;
+
     background-size: cover;
     background-attachment: fixed;
   }
@@ -258,11 +259,16 @@ left:-300px;
 @media (max-width:698px) {
 .Main{
   position: fixed;
-  width: 168%;
-  height: 1600px;
+  width: 500px;
+  height: 1000px;
   top:-7px;
+  background-image: url("/public/mobile.gif");
   background-size: cover;
-  background-attachment: fixed;
+}
+
+body{
+  height: 40px!important;
+  width: 420px !important;
 }
 
 .Main h1{
