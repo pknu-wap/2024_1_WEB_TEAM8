@@ -84,15 +84,18 @@
   }
 
   .num1{
-    width: 350px;
-    margin-left: 50px;
+    position: relative;
+    width: 370px;
+    margin-left: 60px;
     margin-top: 80px;
+
   }
 
   .num1 .q1{
     font-size: 15px;
     padding-top: 45px;
     padding-bottom: 9px;
+    margin-bottom: -30px;
    }
 
   .num1 img{
