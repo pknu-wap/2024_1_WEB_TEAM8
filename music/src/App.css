@@ -103,172 +103,19 @@ body{
   left:137px;
 }
 
-/*Ipad pro*/
-@media(max-width:1300px) {
-  .Main{
-    position: fixed;
-    width: 168%;
-    height: 105%;
-    top:-7px;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  .Main h1{
-    position: absolute;
-    top:670px;
-    left:410px;
-  }
-
-  .Main h2{
-    position: absolute;
-    top:670px;
-    left:320px;
-  }
-
-  .text3 h4{
-    position: relative;
-    top:480.5px;
-    left:-2000px;
-  }
-
-  .mainButton{
-    position:relative;
-    top:670px;
-    left:207px;
-    width: 140px;
-  }
-
-  .mainButton button{
-    font-size: 13px;
-    white-space: nowrap;
-  }
-}
-
-/*ipad Air 세로*/
-@media (max-width:820px) {
-  
-.Main h1{
-    position: absolute;
-    top:655px;
-    left:410px;
-}
-
-.text2 {
-text-align: center;
-line-height: 50%;
-margin-bottom: 50px;
-color: rgb(179, 162, 175);
-}
-
-.text3{
-text-align: center;
-line-height: 10%;
-font-size: small;
-color: rgb(179, 162, 175);
-margin-right: 20px;
-margin-bottom: 50px;
-}
-
-.mainButton {
-margin-top: 80px;
-text-align: center;
-margin-bottom: 80px;
-}
-
-.mainButton button {
-background-color: #D6FF32;
-border:#D6FF32;
-border-radius: 15px;
-padding: 15px 40px;
-
-font-size: medium;
-color: black;
-font-weight: bold;
-
-position: relative;
-left: 373px;
-top: 0px;
-}
-
-.mainButton button:hover{
-background-color: #d6ff328f;
-}
-
-.text3 h4{
-position: relative;
-text-align: center;
-font-size: small;
-color: rgb(179, 162, 175);
-top:780px;
-left:-300px;
-}
-}
-
-/*ipad Air 가로*/
-@media (min-width: 821px) and (max-width: 1180px){
-  .Main{
-    position: fixed;
-    width: 168%;
-    height: 105%;
-    top:-7px;
-
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  .Main h1{
-    position: absolute;
-    font-size: 100px;
-    left:850px;
-    top:470px;
-    margin-right: 20px;
-  }
-  
-  .Main h2{
-    position: absolute;
-    font-size: 35px;
-    left:732px;
-    top:470px;
-  }
-  .sound img{
-    position: relative;
-    top:450px;
-    left:1020px;
-  }
-  .text3 h4{
-    position: relative;
-    font-size: 12px;
-    left:-290px;
-    top:545px;
-    color: aliceblue;
-  }
-  
-  .mainButton{
-    position: relative;
-    margin-top: 0px;
-    width: 100px;
-    height:80px;
-    padding: 3px;
-    left:420px;
-    top:320px;
-  }
-}
-
 /*mobile*/
 @media (max-width:698px) {
 .Main{
   position: fixed;
-  width: 500px;
+  width: 430px;
   height: 1000px;
   top:-7px;
   background-image: url("/public/mobile.gif");
-  background-size: cover;
 }
 
 body{
   height: 40px!important;
-  width: 420px !important;
+  width: 370px !important;
 }
 
 .Main h1{
@@ -281,7 +128,7 @@ body{
 .Main h2{
   position: absolute;
   font-size: 25px;
-  left:100px;
+  left:110px;
   top:130px;
 }
 .sound img{
@@ -298,7 +145,7 @@ body{
 .text3 .h4-1 {
   position: fixed;
   font-size: 8px;
-  left: 83px;
+  left: 87px;
   top: 595px;
   color: aliceblue;
 }
@@ -306,7 +153,7 @@ body{
 .text3 .h4-2 {
   position: fixed;
   font-size: 8px;
-  left: 83px;
+  left: 87px;
   top: 607px;
   color: aliceblue;
 }
@@ -315,8 +162,8 @@ body{
 .mainButton{
   position: fixed;
   height:80px;
-  left:-330px;
-  top:470px;
+  left:-410px;
+  top:320px;
 }
 
 .mainButton button{
