@@ -147,7 +147,7 @@ const Hip = () => {
             <img src="/hip_m1.jpg" id="albumcover"/>
             <div id="song">DIOR<br/><span>Pop Smoke</span></div>
             <img src="/19.png" id="prohibit3"/>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Ma9DKt1sslE4gieQcTHhRwr'} src="sound1.png" id="m1"/><span>play</span></div></td>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Ma9DKt1sslE4gieQcTHhRwr'} src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
@@ -155,28 +155,28 @@ const Hip = () => {
             <td><img src="/hip_m2.jpg" id="albumcover"/>
             <div id="song">Mask Off<br/><span>Future</span></div>
             <img src="/19.png" id="prohibit1"/>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYL6EFzJvB0MR0L5mJIwLFf'} src="/sound1.png" id="m2"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYL6EFzJvB0MR0L5mJIwLFf'} src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/hip_m3.jpg"  id="albumcover" />
             <div id="song">Bound 2<br/><span>Kanye west(Ye)</span></div>
             <img src="/19.png" id="prohibit3"/>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyq1Ry3FaRHdmkcI6f5BHK'} src="sound1.png" id="m3"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyq1Ry3FaRHdmkcI6f5BHK'} src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="hip_m4.webp"  id="albumcover"/>
             <div id="song">Miss The Rage<br/><span>Trippie Redd</span></div>
             <img src="/19.png" id="prohibit1"/>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbKaetJvGbjuo194EI9OfXi'} src="sound1.png" id="m4"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbKaetJvGbjuo194EI9OfXi'} src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="hip_m5.webp" id="albumcover"/>
             <div id="song">Hypnotize<br/><span>B.I.G.</span></div>
             <img src="/19.png" id="prohibit1"/>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaSwB65jkuc1vDC0BWsmpRv'} src="sound1.png" id="m5"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaSwB65jkuc1vDC0BWsmpRv'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
     </table>

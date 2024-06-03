@@ -146,32 +146,32 @@ const Rock = () => {
         <hr/><td>
             <img src="/rock_m1.jpg" id="albumcover"/>
             <div id="song">Owner of a Lonely Heart<br/><span>Yes</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZUIbKyS_2yQJ2JPZPSrzO0'} src="sound1.png" id="m1"/><span>play</span></div></td>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZUIbKyS_2yQJ2JPZPSrzO0'} src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
         <tr>
             <td><img src="/rock_m2.webp" id="albumcover"/>
             <div id="song">Enter Sandman<br/><span>Metallica</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mabu4H5mTkcfBopJhvYqLYZ'} src="/sound1.png" id="m2"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mabu4H5mTkcfBopJhvYqLYZ'} src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rock_m3.webp"  id="albumcover" />
             <div id="song">Smells Like Teen Spirit<br/><span>Nirvana</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbTbdOhM-X-OLPTs18AsV3s'} src="sound1.png" id="m3"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbTbdOhM-X-OLPTs18AsV3s'} src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rock_m4.jpg"  id="albumcover" />
             <div id="song">God Save The Queen<br/><span>Sex pistols</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbB05x1nVG1wAGYp9lyW_sZ'} src="sound1.png" id="m4"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbB05x1nVG1wAGYp9lyW_sZ'} src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rock_m5.jpg"  id="albumcover"/>
             <div id="song">When the Sun Hits<br/><span>Slow dive</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZ9gE5dJgB9lO_tbSNK6m59'} src="sound1.png" id="m5"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZ9gE5dJgB9lO_tbSNK6m59'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
     </table>

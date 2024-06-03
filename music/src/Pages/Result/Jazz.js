@@ -160,32 +160,32 @@ const Jazz = () => {
         <hr/><td>
             <img src="/jazz_m1.jpg" id="albumcover" />
             <div id="song">The Girl From Ipanema<br/><span>Stan Getz</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYz-ulK000LqaLp6XPVVD6s'} src="sound1.png" id="m1"/><span>play</span></div></td>
+            <div class="play"><img style={{ cursor: 'pointer' }}  onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYz-ulK000LqaLp6XPVVD6s'} src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
         <tr>
             <td><img src="/jazz_m2.jpg" id="albumcover"  />
             <div id="song">Sing Sing Sing<br/><span>Benny Goodman</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYu0VZR6fElTGZLEeq5olcL'} src="/sound1.png" id="m2"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYu0VZR6fElTGZLEeq5olcL'} src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/jazz_m3.jpg"id="albumcover" />
             <div id="song">Midnight Special<br/><span>Jimmy smith</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYDB57IXkCJN8NiMLeq0xmM'} src="sound1.png" id="m3"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYDB57IXkCJN8NiMLeq0xmM'} src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/jazz_m4.jpg" id="albumcover"  />
             <div id="song"> Lonely Woman<br/><span>Ornette Coleman</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaS65mSke-ouu9Nz5PJLLXw'} src="sound1.png" id="m4"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaS65mSke-ouu9Nz5PJLLXw'} src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/jazz_m5.jpg" id="albumcover" />
             <div id="song">Confirmation<br/><span>Charlie Parker</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaWk1QneIEshUvxCa9aBKEv'} src="sound1.png" id="m5"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaWk1QneIEshUvxCa9aBKEv'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
     </table>

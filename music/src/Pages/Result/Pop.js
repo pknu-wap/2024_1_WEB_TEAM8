@@ -91,7 +91,7 @@ const Pop = () => {
             align='stretch'
             marginLeft="335px"
             marginRight="335px"
-            >1
+            >
             <Box w='800px'>
             <ProgressBar completed={DancePop}/>
                 <div className="Sub">
@@ -149,32 +149,32 @@ const Pop = () => {
             <img src="/pop_m1.jpg" id="albumcover"/>
             <div id="song">Just Dance<br/><span>Lady gaga</span></div>
             <img src="19.png" id="prohibit1"/>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY-2SwIhakiK3khw88oHzwc'} src="sound1.png" id="m1"/><span>play</span></div></td>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY-2SwIhakiK3khw88oHzwc'} src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
         <tr>
             <td><img src="/pop_m2.jpg" id="albumcover"/>
             <div id="song">Gasoline<br/><span>Halsey</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mai4CdplvjIRFf-znKkJ7_l'} src="/sound1.png" id="m2"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mai4CdplvjIRFf-znKkJ7_l'} src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/pop_m3.jpg"  id="albumcover" />
             <div id="song">This Charming Man<br/><span>The smtihs</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbf-zGpf43gE5pfW8_ycXnR'} src="sound1.png" id="m3"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbf-zGpf43gE5pfW8_ycXnR'} src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/pop_m4.jpg"  id="albumcover" />
             <div id="song">Havana<br/><span>Camila Cabello</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaAWCbd2HcokoqH5sv44OJP'} src="sound1.png" id="m4"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaAWCbd2HcokoqH5sv44OJP'} src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/pop_m5.webp"  id="albumcover"/>
             <div id="song">Wonderwall<br/><span>Oasis</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbfvh0blv_vISpJ5lqZUlZy'} src="sound1.png" id="m5"/><span>play</span></div>
+            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbfvh0blv_vISpJ5lqZUlZy'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
     </table>
