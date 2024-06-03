@@ -103,8 +103,7 @@
     position: fixed;
     background-image: url('/public/mobile.gif') !important;
     width: 5px !important;
-    height: 1700px !important;
-    background-size: 10% auto; 
+    height: 100px !important;
 }
 
   .progress {
@@ -125,7 +124,7 @@
   
   body{
     width: 200px;
-    height: 1200px;
+    height: 800px;
   }
 
   .num1 .q1{
