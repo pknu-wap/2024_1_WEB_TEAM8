@@ -96,7 +96,7 @@ const Pop = () => {
             <ProgressBar completed={DancePop}/>
                 <div className="Sub">
                     <Button 
-                    onClick={onDancePopOpen}>댄스팝</Button>
+                    onClick={onDancePopOpen}>댄스</Button>
                     <CommonModal isOpen={isDancePopOpen} onClose={onDancePopClose} title="댄스">
                         <DancePopModalBody />
                     </CommonModal>
@@ -105,7 +105,7 @@ const Pop = () => {
             <Box w='800px'>
                 <ProgressBar completed={ElecPop}/>
                 <div className="Sub">
-                    <Button onClick={onElecPopOpen}>일렉트로닉팝</Button>
+                    <Button onClick={onElecPopOpen}>일렉트로</Button>
                     <CommonModal isOpen={isElecPopOpen} onClose={onElecPopClose} title="일렉트로닉">
                         <ElecPopModalBody />
                     </CommonModal>
@@ -114,7 +114,7 @@ const Pop = () => {
             <Box w='800px'>
                 <ProgressBar completed={BritPop}/>
                 <div className="Sub">
-                <Button onClick={onBritPopOpen}>브릿팝</Button>
+                <Button onClick={onBritPopOpen}>브릿</Button>
                     <CommonModal isOpen={isBritPopOpen} onClose={onBritPopClose} title="브릿">
                         <BritPopModalBody />
                     </CommonModal>
@@ -123,7 +123,7 @@ const Pop = () => {
             <Box w='800px'>
                 <ProgressBar completed={IndiPop}/>
                 <div className="Sub">
-                <Button onClick={onIndiPopOpen}>인디팝</Button>
+                <Button onClick={onIndiPopOpen}>인디</Button>
                     <CommonModal isOpen={isIndiPopOpen} onClose={onIndiPopClose} title="인디">
                         <IndiPopModalBody />
                     </CommonModal>
@@ -132,7 +132,7 @@ const Pop = () => {
             <Box w='800px'>
                 <ProgressBar completed={LatinPop}/>
                 <div className="Sub">
-                <Button onClick={onLatinPopOpen}>라틴팝</Button>
+                <Button onClick={onLatinPopOpen}>라틴</Button>
                     <CommonModal isOpen={isLatinPopOpen} onClose={onLatinPopClose} title="라틴">
                         <LatinPopModalBody />
                     </CommonModal>
