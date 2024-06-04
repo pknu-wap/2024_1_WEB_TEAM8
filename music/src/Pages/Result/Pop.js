@@ -55,6 +55,9 @@ const Pop = () => {
     LatinPop = parseInt(LatinPop / Total * 100);
     BritPop = parseInt(BritPop / Total * 100);
 
+    // 퍼센트 제일 높은 장르 진행바 형광색
+    const maxProgress = Math.max(DancePop, ElecPop, IndiPop, LatinPop, BritPop);
+
     // 모달 상태관리
     const { isOpen: isDancePopOpen, onOpen: onDancePopOpen, onClose: onDancePopClose } = useDisclosure();
     const { isOpen: isElecPopOpen, onOpen: onElecPopOpen, onClose: onElecPopClose } = useDisclosure();
@@ -69,7 +72,7 @@ const Pop = () => {
 
         <div className="Top">
             <h3>당신의 음악 DNA는</h3>
-            <h2>'<span>POP</span>' 에 가깝군요</h2>
+            <h2>'<span>POP</span>' 에 가깝군요!</h2>
         </div>    
 
         <div class="singer">
@@ -91,6 +94,7 @@ const Pop = () => {
         align="stretch"
         marginLeft="300px"
         marginRight="335px"
+        className="progress_color"
         >
         <Box w="800px">
             <HStack spacing={4} align="center">
@@ -101,7 +105,11 @@ const Pop = () => {
                     </CommonModal>
                 </div>
                 <Box flex="1">
-                    <ProgressBar completed={DancePop} />
+                    <ProgressBar 
+                    bgColor={DancePop === maxProgress ? "#D6FF32" : "white"}
+                    baseBgColor="rgb(37, 37, 103)"
+                    labelColor="black"
+                    completed={DancePop} />
                 </Box>
             </HStack>
         </Box>
@@ -114,7 +122,11 @@ const Pop = () => {
                     </CommonModal>
                 </div>
                 <Box flex="1">
-                    <ProgressBar completed={ElecPop} />
+                    <ProgressBar 
+                    bgColor={ElecPop === maxProgress ? "#D6FF32" : "white"}
+                    baseBgColor="rgb(37, 37, 103)" 
+                    labelColor="black" 
+                    completed={ElecPop} />
                 </Box>
             </HStack>
         </Box>
@@ -127,7 +139,11 @@ const Pop = () => {
                     </CommonModal>
                 </div>
                 <Box flex="1">
-                    <ProgressBar completed={BritPop} />
+                    <ProgressBar 
+                    bgColor={BritPop === maxProgress ? "#D6FF32" : "white"}
+                    baseBgColor="rgb(37, 37, 103)" 
+                    labelColor="black" 
+                    completed={BritPop} />
                 </Box>
             </HStack>
         </Box>
@@ -140,7 +156,11 @@ const Pop = () => {
                     </CommonModal>
                 </div>
                 <Box flex="1">
-                    <ProgressBar completed={IndiPop} />
+                    <ProgressBar 
+                    bgColor={IndiPop === maxProgress ? "#D6FF32" : "white"}
+                    baseBgColor="rgb(37, 37, 103)" 
+                    labelColor="black" 
+                    completed={IndiPop} />
                 </Box>
             </HStack>
         </Box>
@@ -153,7 +173,11 @@ const Pop = () => {
                     </CommonModal>
                 </div>
                 <Box flex="1">
-                    <ProgressBar completed={LatinPop} />
+                    <ProgressBar 
+                    bgColor={LatinPop === maxProgress ? "#D6FF32" : "white"}
+                    baseBgColor="rgb(37, 37, 103)" 
+                    labelColor="black" 
+                    completed={LatinPop} />
                 </Box>
             </HStack>
         </Box>
@@ -162,7 +186,7 @@ const Pop = () => {
             <h3>추천 플레이리스트 보기</h3>
         </div>
         <div class="musictable">
-    <table>
+        <table>
         <tr>
         <hr/><td>
             <img src="/pop_m1.jpg" id="albumcover"/>

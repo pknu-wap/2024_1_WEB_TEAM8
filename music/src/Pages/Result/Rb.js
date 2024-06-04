@@ -52,6 +52,8 @@ const Rb = () => {
     SoulRb = parseInt(SoulRb / Total * 100);
     AlterRb = parseInt(AlterRb / Total * 100);
 
+    const maxProgress = Math.max(NeoRb, ComtemRb, PunkRb, SoulRb, AlterRb);
+
     const { isOpen: isNeoRbOpen, onOpen: onNeoRbOpen, onClose: onNeoRbClose } = useDisclosure();
     const { isOpen: isComtemRbOpen, onOpen: onComtemRbOpen, onClose: onComtemRbClose } = useDisclosure();
     const { isOpen: isPunkRbOpen, onOpen: onPunkRbOpen, onClose: onPunkRbClose } = useDisclosure();
@@ -66,7 +68,7 @@ const Rb = () => {
 
         <div className="Top">
             <h3>당신의 음악 DNA는</h3>
-            <h2>'<span>R&B</span>' 에 가깝군요</h2>
+            <h2>'<span>R&B</span>' 에 가깝군요!</h2>
         </div>    
 
         <div class="singer">
@@ -98,7 +100,11 @@ const Rb = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={NeoRb}/>
+                        <ProgressBar 
+                        bgColor={NeoRb === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={NeoRb}/>
                     </Box>
                 </HStack>
             </Box>
@@ -111,7 +117,11 @@ const Rb = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={ComtemRb}/>
+                        <ProgressBar
+                        bgColor={ComtemRb === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={ComtemRb}/>
                     </Box>
                 </HStack>
             </Box>
@@ -124,7 +134,11 @@ const Rb = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={PunkRb}/>
+                        <ProgressBar 
+                        bgColor={PunkRb === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={PunkRb}/>
                     </Box>
                 </HStack>
             </Box>
@@ -137,7 +151,11 @@ const Rb = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={SoulRb}/>
+                        <ProgressBar 
+                        bgColor={SoulRb === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={SoulRb}/>
                     </Box>
                 </HStack>
             </Box>
@@ -150,7 +168,11 @@ const Rb = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={AlterRb}/>
+                        <ProgressBar 
+                        bgColor={AlterRb === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={AlterRb}/>
                     </Box>
                 </HStack>
             </Box>
