@@ -89,13 +89,13 @@ const Pop = () => {
     <VStack
         spacing={3}
         align="stretch"
-        marginLeft="335px"
+        marginLeft="300px"
         marginRight="335px"
         >
         <Box w="800px">
             <HStack spacing={4} align="center">
                 <div className="Sub">
-                    <Button onClick={onDancePopOpen}>댄스</Button>
+                    <Button onClick={onDancePopOpen} style={{padding: '0px 30px' }}>댄스</Button>
                     <CommonModal isOpen={isDancePopOpen} onClose={onDancePopClose} title="댄스">
                     <DancePopModalBody />
                     </CommonModal>
@@ -121,7 +121,7 @@ const Pop = () => {
         <Box w="800px">
             <HStack spacing={4} align="center">
                 <div className="Sub">
-                    <Button onClick={onBritPopOpen}>브릿</Button>
+                    <Button onClick={onBritPopOpen} style={{padding: '0px 30px' }}>브릿</Button>
                     <CommonModal isOpen={isBritPopOpen} onClose={onBritPopClose} title="브릿">
                     <BritPopModalBody />
                     </CommonModal>
@@ -134,7 +134,7 @@ const Pop = () => {
         <Box w="800px">
             <HStack spacing={4} align="center">
                 <div className="Sub">
-                    <Button onClick={onIndiPopOpen}>인디</Button>
+                    <Button onClick={onIndiPopOpen} style={{padding: '0px 30px' }}>인디</Button>
                     <CommonModal isOpen={isIndiPopOpen} onClose={onIndiPopClose} title="인디">
                     <IndiPopModalBody />
                     </CommonModal>
@@ -147,7 +147,7 @@ const Pop = () => {
         <Box w="800px">
             <HStack spacing={4} align="center">
                 <div className="Sub">
-                    <Button onClick={onLatinPopOpen}>라틴</Button>
+                    <Button onClick={onLatinPopOpen} style={{padding: '0px 30px' }}>라틴</Button>
                     <CommonModal isOpen={isLatinPopOpen} onClose={onLatinPopClose} title="라틴">
                     <LatinPopModalBody />
                     </CommonModal>

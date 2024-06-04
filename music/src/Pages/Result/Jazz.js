@@ -101,7 +101,7 @@ const Jazz = () => {
         <VStack
             spacing={3}
             align='stretch'
-            marginLeft="335px"
+            marginLeft="300px"
             marginRight="335px"
         >
             <Box w='800px'>

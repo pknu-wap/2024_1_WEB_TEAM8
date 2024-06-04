@@ -87,13 +87,13 @@ const Hip = () => {
         <VStack
         spacing={3}
         align='stretch'
-        marginLeft="335px"
+        marginLeft="300px"
         marginRight="335px"
         >
             <Box w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onDrillHipOpen}>드릴</Button>
+                        <Button onClick={onDrillHipOpen} style={{padding: '0px 37px' }}>드릴</Button>
                         <CommonModal isOpen={isDrillHipOpen} onClose={onDrillHipClose} title="드릴">
                             <DrillHipModalBody />
                         </CommonModal>
@@ -106,7 +106,7 @@ const Hip = () => {
             <Box w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onTrapHipOpen}>트랩</Button>
+                        <Button onClick={onTrapHipOpen} style={{padding: '0px 37px' }}>트랩</Button>
                         <CommonModal isOpen={isTrapHipOpen} onClose={onTrapHipClose} title="트랩">
                             <TrapHipModalBody />
                         </CommonModal>
@@ -132,7 +132,7 @@ const Hip = () => {
             <Box w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onRageHipOpen}>레이지</Button>
+                        <Button onClick={onRageHipOpen} style={{padding: '0px 30px' }}>레이지</Button>
                         <CommonModal isOpen={isRageHipOpen} onClose={onRageHipClose} title="레이지">
                             <RageHipModalBody />
                         </CommonModal>
@@ -145,7 +145,7 @@ const Hip = () => {
             <Box w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onBoomHipOpen}>붐뱁</Button>
+                        <Button onClick={onBoomHipOpen} style={{padding: '0px 37px' }}>붐뱁</Button>
                         <CommonModal isOpen={isBoomHipOpen} onClose={onBoomHipClose} title="붐뱁">
                             <BoomHipModalBody />
                         </CommonModal>
