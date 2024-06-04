@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Result.css";
 import CommonModal from './Modal';
 
-import { ChakraProvider,VStack,Box, Button, useDisclosure } from "@chakra-ui/react";
+import { ChakraProvider,VStack,HStack, Box, Button, useDisclosure } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { RockValueState } from "../../Components/RockBox";
 import { useRecoilValue } from "recoil";
@@ -73,105 +73,126 @@ const Rock = () => {
 
         <div class="singer">
         <table>
-        <tr>
-        <td><span>Progressive</span><br/><br/>< img src="/rock_singer1.png" alt="Yes"/>Yes</td>
-        <td><span>Heavy Metal</span><br/><br/><img src="/rock_singer2.png" alt="Metallica" />Metallica<br/></td>
-        <td><span>Alternative</span><br/><br/><img src="/rock_singer3.png" alt="Nirvana" />Nirvana<br/></td>
-        <td><span>Punk</span><br/><br/><img src="/rock_singer4.png" alt="Sex pistols" />Sex pistols<br/></td>
-        <td><span>Shoegaze</span><br/><br/><img src="/rock_singer5.png" alt="Slow dive" />Slow dive</td> 
-        </tr>
+            <tr>
+            <td><span>Progressive</span><br/><br/>< img src="/rock_singer1.png" alt="Yes"/>Yes</td>
+            <td><span>Heavy Metal</span><br/><br/><img src="/rock_singer2.png" alt="Metallica" />Metallica<br/></td>
+            <td><span>Alternative</span><br/><br/><img src="/rock_singer3.png" alt="Nirvana" />Nirvana<br/></td>
+            <td><span>Punk</span><br/><br/><img src="/rock_singer4.png" alt="Sex pistols" />Sex pistols<br/></td>
+            <td><span>Shoegaze</span><br/><br/><img src="/rock_singer5.png" alt="Slow dive" />Slow dive</td> 
+            </tr>
         </table>
         </div>
         <div class="graph">
-        <h2>현재 <span>나의 음악 DNA</span>분포도</h2>
-    </div>
+            <h2>현재 <span>나의 음악 DNA</span>분포도</h2>
+        </div>
         <VStack
             spacing={3}
             align='stretch'
             marginLeft="335px"
             marginRight="335px"
-            >
+        >
             <Box w='800px'>
-            <ProgressBar completed={ProRock}/>
-                <div className="Sub">
-                <Button onClick={onProRockOpen}>프로그레시브</Button>
-                <CommonModal isOpen={isProRockOpen} onClose={onProRockClose} title="프로그레시브">
-                    <ProRockModalBody />
-                </CommonModal>
-                </div>
+                <HStack spacing={4} align='center'>
+                    <div className="Sub">
+                        <Button onClick={onProRockOpen}>프로그레시브</Button>
+                        <CommonModal isOpen={isProRockOpen} onClose={onProRockClose} title="프로그레시브">
+                            <ProRockModalBody />
+                        </CommonModal>
+                    </div>
+                    <Box flex='1'>
+                        <ProgressBar completed={ProRock}/>
+                    </Box>
+                </HStack>
             </Box>
             <Box w='800px'>
-            <ProgressBar completed={HeavyRock}/>
-                <div className="Sub">
-                <Button onClick={onHeavyRockOpen}>헤비</Button>
-                <CommonModal isOpen={isHeavyRockOpen} onClose={onHeavyRockClose} title="헤비">
-                    <HeavyRockModalBody />
-                </CommonModal>
-                </div>
+                <HStack spacing={4} align='center'>
+                    <div className="Sub">
+                        <Button onClick={onHeavyRockOpen}>헤비</Button>
+                        <CommonModal isOpen={isHeavyRockOpen} onClose={onHeavyRockClose} title="헤비">
+                            <HeavyRockModalBody />
+                        </CommonModal>
+                    </div>
+                    <Box flex='1'>
+                        <ProgressBar completed={HeavyRock}/>
+                    </Box>
+                </HStack>
             </Box>
             <Box w='800px'>
-            <ProgressBar completed={AlterRock}/>
-                <div className="Sub">
-                <Button onClick={onAlterRockOpen}>얼터너티브</Button>
-                <CommonModal isOpen={isAlterRockOpen} onClose={onAlterRockClose} title="얼터너티브">
-                    <AlterRockModalBody />
-                </CommonModal>
-                </div>
+                <HStack spacing={4} align='center'>
+                    <div className="Sub">
+                        <Button onClick={onAlterRockOpen}>얼터너티브</Button>
+                        <CommonModal isOpen={isAlterRockOpen} onClose={onAlterRockClose} title="얼터너티브">
+                            <AlterRockModalBody />
+                        </CommonModal>
+                    </div>
+                    <Box flex='1'>
+                        <ProgressBar completed={AlterRock}/>
+                    </Box>
+                </HStack>
             </Box>
             <Box w='800px'>
-            <ProgressBar completed={PunkRock}/>
-                <div className="Sub">
-                <Button onClick={onPunkRockOpen}>펑크</Button>
-                <CommonModal isOpen={isPunkRockOpen} onClose={onPunkRockClose} title="펑크">
-                    <PunkRockModalBody />
-                </CommonModal>
-                </div>
+                <HStack spacing={4} align='center'>
+                    <div className="Sub">
+                        <Button onClick={onPunkRockOpen}>펑크</Button>
+                        <CommonModal isOpen={isPunkRockOpen} onClose={onPunkRockClose} title="펑크">
+                            <PunkRockModalBody />
+                        </CommonModal>
+                    </div>
+                    <Box flex='1'>
+                        <ProgressBar completed={PunkRock}/>
+                    </Box>
+                </HStack>
             </Box>
             <Box w='800px'>
-            <ProgressBar completed={ShowRock}/>
-                <div className="Sub">
-                <Button onClick={onShowRockOpen}>슈게이징</Button>
-                <CommonModal isOpen={isShowRockOpen} onClose={onShowRockClose} title="슈게이징">
-                    <ShowRockModalBody />
-                </CommonModal>
-                </div>
+                <HStack spacing={4} align='center'>
+                    <div className="Sub">
+                        <Button onClick={onShowRockOpen}>슈게이징</Button>
+                        <CommonModal isOpen={isShowRockOpen} onClose={onShowRockClose} title="슈게이징">
+                            <ShowRockModalBody />
+                        </CommonModal>
+                    </div>
+                    <Box flex='1'>
+                        <ProgressBar completed={ShowRock}/>
+                    </Box>
+                </HStack>
             </Box>
         </VStack>
+
         <div className="ques">
             <h3>추천 플레이리스트 보기</h3>
         </div>
         <div class="musictable">
-    <table>
+        <table>
         <tr>
         <hr/><td>
             <img src="/rock_m1.jpg" id="albumcover"/>
             <div id="song">Owner of a Lonely Heart<br/><span>Yes</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZUIbKyS_2yQJ2JPZPSrzO0'} src="sound1.png" id="m1"/><span>play</span></div></td>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZUIbKyS_2yQJ2JPZPSrzO0'} src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
         <tr>
             <td><img src="/rock_m2.webp" id="albumcover"/>
             <div id="song">Enter Sandman<br/><span>Metallica</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mabu4H5mTkcfBopJhvYqLYZ'} src="/sound1.png" id="m2"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mabu4H5mTkcfBopJhvYqLYZ'} src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rock_m3.webp"  id="albumcover" />
             <div id="song">Smells Like Teen Spirit<br/><span>Nirvana</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbTbdOhM-X-OLPTs18AsV3s'} src="sound1.png" id="m3"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbTbdOhM-X-OLPTs18AsV3s'} src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rock_m4.jpg"  id="albumcover" />
             <div id="song">God Save The Queen<br/><span>Sex pistols</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbB05x1nVG1wAGYp9lyW_sZ'} src="sound1.png" id="m4"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbB05x1nVG1wAGYp9lyW_sZ'} src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rock_m5.jpg"  id="albumcover"/>
             <div id="song">When the Sun Hits<br/><span>Slow dive</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZ9gE5dJgB9lO_tbSNK6m59'} src="sound1.png" id="m5"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZ9gE5dJgB9lO_tbSNK6m59'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
     </table>

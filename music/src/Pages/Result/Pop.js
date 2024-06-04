@@ -3,7 +3,7 @@ import "./Result.css";
 import CommonModal from './Modal';
 
 import ProgressBar from "@ramonak/react-progress-bar";
-import { ChakraProvider,VStack,Box, useDisclosure, Button } from "@chakra-ui/react";
+import { ChakraProvider,VStack,HStack, Box, useDisclosure, Button } from "@chakra-ui/react";
 import { PopValueState } from "../../Components/PopBox";
 import { useRecoilValue } from "recoil";
 import {
@@ -86,59 +86,78 @@ const Pop = () => {
         <div class="graph">
         <h2>현재 <span>나의 음악 DNA</span>분포도</h2>
     </div>  
-        <VStack
-            spacing={3}
-            align='stretch'
-            marginLeft="335px"
-            marginRight="335px"
-            >
-            <Box w='800px'>
-            <ProgressBar completed={DancePop}/>
+    <VStack
+        spacing={3}
+        align="stretch"
+        marginLeft="335px"
+        marginRight="335px"
+        >
+        <Box w="800px">
+            <HStack spacing={4} align="center">
                 <div className="Sub">
-                    <Button 
-                    onClick={onDancePopOpen}>댄스</Button>
+                    <Button onClick={onDancePopOpen}>댄스</Button>
                     <CommonModal isOpen={isDancePopOpen} onClose={onDancePopClose} title="댄스">
-                        <DancePopModalBody />
+                    <DancePopModalBody />
                     </CommonModal>
                 </div>
-            </Box>
-            <Box w='800px'>
-                <ProgressBar completed={ElecPop}/>
+                <Box flex="1">
+                    <ProgressBar completed={DancePop} />
+                </Box>
+            </HStack>
+        </Box>
+        <Box w="800px">
+            <HStack spacing={4} align="center">
                 <div className="Sub">
                     <Button onClick={onElecPopOpen}>일렉트로</Button>
                     <CommonModal isOpen={isElecPopOpen} onClose={onElecPopClose} title="일렉트로닉">
-                        <ElecPopModalBody />
+                    <ElecPopModalBody />
                     </CommonModal>
                 </div>
-            </Box>
-            <Box w='800px'>
-                <ProgressBar completed={BritPop}/>
+                <Box flex="1">
+                    <ProgressBar completed={ElecPop} />
+                </Box>
+            </HStack>
+        </Box>
+        <Box w="800px">
+            <HStack spacing={4} align="center">
                 <div className="Sub">
-                <Button onClick={onBritPopOpen}>브릿</Button>
+                    <Button onClick={onBritPopOpen}>브릿</Button>
                     <CommonModal isOpen={isBritPopOpen} onClose={onBritPopClose} title="브릿">
-                        <BritPopModalBody />
+                    <BritPopModalBody />
                     </CommonModal>
                 </div>
-            </Box>
-            <Box w='800px'>
-                <ProgressBar completed={IndiPop}/>
+                <Box flex="1">
+                    <ProgressBar completed={BritPop} />
+                </Box>
+            </HStack>
+        </Box>
+        <Box w="800px">
+            <HStack spacing={4} align="center">
                 <div className="Sub">
-                <Button onClick={onIndiPopOpen}>인디</Button>
+                    <Button onClick={onIndiPopOpen}>인디</Button>
                     <CommonModal isOpen={isIndiPopOpen} onClose={onIndiPopClose} title="인디">
-                        <IndiPopModalBody />
+                    <IndiPopModalBody />
                     </CommonModal>
                 </div>
-            </Box>
-            <Box w='800px'>
-                <ProgressBar completed={LatinPop}/>
+                <Box flex="1">
+                    <ProgressBar completed={IndiPop} />
+                </Box>
+            </HStack>
+        </Box>
+        <Box w="800px">
+            <HStack spacing={4} align="center">
                 <div className="Sub">
-                <Button onClick={onLatinPopOpen}>라틴</Button>
+                    <Button onClick={onLatinPopOpen}>라틴</Button>
                     <CommonModal isOpen={isLatinPopOpen} onClose={onLatinPopClose} title="라틴">
-                        <LatinPopModalBody />
+                    <LatinPopModalBody />
                     </CommonModal>
                 </div>
-            </Box>
-        </VStack>
+                <Box flex="1">
+                    <ProgressBar completed={LatinPop} />
+                </Box>
+            </HStack>
+        </Box>
+    </VStack>
         <div className="ques">
             <h3>추천 플레이리스트 보기</h3>
         </div>
@@ -149,32 +168,32 @@ const Pop = () => {
             <img src="/pop_m1.jpg" id="albumcover"/>
             <div id="song">Just Dance<br/><span>Lady gaga</span></div>
             <img src="19.png" id="prohibit1"/>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY-2SwIhakiK3khw88oHzwc'} src="sound1.png" id="m1"/><span>play</span></div></td>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY-2SwIhakiK3khw88oHzwc'} src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
         <tr>
             <td><img src="/pop_m2.jpg" id="albumcover"/>
             <div id="song">Gasoline<br/><span>Halsey</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mai4CdplvjIRFf-znKkJ7_l'} src="/sound1.png" id="m2"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mai4CdplvjIRFf-znKkJ7_l'} src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/pop_m3.jpg"  id="albumcover" />
             <div id="song">This Charming Man<br/><span>The smtihs</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbf-zGpf43gE5pfW8_ycXnR'} src="sound1.png" id="m3"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbf-zGpf43gE5pfW8_ycXnR'} src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/pop_m4.jpg"  id="albumcover" />
             <div id="song">Havana<br/><span>Camila Cabello</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaAWCbd2HcokoqH5sv44OJP'} src="sound1.png" id="m4"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MaAWCbd2HcokoqH5sv44OJP'} src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/pop_m5.webp"  id="albumcover"/>
             <div id="song">Wonderwall<br/><span>Oasis</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbfvh0blv_vISpJ5lqZUlZy'} src="sound1.png" id="m5"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbfvh0blv_vISpJ5lqZUlZy'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
     </table>

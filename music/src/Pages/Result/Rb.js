@@ -3,7 +3,7 @@ import "./Result.css";
 import CommonModal from './Modal';
 
 import ProgressBar from "@ramonak/react-progress-bar";
-import { ChakraProvider,VStack,Box, Button, useDisclosure } from "@chakra-ui/react";
+import { ChakraProvider,VStack,HStack, Box, Button, useDisclosure } from "@chakra-ui/react";
 import { RbValueState } from "../../Components/RbBox";
 import { useRecoilValue } from "recoil";
 import {
@@ -71,70 +71,91 @@ const Rb = () => {
 
         <div class="singer">
         <table>
-        <tr>
-        <td><span>Neo Soul</span><br/>< img src="/rb_singer1.png" alt="D'Angelo"/>D'Angelo</td>
-        <td><span>Contemporary</span><br/><img src="/rb_singer2.png" alt="SZA" />Beyoncé<br/></td>
-        <td><span>Funk</span><br/><img src="/rb_singer3.png" alt="Michael Jackson" />Michael Jackson<br/></td>
-        <td><span>Soul</span><br/><img src="/rb_singer4.png" alt="Stevie Wonder" />Stevie Wonder<br/></td>
-        <td><span>Alternative</span><br/><img src="/rb_singer5.png" alt="Frank ocean" />Frank ocean</td> 
-        </tr>
+            <tr>
+            <td><span>Neo Soul</span><br/>< img src="/rb_singer1.png" alt="D'Angelo"/>D'Angelo</td>
+            <td><span>Contemporary</span><br/><img src="/rb_singer2.png" alt="SZA" />Beyoncé<br/></td>
+            <td><span>Funk</span><br/><img src="/rb_singer3.png" alt="Michael Jackson" />Michael Jackson<br/></td>
+            <td><span>Soul</span><br/><img src="/rb_singer4.png" alt="Stevie Wonder" />Stevie Wonder<br/></td>
+            <td><span>Alternative</span><br/><img src="/rb_singer5.png" alt="Frank ocean" />Frank ocean</td> 
+            </tr>
         </table>
         </div>
         <div class="graph">
-        <h2>현재 <span>나의 음악 DNA</span>분포도</h2>
-    </div>
+            <h2>현재 <span>나의 음악 DNA</span>분포도</h2>
+            </div>
         <VStack
             spacing={3}
             align='stretch'
             marginLeft="335px"
             marginRight="335px"
-            >
-            <Box w='800px'> 
-            <ProgressBar completed={NeoRb}/>
-                <div className="Sub">
-                <Button onClick={onNeoRbOpen}>네오</Button>
-                <CommonModal isOpen={isNeoRbOpen} onClose={onNeoRbClose} title="네오">
-                <NeoRbModalBody />
-                </CommonModal>
-                </div>
+        >
+            <Box w='800px'>
+                <HStack spacing={4} align='center'>
+                    <div className="Sub">
+                        <Button onClick={onNeoRbOpen}>네오</Button>
+                        <CommonModal isOpen={isNeoRbOpen} onClose={onNeoRbClose} title="네오">
+                            <NeoRbModalBody />
+                        </CommonModal>
+                    </div>
+                    <Box flex='1'>
+                        <ProgressBar completed={NeoRb}/>
+                    </Box>
+                </HStack>
             </Box>
             <Box w='800px'>
-            <ProgressBar completed={ComtemRb}/>
-                <div className="Sub">
-                <Button onClick={onComtemRbOpen}>컨템포러리</Button>
-                <CommonModal isOpen={isComtemRbOpen} onClose={onComtemRbClose} title="컨템포러리">
-                <ComtemRbModalBody />
-                </CommonModal>
-                </div>
+                <HStack spacing={4} align='center'>
+                    <div className="Sub">
+                        <Button onClick={onComtemRbOpen}>컨템포러리</Button>
+                        <CommonModal isOpen={isComtemRbOpen} onClose={onComtemRbClose} title="컨템포러리">
+                            <ComtemRbModalBody />
+                        </CommonModal>
+                    </div>
+                    <Box flex='1'>
+                        <ProgressBar completed={ComtemRb}/>
+                    </Box>
+                </HStack>
             </Box>
             <Box w='800px'>
-            <ProgressBar completed={PunkRb}/>
-                <div className="Sub">
-                <Button onClick={onPunkRbOpen}>펑크</Button>
-                <CommonModal isOpen={isPunkRbOpen} onClose={onPunkRbClose} title="펑크">
-                <PunkRbModalBody />
-                </CommonModal>
-                </div>
+                <HStack spacing={4} align='center'>
+                    <div className="Sub">
+                        <Button onClick={onPunkRbOpen}>펑크</Button>
+                        <CommonModal isOpen={isPunkRbOpen} onClose={onPunkRbClose} title="펑크">
+                            <PunkRbModalBody />
+                        </CommonModal>
+                    </div>
+                    <Box flex='1'>
+                        <ProgressBar completed={PunkRb}/>
+                    </Box>
+                </HStack>
             </Box>
             <Box w='800px'>
-            <ProgressBar completed={SoulRb}/>
-                <div className="Sub">
-                <Button onClick={onSoulRbOpen}>소울</Button>
-                <CommonModal isOpen={isSoulRbOpen} onClose={onSoulRbClose} title="소울">
-                <SoulRbModalBody />
-                </CommonModal>
-                </div>
+                <HStack spacing={4} align='center'>
+                    <div className="Sub">
+                        <Button onClick={onSoulRbOpen}>소울</Button>
+                        <CommonModal isOpen={isSoulRbOpen} onClose={onSoulRbClose} title="소울">
+                            <SoulRbModalBody />
+                        </CommonModal>
+                    </div>
+                    <Box flex='1'>
+                        <ProgressBar completed={SoulRb}/>
+                    </Box>
+                </HStack>
             </Box>
             <Box w='800px'>
-            <ProgressBar completed={AlterRb}/>
-                <div className="Sub">
-                <Button onClick={onAlterRbOpen}>얼터너티브</Button>
-                <CommonModal isOpen={isAlterRbOpen} onClose={onAlterRbClose} title="얼터너티브">
-                <AlterRbModalBody />
-                </CommonModal>
-                </div>
+                <HStack spacing={4} align='center'>
+                    <div className="Sub">
+                        <Button onClick={onAlterRbOpen}>얼터너티브</Button>
+                        <CommonModal isOpen={isAlterRbOpen} onClose={onAlterRbClose} title="얼터너티브">
+                            <AlterRbModalBody />
+                        </CommonModal>
+                    </div>
+                    <Box flex='1'>
+                        <ProgressBar completed={AlterRb}/>
+                    </Box>
+                </HStack>
             </Box>
         </VStack>
+
         <div className="ques">
             <h3>추천 플레이리스트 보기</h3>
         </div>
@@ -146,32 +167,32 @@ const Rb = () => {
             <img src="rb_m1.jpg"  id="albumcover"/>
             <div id="song">Brown Sugar<br/><span>D'Angelo</span></div>
             <img src="19.png" id="prohibit1"/>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYDejvhbWZoWsq6gd1ttD20'} src="sound1.png" id="m1"/><span>play</span></div></td>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYDejvhbWZoWsq6gd1ttD20'} src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
         <tr>
             <td><img src="/rb_m2.jpg"  id="albumcover" />
             <div id="song">Crazy In Love<br/><span>Beyoncé</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY2BZBQY_JBa2N6FraJL0su'} src="/sound1.png" id="m2"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MY2BZBQY_JBa2N6FraJL0su'} src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rb_m3.jpg"  id="albumcover"/>
             <div id="song"> I Got You<br/><span>Michael Jackson</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYyy_jgPMM_gkmG3LJgdJ_G'} src="sound1.png" id="m3"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYyy_jgPMM_gkmG3LJgdJ_G'} src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rb_m4.jpg"  id="albumcover" />
             <div id="song">You Send Me<br/><span>Stevie Wonder</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyhmm-4g_T2xdeSrQJ6r0O'} src="sound1.png" id="m4"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZyhmm-4g_T2xdeSrQJ6r0O'} src="sound1.png" id="m4"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>
             <td><img src="/rb_m5.jpg"  id="albumcover" />
             <div id="song">Self Control<br/><span>Frank ocean</span></div>
-            <div class="play"><img style={{ cursor: 'pointer' }} onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MblTfvFXrghM3DHYXyAkiG0'} src="sound1.png" id="m5"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MblTfvFXrghM3DHYXyAkiG0'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
     </table>
