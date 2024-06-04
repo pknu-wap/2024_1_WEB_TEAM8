@@ -54,20 +54,7 @@ const Jazz = () => {
     FreeJazz = parseInt(FreeJazz / Total * 100);
     BibobJazz = parseInt(BibobJazz / Total * 100);
 
-    const maxPoint = Math.max(LatinJazz,SwingJazz,SoulJazz,FreeJazz,BibobJazz);
-    var maxGenre;
-    
-    if(maxPoint===LatinJazz){
-        maxGenre="라틴";
-    }if(maxPoint===SwingJazz){
-        maxGenre="스윙";
-    }if(maxPoint===SoulJazz){
-        maxGenre="스윙";
-    }if(maxPoint===FreeJazz){
-        maxGenre="스윙";
-    }if (maxPoint===BibobJazz){
-        maxGenre="비밥";
-    }
+    const maxProgress = Math.max(LatinJazz, SwingJazz, SoulJazz, FreeJazz, BibobJazz);
 
     const { isOpen: isLatinJazzOpen, onOpen: onLatinJazzOpen, onClose: onLatinJazzClose } = useDisclosure();
     const { isOpen: isSwingJazzOpen, onOpen: onSwingJazzOpen, onClose: onSwingJazzClose } = useDisclosure();
@@ -82,6 +69,7 @@ const Jazz = () => {
 
         <div className="Top">
             <h3>당신의 음악 DNA는</h3>
+            <h2>'<span>재즈</span>' 에 가깝군요!</h2>
         </div>    
         
         <div class="singer">
@@ -113,7 +101,11 @@ const Jazz = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={LatinJazz}/>
+                        <ProgressBar 
+                        bgColor={LatinJazz === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={LatinJazz}/>
                     </Box>
                 </HStack>
             </Box>
@@ -126,7 +118,11 @@ const Jazz = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={SwingJazz}/>
+                        <ProgressBar 
+                        bgColor={SwingJazz === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={SwingJazz}/>
                     </Box>
                 </HStack>
             </Box>
@@ -139,7 +135,11 @@ const Jazz = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={SoulJazz}/>
+                        <ProgressBar 
+                        bgColor={SoulJazz === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={SoulJazz}/>
                     </Box>
                 </HStack>
             </Box>
@@ -152,7 +152,11 @@ const Jazz = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={FreeJazz}/>
+                        <ProgressBar 
+                        bgColor={FreeJazz === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={FreeJazz}/>
                     </Box>
                 </HStack>
             </Box>
@@ -165,7 +169,11 @@ const Jazz = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={BibobJazz}/>
+                        <ProgressBar 
+                        bgColor={BibobJazz === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={BibobJazz}/>
                     </Box>
                 </HStack>
             </Box>

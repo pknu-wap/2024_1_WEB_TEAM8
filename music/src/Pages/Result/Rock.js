@@ -55,6 +55,8 @@ const Rock = () => {
     PunkRock = parseInt(PunkRock / Total * 100);
     ShowRock = parseInt(ShowRock / Total * 100);
 
+    const maxProgress = Math.max(ProRock, HeavyRock, AlterRock, PunkRock, ShowRock);
+
     const { isOpen: isProRockOpen, onOpen: onProRockOpen, onClose: onProRockClose } = useDisclosure();
     const { isOpen: isHeavyRockOpen, onOpen: onHeavyRockOpen, onClose: onHeavyRockClose } = useDisclosure();
     const { isOpen: isAlterRockOpen, onOpen: onAlterRockOpen, onClose: onAlterRockClose } = useDisclosure();
@@ -68,7 +70,7 @@ const Rock = () => {
 
         <div className="Top">
             <h3>당신의 음악 DNA는</h3>
-            <h2>'<span>Rock</span>' 에 가깝군요</h2>
+            <h2>'<span>Rock</span>' 에 가깝군요!</h2>
         </div>    
 
         <div class="singer">
@@ -100,7 +102,11 @@ const Rock = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={ProRock}/>
+                        <ProgressBar 
+                        bgColor={ProRock === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={ProRock}/>
                     </Box>
                 </HStack>
             </Box>
@@ -113,7 +119,11 @@ const Rock = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={HeavyRock}/>
+                        <ProgressBar 
+                        bgColor={HeavyRock === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={HeavyRock}/>
                     </Box>
                 </HStack>
             </Box>
@@ -126,7 +136,11 @@ const Rock = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={AlterRock}/>
+                        <ProgressBar 
+                        bgColor={AlterRock === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={AlterRock}/>
                     </Box>
                 </HStack>
             </Box>
@@ -139,7 +153,11 @@ const Rock = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={PunkRock}/>
+                        <ProgressBar 
+                        bgColor={PunkRock === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={PunkRock}/>
                     </Box>
                 </HStack>
             </Box>
@@ -152,7 +170,11 @@ const Rock = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={ShowRock}/>
+                        <ProgressBar 
+                        bgColor={ShowRock === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={ShowRock}/>
                     </Box>
                 </HStack>
             </Box>

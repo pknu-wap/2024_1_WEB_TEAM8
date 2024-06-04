@@ -54,6 +54,9 @@ const Hip = () => {
     RageHip = parseInt(RageHip / Total * 100);
     BoomHip = parseInt(BoomHip / Total * 100);
 
+    // 퍼센트 제일 높은 장르 진행바 형광색
+    const maxProgress = Math.max(DrillHip, TrapHip, AlterHip, RageHip, BoomHip);
+
     const { isOpen: isDrillHipOpen, onOpen: onDrillHipOpen, onClose: onDrillHipClose } = useDisclosure();
     const { isOpen: isTrapHipOpen, onOpen: onTrapHipOpen, onClose: onTrapHipClose } = useDisclosure();
     const { isOpen: isAlterHipOpen, onOpen: onAlterHipOpen, onClose: onAlterHipClose } = useDisclosure();
@@ -67,7 +70,7 @@ const Hip = () => {
 
         <div className="Top">
             <h3>당신의 음악 DNA는</h3>
-            <h2>'<span>힙합</span>' 에 가깝군요</h2>
+            <h2>'<span>힙합</span>' 에 가깝군요!</h2>
         </div>    
         
         <div class="singer">
@@ -99,7 +102,11 @@ const Hip = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={DrillHip}/>
+                        <ProgressBar 
+                        bgColor={DrillHip === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={DrillHip}/>
                     </Box>
                 </HStack>
             </Box>
@@ -112,7 +119,11 @@ const Hip = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={TrapHip}/>
+                        <ProgressBar 
+                        bgColor={TrapHip === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={TrapHip}/>
                     </Box>
                 </HStack>
             </Box>
@@ -125,7 +136,11 @@ const Hip = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={AlterHip}/>
+                        <ProgressBar 
+                        bgColor={AlterHip === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={AlterHip}/>
                     </Box>
                 </HStack>
             </Box>
@@ -138,7 +153,11 @@ const Hip = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={RageHip}/>
+                        <ProgressBar 
+                        bgColor={RageHip === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={RageHip}/>
                     </Box>
                 </HStack>
             </Box>
@@ -151,7 +170,11 @@ const Hip = () => {
                         </CommonModal>
                     </div>
                     <Box flex='1'>
-                        <ProgressBar completed={BoomHip}/>
+                        <ProgressBar 
+                        bgColor={BoomHip === maxProgress ? "#D6FF32" : "white"}
+                        baseBgColor="rgb(37, 37, 103)"
+                        labelColor="black"
+                        completed={BoomHip}/>
                     </Box>
                 </HStack>
             </Box>
