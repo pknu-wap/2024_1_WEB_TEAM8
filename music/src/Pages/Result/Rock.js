@@ -88,7 +88,7 @@ const Rock = () => {
         <VStack
             spacing={3}
             align='stretch'
-            marginLeft="335px"
+            marginLeft="300px"
             marginRight="335px"
         >
             <Box w='800px'>
@@ -107,7 +107,7 @@ const Rock = () => {
             <Box w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onHeavyRockOpen}>헤비</Button>
+                        <Button onClick={onHeavyRockOpen} style={{ padding: '0px 43px' }}>헤비</Button>
                         <CommonModal isOpen={isHeavyRockOpen} onClose={onHeavyRockClose} title="헤비">
                             <HeavyRockModalBody />
                         </CommonModal>
@@ -120,7 +120,7 @@ const Rock = () => {
             <Box w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onAlterRockOpen}>얼터너티브</Button>
+                        <Button onClick={onAlterRockOpen}  style={{ padding: '0px 22px' }}>얼터너티브</Button>
                         <CommonModal isOpen={isAlterRockOpen} onClose={onAlterRockClose} title="얼터너티브">
                             <AlterRockModalBody />
                         </CommonModal>
@@ -133,7 +133,7 @@ const Rock = () => {
             <Box w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onPunkRockOpen}>펑크</Button>
+                        <Button onClick={onPunkRockOpen} style={{ padding: '0px 43px' }}>펑크</Button>
                         <CommonModal isOpen={isPunkRockOpen} onClose={onPunkRockClose} title="펑크">
                             <PunkRockModalBody />
                         </CommonModal>
@@ -146,7 +146,7 @@ const Rock = () => {
             <Box w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onShowRockOpen}>슈게이징</Button>
+                        <Button onClick={onShowRockOpen} style={{ padding: '0px 29px' }}>슈게이징</Button>
                         <CommonModal isOpen={isShowRockOpen} onClose={onShowRockClose} title="슈게이징">
                             <ShowRockModalBody />
                         </CommonModal>

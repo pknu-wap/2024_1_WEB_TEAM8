@@ -86,13 +86,13 @@ const Rb = () => {
         <VStack
             spacing={3}
             align='stretch'
-            marginLeft="335px"
+            marginLeft="300px"
             marginRight="335px"
         >
             <Box w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onNeoRbOpen}>네오</Button>
+                        <Button onClick={onNeoRbOpen} style={{padding: '0px 37px' }}>네오</Button>
                         <CommonModal isOpen={isNeoRbOpen} onClose={onNeoRbClose} title="네오">
                             <NeoRbModalBody />
                         </CommonModal>
@@ -118,7 +118,7 @@ const Rb = () => {
             <Box w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onPunkRbOpen}>펑크</Button>
+                        <Button onClick={onPunkRbOpen} style={{padding: '0px 37px' }}>펑크</Button>
                         <CommonModal isOpen={isPunkRbOpen} onClose={onPunkRbClose} title="펑크">
                             <PunkRbModalBody />
                         </CommonModal>
@@ -131,7 +131,7 @@ const Rb = () => {
             <Box w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onSoulRbOpen}>소울</Button>
+                        <Button onClick={onSoulRbOpen} style={{padding: '0px 37px' }}>소울</Button>
                         <CommonModal isOpen={isSoulRbOpen} onClose={onSoulRbClose} title="소울">
                             <SoulRbModalBody />
                         </CommonModal>
