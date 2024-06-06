@@ -1,12 +1,13 @@
-.nextPage {
+.SecondBtn {
     margin-top: 80px;
     text-align: center;
     margin-bottom: 80px;
   }
   
-  .nextPage button {
-    margin-right: 10px;
-    margin-left: 10px;
+  .SecondBtn button {
+    position: relative;
+    top:-30px;
+    left: -38px;
     background-color:#D6FF32;
     padding: 10px 40px;
     font-size: medium;
@@ -15,14 +16,14 @@
     font-weight: bold;
   }
 
-  .nextPage button:hover {
+  .SecondBtn button:hover {
     background-color: rgb(100, 92, 92);
   }
 
 
 /*mobile*/
 @media (max-width: 698px) {
-  .nextPage button{
+  .SecondBtn button{
     position: absolute;
     top: 1860px;
     left: 160px;

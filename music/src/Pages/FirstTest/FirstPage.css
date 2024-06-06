@@ -23,6 +23,7 @@
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom: 200px;
+    padding-top: 50px;
   }
 
   .num1 span{
@@ -47,7 +48,7 @@
   border-radius: 100px;
   width: 50px;
   left: 650px;
-  top:13px;
+  top:-30px;
  }
   
 /* Progress 바 */
