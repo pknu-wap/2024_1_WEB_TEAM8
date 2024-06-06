@@ -31,12 +31,6 @@
         <br />
         <a href="" title="Code">chanxami </a>
     </td>
-     <td align="center">
-<!--       <a href="https://github.com/dogfood5" target="_blank"> -->
-<!--         <img src="https://avatars.githubusercontent.com/u/88235766?v=4" width="120px;"/> -->
-<!--         <br />
-        <a href="https://github.com/pknu-wap/2023_2_APP_TEAM1/commits/main?author=dogfood5" title="Code">dogfood5 </a> -->
-    </td>
     <td align="center">
       <a href="https://github.com/Chaeeun1021" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/92985089?v=4" width="120px;"/> 
@@ -53,14 +47,12 @@
   <tr>
     <td align="center">서성원</td>
     <td align="center">이찬이</td>
-    <td align="center">김지혜</td>
     <td align="center">신채은</td>
     <td align="center">박준용</td>
   </tr>
     <tr>
     <td align="center">Front</td>
     <td align="center">Front</td>
-    <td align="center">Design</td>
     <td align="center">Back</td>
     <td align="center">Back</td>
   </tr>
