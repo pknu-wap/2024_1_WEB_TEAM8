@@ -19,6 +19,7 @@ const CheckBoxCnt = styled.div`
         border: 1px solid #D6FF32;
         padding: 10px 10px;
         width:50px;
+        height:50px;
         box-sizing: border-box;
         cursor: pointer;
         border-radius: 50%;
@@ -30,7 +31,7 @@ const CheckBoxCnt = styled.div`
             switch (num) {
  
                 default:
-                    return '#D9D9D9';
+                    return 'rgb(225, 231, 235)';
             }
         }};
         border: 1px solid #D6FF32;
@@ -38,22 +39,24 @@ const CheckBoxCnt = styled.div`
         box-sizing: border-box;
         cursor: pointer;
         z-index: 1;
-    }
-    @media (max-width: 820px) {
-        input[type=checkbox] + label {
-            top: 50px;
-            font-size: 1.2rem;
-            padding: 8px 8px;
-            width: 40px;
-        }
+        width:50px;
+        height:50px;
     }
 
     @media (max-width: 480px) {
         input[type=checkbox] + label {
-            top: 30px;
+            top: 50px;
             font-size: 1rem;
             padding: 5px 5px;
-            width: 30px;
+            width:30px;
+            height:30px;
+        }
+
+        input[type=checkbox]:checked + label {
+            position:relative;
+            width:30px;
+            height:30px;
+            top:56px;
         }
 
     }
