@@ -38,12 +38,12 @@ const SecondPage4 = () => {
             </div>
             <div className="num2">
                 <h3>분위기 있는 작은 공연장에 나만 알고싶은 아티스트가 콘서트를 열었어.
-감성적인 멜로디와 차분한 선율..이게 나의 안정제지.</h3><br/>
+감성적인 멜로디와 차분한 선율..이게 나의 안정제지.</h3>
                 <PopBox id="IndiPop2"/>
             </div>
             <div className="num2">
                 <h3>스페인어만의 특유한 어감과 레게톤의 음악!
-마치 스페인 바닷가에서 개최한 뮤직 페스티벌에 와 있는것 같아서 정말 신나!</h3><br/>
+마치 스페인 바닷가에서 개최한 뮤직 페스티벌에 와 있는것 같아서 정말 신나!</h3>
                 <PopBox id="LatinPop2"/>
             </div>
             <SecondBtn to="/SecondPage5" ids={["DancePop2", "ElecPop2", "BritPop2", "IndiPop2", "LatinPop2"]}/>

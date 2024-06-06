@@ -35,7 +35,7 @@ const NextButton = ({ to, ids = [], onCompleteButtonClick }) => {
     };
 
     return (
-        <div className="nextPage">
+        <div className="SecondBtn">
             <Link to={to}>
                 <button
                     onClick={(e) => {

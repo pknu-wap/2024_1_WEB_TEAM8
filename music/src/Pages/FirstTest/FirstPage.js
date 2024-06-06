@@ -63,31 +63,31 @@ const FirstPage = () => {
             </div>
             <div className="num1">
                 <img onClick={() => playMusic(1)} src="./sound1.png" alt='Sound Icon'/>
-                <h3><span></span><div class="q1">1번 사운드가 당신의 마음에 드나요?</div></h3>
+                <h3><div class="q1">1번 사운드가 당신의 마음에 드나요?</div></h3>
                 <PopBox id="Pop1"/>
                 <audio ref={el => audioRefs.current[1] = el} />
             </div>
             <div className="num1">
                 <img onClick={() => playMusic(2)} src="./sound1.png" alt='Sound Icon'/>
-                <h3><span></span><div class="q1">2번 사운드가 당신의 마음에 드나요?</div></h3>
+                <h3><div class="q1">2번 사운드가 당신의 마음에 드나요?</div></h3>
                 <PopBox id="Pop2"/>
                 <audio ref={el => audioRefs.current[2] = el} />
             </div>
             <div className="num1">
                 <img onClick={() => playMusic(3)} src="./sound1.png" alt='Sound Icon'/>
-                <h3><span></span><div class="q1">3번 사운드가 당신의 마음에 드나요?</div></h3>
+                <h3><div class="q1">3번 사운드가 당신의 마음에 드나요?</div></h3>
                 <HipBox id="Hip1"/>
                 <audio ref={el => audioRefs.current[3] = el} />
             </div>
             <div className="num1">
                 <img onClick={() => playMusic(4)} src="./sound1.png" alt='Sound Icon'/>
-                <h3><span></span><div class="q1">4번 사운드가 당신의 마음에 드나요?</div></h3>
+                <h3><div class="q1">4번 사운드가 당신의 마음에 드나요?</div></h3>
                 <HipBox id="Hip2"/>
                 <audio ref={el => audioRefs.current[4] = el} />
             </div>
             <div className="num1">
                 <img onClick={() => playMusic(5)} src="./sound1.png" alt='Sound Icon'/>
-                <h3><span></span><div class="q1">5번 사운드가 당신의 마음에 드나요?</div></h3>
+                <h3><div class="q1">5번 사운드가 당신의 마음에 드나요?</div></h3>
                 <RockBox id="Rock1"/>
                 <audio ref={el => audioRefs.current[5] = el} />
             </div>
