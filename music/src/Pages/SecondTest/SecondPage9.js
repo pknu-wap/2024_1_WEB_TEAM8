@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
@@ -12,6 +12,7 @@ import { RbValueState } from "../../Components/RbBox";
 import { RockValueState} from "../../Components/RockBox";
 import { useRecoilValue } from "recoil";
 import useCompleted from "../../Components/useCompleted";
+import SecondBtn from "./Button/SecondBtn"; 
 
 import "./SecondPage.css";
 
@@ -124,11 +125,12 @@ const SecondPage9 = () => {
 소울이 담겨진 음악.. 이건 아트가 아닐까?</h3>
                 <RbBox id="AlterRB1"/>
             </div>
-            <div className='linkBox'>
+            {/* <div className='linkBox'>
                 <Link to={`/${Result}`}>
                     <button onClick={completeButton}>완료</button> 
                 </Link>
-            </div>
+            </div> */}
+            <SecondBtn to={`/${Result}`} ids={["NeoRB1", "ComRB1", "PunkRB1", "SoulRB1", "AlterRB1"]} onCompleteButtonClick={completeButton}/>
         </div>
         </ChakraProvider>
     );

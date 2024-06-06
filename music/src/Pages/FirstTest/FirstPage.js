@@ -91,7 +91,7 @@ const FirstPage = () => {
                 <RockBox id="Rock1"/>
                 <audio ref={el => audioRefs.current[5] = el} />
             </div>
-            <NextButton to="/FirstPage1" popCount={2} hipCount={2} rockCount={1} jazzCount={-1} RbCount={-1} />
+            <NextButton to="/FirstPage1" popCount={2} hipCount={2} rockCount={1}/>
         </div>
         </ChakraProvider>
     );

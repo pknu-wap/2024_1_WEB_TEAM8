@@ -4,7 +4,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 import RockBox from "../../Components/RockBox";
 import testData from "../../Components/testData";
-import NextButton from "../../Components/NextButton";
+import SecondBtn from "./Button/SecondBtn";
 import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
@@ -43,7 +43,7 @@ const SecondPage7 = () => {
 아이러니 하지만 이 음악에 집중하면 나 역시 환상속에 잠기는 것 같아.</h3>
                 <RockBox id="ShowRock2"/>
             </div>
-            <NextButton to="/SecondPage8"/>
+            <SecondBtn to="/SecondPage8" ids={["ProRock2", "HeavyRock2", "AlterRock2", "PunkRock2", "ShowRock2"]}/>
         </div>
         </ChakraProvider>
     );

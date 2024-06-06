@@ -4,7 +4,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 import JazzBox from "../../Components/JazzBox";
 import testData from "../../Components/testData";
-import NextButton from "../../Components/NextButton";
+import SecondBtn from "./Button/SecondBtn";
 import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
@@ -46,7 +46,7 @@ const SecondPage1 = () => {
                 <h3>난 느긋하고 여유롭지 않아 차분함 속에도 속도감과 복잡하고 다양한 리듬이 나의 인생과 비슷해.</h3>
                 <JazzBox id="BibobJazz1"/>
             </div>
-            <NextButton to="/SecondPage2"/>
+            <SecondBtn to="/SecondPage2" ids={["LatinJazz1", "SwingJazz1", "SoulJazz1", "FreeJazz1", "BibobJazz1"]}/>
         </div>
         </ChakraProvider>
     );
