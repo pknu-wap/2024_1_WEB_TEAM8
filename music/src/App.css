@@ -22,6 +22,7 @@ body{
   left:1230px;
   width: 60px;
   height: 60px;
+  color:rgb(208, 213, 216)
 }
 
 .Main h2{
@@ -107,7 +108,7 @@ body{
 @media (max-width:698px) {
 .Main{
   position: fixed;
-  width: 430px;
+  width: 445px;
   height: 1000px;
   top:-7px;
   background-image: url("/public/mobile.gif");
