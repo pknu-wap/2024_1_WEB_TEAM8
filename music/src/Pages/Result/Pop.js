@@ -94,9 +94,9 @@ const Pop = () => {
         align="stretch"
         marginLeft="300px"
         marginRight="335px"
-        className="progress_color"
+        className="vstack-custom" 
         >
-        <Box w="800px">
+        <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
                 <div className="Sub">
                     <Button onClick={onDancePopOpen} style={{padding: '0px 30px' }}>댄스</Button>
@@ -113,10 +113,10 @@ const Pop = () => {
                 </Box>
             </HStack>
         </Box>
-        <Box w="800px">
+        <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
                 <div className="Sub">
-                    <Button onClick={onElecPopOpen}>일렉트로</Button>
+                    <Button className="elec" onClick={onElecPopOpen}>일렉트로</Button>
                     <CommonModal isOpen={isElecPopOpen} onClose={onElecPopClose} title="일렉트로닉">
                     <ElecPopModalBody />
                     </CommonModal>
@@ -130,7 +130,7 @@ const Pop = () => {
                 </Box>
             </HStack>
         </Box>
-        <Box w="800px">
+        <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
                 <div className="Sub">
                     <Button onClick={onBritPopOpen} style={{padding: '0px 30px' }}>브릿</Button>
@@ -147,7 +147,7 @@ const Pop = () => {
                 </Box>
             </HStack>
         </Box>
-        <Box w="800px">
+        <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
                 <div className="Sub">
                     <Button onClick={onIndiPopOpen} style={{padding: '0px 30px' }}>인디</Button>
@@ -164,7 +164,7 @@ const Pop = () => {
                 </Box>
             </HStack>
         </Box>
-        <Box w="800px">
+        <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
                 <div className="Sub">
                     <Button onClick={onLatinPopOpen} style={{padding: '0px 30px' }}>라틴</Button>

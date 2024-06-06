@@ -92,8 +92,9 @@ const Hip = () => {
         align='stretch'
         marginLeft="300px"
         marginRight="335px"
+        className="vstack-custom" 
         >
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
                         <Button onClick={onDrillHipOpen} style={{padding: '0px 37px' }}>드릴</Button>
@@ -110,7 +111,7 @@ const Hip = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
                         <Button onClick={onTrapHipOpen} style={{padding: '0px 37px' }}>트랩</Button>
@@ -127,10 +128,10 @@ const Hip = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onAlterHipOpen}>얼터너티브</Button>
+                        <Button className="AlterHip" onClick={onAlterHipOpen}>얼터너티브</Button>
                         <CommonModal isOpen={isAlterHipOpen} onClose={onAlterHipClose} title="얼터너티브">
                             <AlterHipModalBody />
                         </CommonModal>
@@ -144,10 +145,10 @@ const Hip = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onRageHipOpen} style={{padding: '0px 30px' }}>레이지</Button>
+                        <Button className="RageHip" onClick={onRageHipOpen}>레이지</Button>
                         <CommonModal isOpen={isRageHipOpen} onClose={onRageHipClose} title="레이지">
                             <RageHipModalBody />
                         </CommonModal>
@@ -161,7 +162,7 @@ const Hip = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
                         <Button onClick={onBoomHipOpen} style={{padding: '0px 37px' }}>붐뱁</Button>

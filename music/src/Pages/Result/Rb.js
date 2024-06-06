@@ -90,8 +90,9 @@ const Rb = () => {
             align='stretch'
             marginLeft="300px"
             marginRight="335px"
+            className="vstack-custom" 
         >
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
                         <Button onClick={onNeoRbOpen} style={{padding: '0px 37px' }}>네오</Button>
@@ -108,10 +109,10 @@ const Rb = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onComtemRbOpen}>컨템포러리</Button>
+                        <Button className="ComRB" onClick={onComtemRbOpen}>컨템포러리</Button>
                         <CommonModal isOpen={isComtemRbOpen} onClose={onComtemRbClose} title="컨템포러리">
                             <ComtemRbModalBody />
                         </CommonModal>
@@ -125,7 +126,7 @@ const Rb = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
                         <Button onClick={onPunkRbOpen} style={{padding: '0px 37px' }}>펑크</Button>
@@ -142,7 +143,7 @@ const Rb = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
                         <Button onClick={onSoulRbOpen} style={{padding: '0px 37px' }}>소울</Button>
@@ -159,10 +160,10 @@ const Rb = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onAlterRbOpen}>얼터너티브</Button>
+                        <Button className="AlterRB" onClick={onAlterRbOpen}>얼터너티브</Button>
                         <CommonModal isOpen={isAlterRbOpen} onClose={onAlterRbClose} title="얼터너티브">
                             <AlterRbModalBody />
                         </CommonModal>
