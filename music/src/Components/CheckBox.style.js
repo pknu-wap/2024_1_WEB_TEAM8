@@ -48,14 +48,14 @@ const CheckBoxCnt = styled.div`
             top: 50px;
             font-size: 1rem;
             padding: 5px 5px;
-            width:30px;
-            height:30px;
+            width:40px;
+            height:40px;
         }
 
         input[type=checkbox]:checked + label {
             position:relative;
-            width:30px;
-            height:30px;
+            width:40px;
+            height:40px;
             top:56px;
         }
 

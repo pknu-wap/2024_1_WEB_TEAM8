@@ -1,7 +1,8 @@
+
 .firstPage{
   position: relative;
   background-image: url("/public/maindesign4.gif");
-  width: 1485px;
+  width: 1500px;
   height:1950px;
   margin-left: -12px;
   margin-bottom: -100px;
@@ -88,8 +89,12 @@
     position: relative;
     width: 370px;
     margin-left: 60px;
-    margin-top: 80px;
+    margin-top: 30px;
 
+  }
+
+  .num1 h3{
+    margin-bottom: 50px;
   }
 
   .num1 .q1{
@@ -103,7 +108,7 @@
     position: relative;
     width: 60px;
     left:-200px;
-    top:10px !important;
+    top:-10px !important;
   }
 
 }
