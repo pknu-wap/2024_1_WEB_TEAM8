@@ -92,11 +92,12 @@ const Rock = () => {
             align='stretch'
             marginLeft="300px"
             marginRight="335px"
+            className="vstack-custom" 
         >
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onProRockOpen}>프로그레시브</Button>
+                        <Button className="Pro" onClick={onProRockOpen}>프로그레시브</Button>
                         <CommonModal isOpen={isProRockOpen} onClose={onProRockClose} title="프로그레시브">
                             <ProRockModalBody />
                         </CommonModal>
@@ -110,10 +111,10 @@ const Rock = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onHeavyRockOpen} style={{ padding: '0px 43px' }}>헤비</Button>
+                        <Button className="HeavyRock" onClick={onHeavyRockOpen}>헤비</Button>
                         <CommonModal isOpen={isHeavyRockOpen} onClose={onHeavyRockClose} title="헤비">
                             <HeavyRockModalBody />
                         </CommonModal>
@@ -127,10 +128,10 @@ const Rock = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onAlterRockOpen}  style={{ padding: '0px 22px' }}>얼터너티브</Button>
+                        <Button className="AlterRock" onClick={onAlterRockOpen}>얼터너티브</Button>
                         <CommonModal isOpen={isAlterRockOpen} onClose={onAlterRockClose} title="얼터너티브">
                             <AlterRockModalBody />
                         </CommonModal>
@@ -144,10 +145,10 @@ const Rock = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onPunkRockOpen} style={{ padding: '0px 43px' }}>펑크</Button>
+                        <Button className="PunkRock" onClick={onPunkRockOpen} style={{ padding: '0px 43px' }}>펑크</Button>
                         <CommonModal isOpen={isPunkRockOpen} onClose={onPunkRockClose} title="펑크">
                             <PunkRockModalBody />
                         </CommonModal>
@@ -161,10 +162,10 @@ const Rock = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button onClick={onShowRockOpen} style={{ padding: '0px 29px' }}>슈게이징</Button>
+                        <Button className="show" onClick={onShowRockOpen}>슈게이징</Button>
                         <CommonModal isOpen={isShowRockOpen} onClose={onShowRockClose} title="슈게이징">
                             <ShowRockModalBody />
                         </CommonModal>

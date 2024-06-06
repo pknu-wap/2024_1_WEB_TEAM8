@@ -91,8 +91,9 @@ const Jazz = () => {
             align='stretch'
             marginLeft="300px"
             marginRight="335px"
+            className="vstack-custom" 
         >
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
                         <Button onClick={onLatinJazzOpen}>라틴</Button>
@@ -109,7 +110,7 @@ const Jazz = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
                         <Button onClick={onSwingJazzOpen}>스윙</Button>
@@ -126,7 +127,7 @@ const Jazz = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
                         <Button onClick={onSoulJazzOpen}>소울</Button>
@@ -143,7 +144,7 @@ const Jazz = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
                         <Button onClick={onFreeJazzOpen}>프리</Button>
@@ -160,7 +161,7 @@ const Jazz = () => {
                     </Box>
                 </HStack>
             </Box>
-            <Box w='800px'>
+            <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
                         <Button onClick={onBibobJazzOpen}>비밥</Button>
