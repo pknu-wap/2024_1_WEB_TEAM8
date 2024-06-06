@@ -1,7 +1,17 @@
 /* App */
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body{
   width:1000px;
+  font-family: 'Pretendard-Regular';
 }
+
 .Main{
   position: fixed;
   background-image: url("/public/maindesign4.gif");
