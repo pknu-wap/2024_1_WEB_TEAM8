@@ -9,7 +9,7 @@
     position: relative;
     background-color: rgb(37, 37, 103);
     width:147%;
-    height: 1600px;
+    height: 1900px;
     text-align: center;
     align-items: center;
     justify-content: center;  
@@ -228,7 +228,8 @@ text-align: left;
     }
 
     .body {
-        width: 490px !important;
+        width: 500px;
+        height: 1600px !important;
         margin: 0 auto; 
         background-size: cover;
         padding: -200px; 
