@@ -4,7 +4,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 import RbBox from "../../Components/RbBox";
 import testData from "../../Components/testData";
-import NextButton from "../../Components/NextButton";
+import SecondBtn from "./Button/SecondBtn";
 import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
@@ -47,7 +47,7 @@ const SecondPage8 = () => {
 힙스터인 나는 자신만의 색깔이 뚜렷한 이 음악에 더 공감이 생겨.</h3>
                 <RbBox id="AlterRB2"/>
             </div>
-            <NextButton to="/SecondPage9"/>
+            <SecondBtn to="/SecondPage9" ids={["NeoRB2", "ComRB2", "PunkRB2", "SoulRB2", "AlterRB2"]}/>
         </div>
         </ChakraProvider>
     );

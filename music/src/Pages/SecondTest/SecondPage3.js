@@ -4,7 +4,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 import RockBox from "../../Components/RockBox";
 import testData from "../../Components/testData";
-import NextButton from "../../Components/NextButton";
+import SecondBtn from "./Button/SecondBtn";
 import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
@@ -47,7 +47,7 @@ const SecondPage3 = () => {
  이건 꿈속이 아닐까? 뭔가 하늘을 헤엄치는것만 같아. </h3>
                 <RockBox id="ShowRock1"/>
             </div>
-            <NextButton to="/SecondPage4"/>
+            <SecondBtn to="/SecondPage4" ids={["ProRock1", "HeavyRock1", "AlterRock1", "PunkRock1", "ShowRock1"]}/>
         </div>
         </ChakraProvider>
     );

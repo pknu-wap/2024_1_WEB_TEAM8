@@ -4,7 +4,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 import PopBox from "../../Components/PopBox";
 import testData from "../../Components/testData";
-import NextButton from "../../Components/NextButton";
+import SecondBtn from "./Button/SecondBtn";
 import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
@@ -46,7 +46,7 @@ const SecondPage4 = () => {
 마치 스페인 바닷가에서 개최한 뮤직 페스티벌에 와 있는것 같아서 정말 신나!</h3><br/>
                 <PopBox id="LatinPop2"/>
             </div>
-            <NextButton to="/SecondPage5"/>
+            <SecondBtn to="/SecondPage5" ids={["DancePop2", "ElecPop2", "BritPop2", "IndiPop2", "LatinPop2"]}/>
         </div>
         </ChakraProvider>
     );

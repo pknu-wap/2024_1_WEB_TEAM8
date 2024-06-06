@@ -4,7 +4,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 import HipBox from "../../Components/HipBox";
 import testData from "../../Components/testData";
-import NextButton from "../../Components/NextButton";
+import SecondBtn from "./Button/SecondBtn";
 import useCompleted from "../../Components/useCompleted";
 
 import "./SecondPage.css";
@@ -45,7 +45,7 @@ const SecondPage2 = () => {
 우리 동네 벽에는 그래피티가 가득하지.</h3>
                 <HipBox id="BoomHip1"/>
             </div>
-            <NextButton to="/SecondPage3"/>
+            <SecondBtn to="/SecondPage3" ids={["DrillHip1", "TrapHip1", "AlterHip1", "RageHip1", "BoomHip1"]}/>
         </div>
         </ChakraProvider>
     );
