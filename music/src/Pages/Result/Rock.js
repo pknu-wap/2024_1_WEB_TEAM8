@@ -77,7 +77,7 @@ const Rock = () => {
         <table>
             <tr>
             <td><span>Progressive</span><br/><br/>< img src="/rock_singer1.png" alt="Yes"/>Yes</td>
-            <td><span>Heavy Metal</span><br/><br/><img src="/rock_singer2.png" alt="Metallica" />Metallica<br/></td>
+            <td><span>Hard</span><br/><br/><img src="/rock_singer2.png" alt="Guns N' Roses" />Guns N' Roses<br/></td>
             <td><span>Alternative</span><br/><br/><img src="/rock_singer3.png" alt="Nirvana" />Nirvana<br/></td>
             <td><span>Punk</span><br/><br/><img src="/rock_singer4.png" alt="Sex pistols" />Sex pistols<br/></td>
             <td><span>Shoegaze</span><br/><br/><img src="/rock_singer5.png" alt="Slow dive" />Slow dive</td> 
@@ -114,7 +114,7 @@ const Rock = () => {
             <Box className="first_box" w='800px'>
                 <HStack spacing={4} align='center'>
                     <div className="Sub">
-                        <Button className="HeavyRock" onClick={onHeavyRockOpen}>헤비</Button>
+                        <Button className="HeavyRock" onClick={onHeavyRockOpen}>하드</Button>
                         <CommonModal isOpen={isHeavyRockOpen} onClose={onHeavyRockClose} title="헤비">
                             <HeavyRockModalBody />
                         </CommonModal>
@@ -190,14 +190,14 @@ const Rock = () => {
         <hr/><td>
             <img src="/rock_m1.jpg" id="albumcover"/>
             <div id="song">Owner of a Lonely Heart<br/><span>Yes</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbI51oLrTl-9D9nhhKZk7CD'} src="sound1.png" id="m1"/><span>play</span></div></td>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MZUIbKyS_2yQJ2JPZPSrzO0'} src="sound1.png" id="m1"/><span>play</span></div></td>
             <hr/>
         <hr/>
         </tr>
         <tr>
             <td><img src="/rock_m2.webp" id="albumcover"/>
-            <div id="song">Enter Sandman<br/><span>Metallica</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mabu4H5mTkcfBopJhvYqLYZ'} src="/sound1.png" id="m2"/><span>play</span></div>
+            <div id="song">Sweet Child O' Mine<br/><span>Guns N' Roses</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MbI51oLrTl-9D9nhhKZk7CD'} src="/sound1.png" id="m2"/><span>play</span></div>
             </td><hr/>
         </tr>
         <tr>

@@ -121,11 +121,10 @@ function BoomHipModalBody() {
 }
 
 function ProRockModalBody() {
-  return <p>1960년대 영국에서 유래된 록 장르이며 당시 대중음악의 한 축을 담당한 장르이다.
-  중독성 있는 기타 리프, 높은 음역의 공격적인 샤우팅 보컬, 박진감 넘치는 리듬이 특징이다.
-  헤비 메탈(heavy metal)등 이후 여러 하위장르를 파생시켰다.
-  *헤비메탈과 살짝 다른 점은 블루지한 성향이 묻어있다는 점이다.
-  <p style={{fontSize: "14px"}}><br/>대표 아티스트 : AC/DC, Guns N' Roses, Led Zeppelin</p></p>;
+  return <p>1960대에 등장한 음악 장르이며 클래식 음악, 재즈, 포크 등 많은 문화적, 음악적 요소를 결합한 장르이다.
+  가사는 시적이거나 철학적인 요소가  담겨 있으며 전반적으로 곡이 되게 복잡하고 긴 진행구조이다.
+  그래서 다양한 악기의 연주와 긴 솔로가 특징이다.
+  <p style={{fontSize: "14px"}}><br/>대표 아티스트 : Yes, Rush, King Crimson</p></p>;
 }
 
 function HeavyRockModalBody() {
