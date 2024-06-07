@@ -53,6 +53,7 @@ body{
   }
 
  .num1 img{
+  cursor: pointer;
   position: relative;
   background-color:black;
   border-radius: 100px;
