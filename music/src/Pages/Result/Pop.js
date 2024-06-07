@@ -133,23 +133,6 @@ const Pop = () => {
         <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
                 <div className="Sub">
-                    <Button onClick={onBritPopOpen} style={{padding: '0px 30px' }}>브릿</Button>
-                    <CommonModal isOpen={isBritPopOpen} onClose={onBritPopClose} title="브릿">
-                    <BritPopModalBody />
-                    </CommonModal>
-                </div>
-                <Box flex="1">
-                    <ProgressBar 
-                    bgColor={BritPop === maxProgress ? "#D6FF32" : "white"}
-                    baseBgColor="rgb(37, 37, 103)" 
-                    labelColor="black" 
-                    completed={BritPop} />
-                </Box>
-            </HStack>
-        </Box>
-        <Box className="first_box" w="800px">
-            <HStack spacing={4} align="center">
-                <div className="Sub">
                     <Button onClick={onIndiPopOpen} style={{padding: '0px 30px' }}>인디</Button>
                     <CommonModal isOpen={isIndiPopOpen} onClose={onIndiPopClose} title="인디">
                     <IndiPopModalBody />
@@ -178,6 +161,23 @@ const Pop = () => {
                     baseBgColor="rgb(37, 37, 103)" 
                     labelColor="black" 
                     completed={LatinPop} />
+                </Box>
+            </HStack>
+        </Box>
+        <Box className="first_box" w="800px">
+            <HStack spacing={4} align="center">
+                <div className="Sub">
+                    <Button onClick={onBritPopOpen} style={{padding: '0px 30px' }}>브릿</Button>
+                    <CommonModal isOpen={isBritPopOpen} onClose={onBritPopClose} title="브릿">
+                    <BritPopModalBody />
+                    </CommonModal>
+                </div>
+                <Box flex="1">
+                    <ProgressBar 
+                    bgColor={BritPop === maxProgress ? "#D6FF32" : "white"}
+                    baseBgColor="rgb(37, 37, 103)" 
+                    labelColor="black" 
+                    completed={BritPop} />
                 </Box>
             </HStack>
         </Box>
@@ -217,7 +217,7 @@ const Pop = () => {
         <tr>
             <td><img src="/pop_m5.webp"  id="albumcover"/>
             <div id="song">Wonderwall<br/><span>Oasis</span></div>
-            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67Mbfvh0blv_vISpJ5lqZUlZy'} src="sound1.png" id="m5"/><span>play</span></div>
+            <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYaW79d9ymkxjp26uC1xRmT'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
     </table>

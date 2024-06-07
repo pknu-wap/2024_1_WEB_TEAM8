@@ -27,7 +27,8 @@ const SecondPage7 = () => {
                 <RockBox id="ProRock2"/>
             </div>
             <div className="num2">
-                <h3>찢어지는 듯한 일렉 기타, 보컬의 샤우팅, 힘찬 드럼은 내 심장을 더욱 뜨겁게 타오르게 해.</h3>
+                <h3>어디선가 들어본 기타 리프 라인이 저 멀리서 들려! 홀린듯 그쪽으로 가보니 박진감 넘치는 밴드들이 무대를 날뛰며 공연을 하고 있어.
+                    강렬한 열기에 나 역시 몸을 흔들게 돼.. 이게 도파민이지!</h3>
                 <RockBox id="HeavyRock2"/>
             </div>
             <div className="num2">

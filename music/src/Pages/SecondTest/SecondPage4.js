@@ -32,8 +32,8 @@ const SecondPage4 = () => {
                 <PopBox id="ElecPop2"/>
             </div>
             <div className="num2">
-                <h3>전반적으로 밝고 경쾌하지만 가사에는 우울함과 현실의 분노가 담긴 음악.. 
-                    마치 나의 양면적인 모습과 닮았어.</h3>
+                <h3>내가 덕질하는 최애 아이돌 음악만이 내 삶의 원동력이라구!
+굿즈 소장은 필수 중 필수 아니겠어?</h3>
                 <PopBox id="BritPop2"/>
             </div>
             <div className="num2">

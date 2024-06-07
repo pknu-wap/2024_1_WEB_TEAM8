@@ -33,8 +33,7 @@ const SecondPage = () => {
                 <PopBox id="ElecPop1"/>
             </div>
             <div className="num2">
-                <h3>런던의 가을 밤 펍에서 새어 나오는 거치면서도 고요한 기타 리프, 사회적 이슈를 다루는 가사, 
-감정 속에 잠긴<br/> 보컬의 고요한 음색 때문에 나도 모르게 분위기에 취하게 돼.</h3>
+                <h3>어디를 가나 익숙하게 들려오는 대한민국의 대중가요. 역시 케이팝이 대중음악 계에서 최고라고 생각해.</h3>
                 <PopBox id="BritPop1"/>
             </div>
             <div className="num2">
