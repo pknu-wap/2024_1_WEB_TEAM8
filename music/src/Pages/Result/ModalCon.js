@@ -14,7 +14,7 @@ function ElecPopModalBody() {
   이후 하우스나 테크노 등 많은 영향을 끼친 장르이다.<br/>
   순수 악기와 보컬의 범주에서 벗어나 다채로운 기계적인 사운드, 신디사이저,
   드럼 머신을 결합한 것이 특징이다.
-  <p style={{fontSize: "14px"}}><br/>대표 아티스트 : Halsey,Ariana Grande, LMFAO</p></p>;
+  <p style={{fontSize: "14px"}}><br/>대표 아티스트 : Halsey, Sia, LMFAO</p></p>;
 }
 
 function BritPopModalBody() {
@@ -138,7 +138,7 @@ function AlterRockModalBody() {
   return <p>1960년대 등장해 포스트 펑크(Post Punk)의 DIY(Do it yourself)정신의 영향을 받아
   전통적이고 대중화된 록 사운드의 "대안"(Alternative) 으로 만들어진 장르이다.
   기존의 록만의 구성 방식을 실험적으로 바꿔 많은 하위장르를 탄생시킨 것이 특징이다.
-  <p style={{fontSize: "14px"}}><br/>대표 아티스트 : Nirvana, Radiohead, Alt - J</p></p>;
+  <p style={{fontSize: "14px"}}><br/>대표 아티스트 : Nirvana, Coldplay, Pearl Jam - J</p></p>;
 }
 
 function PunkRockModalBody() {
@@ -177,7 +177,7 @@ function PunkRbModalBody() {
   '강한 냄새' 곧 신체적 노력으로 인한 체취가 느껴지는 음악이라는 뜻이다.
   다양한 음악 장르를 혼합해 끈적한 그루브와 리듬이 강조된 음악이라
   그루브를 느끼며 춤추기 쉬운 새로운 형태의 리듬적 역할이 강한 음악이다.
-  <p style={{fontSize: "14px"}}><br/>대표 아티스트 : James Brown, Michael Jackson, Sly and the Family Stone</p></p>;
+  <p style={{fontSize: "14px"}}><br/>대표 아티스트 :James Brown, King Floyd, Sly and the Family Stone</p></p>;
 }
 
 function SoulRbModalBody() {
