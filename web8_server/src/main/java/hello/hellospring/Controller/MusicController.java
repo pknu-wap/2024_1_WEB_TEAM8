@@ -1,5 +1,6 @@
 package hello.hellospring.Controller;
 
+import hello.hellospring.domain.MusicCode;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
@@ -11,11 +12,13 @@ import java.io.InputStream;
 
 @RestController
 public class MusicController {
-    @PostMapping("/music/{fileName}")
-    public ResponseEntity<byte[]> getMusic(@PathVariable("fileName") String fileName) throws IOException {
-        // 클래스패스 상의 리소스를 로드
-        Resource resource = new ClassPathResource("static/music/" + fileName + ".mp3");
+    @PostMapping("/music/{index}")
+    public ResponseEntity<byte[]> getMusic(@PathVariable("index") int index) throws IOException {
+        MusicCode musicCode = MusicCode.getMusicName(index);
+        System.out.println(musicCode.name());
 
+        // 클래스패스 상의 리소스를 로드
+        Resource resource = new ClassPathResource("static/music/" + musicCode.name() + ".wav");
         // 리소스가 존재하는지 확인
         if (resource.exists() && resource.isReadable()) {
             // 리소스를 InputStream으로 읽어들임
@@ -24,7 +27,7 @@ public class MusicController {
             byte[] audioBytes = inputStream.readAllBytes();
 
             return ResponseEntity.ok()
-                    .contentType(MediaType.APPLICATION_OCTET_STREAM)
+                    .contentType(MediaType.parseMediaType("audio/wav"))
                     .body(audioBytes);
         } else {
             // 파일이 존재하지 않거나 읽을 수 없는 경우 예외 처리
