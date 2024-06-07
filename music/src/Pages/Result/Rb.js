@@ -76,7 +76,7 @@ const Rb = () => {
             <tr>
             <td><span>Neo Soul</span><br/>< img src="/rb_singer1.png" alt="D'Angelo"/>D'Angelo</td>
             <td><span>Contemporary</span><br/><img src="/rb_singer2.png" alt="SZA" />Beyoncé<br/></td>
-            <td><span>Funk</span><br/><img src="/rb_singer3.png" alt="Michael Jackson" />Michael Jackson<br/></td>
+            <td><span>Funk</span><br/><img src="/rb_singer3.png" alt="Michael Jackson" />James Brown<br/></td>
             <td><span>Soul</span><br/><img src="/rb_singer4.png" alt="Stevie Wonder" />Stevie Wonder<br/></td>
             <td><span>Alternative</span><br/><img src="/rb_singer5.png" alt="Frank ocean" />Frank ocean</td> 
             </tr>
@@ -201,8 +201,8 @@ const Rb = () => {
             </td><hr/>
         </tr>
         <tr>
-            <td><img src="/rb_m3.jpg"  id="albumcover"/>
-            <div id="song"> I Got You<br/><span>Michael Jackson</span></div>
+            <td><img src="/rb_m3.jpeg"  id="albumcover"/>
+            <div id="song"> I Got You<br/><span>James Brown</span></div>
             <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYyy_jgPMM_gkmG3LJgdJ_G'} src="sound1.png" id="m3"/><span>play</span></div>
             </td><hr/>
         </tr>

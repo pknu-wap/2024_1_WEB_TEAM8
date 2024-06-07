@@ -82,7 +82,7 @@ const Pop = () => {
         <td><span>Electro</span><br/><br/><img src="/pop_singer2.png" alt="Halsey" />Halsey<br/></td>
         <td><span>Indie</span><br/><br/><img src="/pop_singer3.png" alt="The smtihs" />The smtihs<br/></td>
         <td><span>Latin</span><br/><br/><img src="/pop_singer4.png" alt="Camila Cabello" />Camila Cabello<br/></td>
-        <td><span>Brit</span><br/><br/><img src="/pop_singer5.png" alt="Oasis" />Oasis</td> 
+        <td><span>Kpop</span><br/><br/><img src="/pop_singer5.png" alt="Oasis" />BTS</td> 
         </tr>
         </table>
         </div>
@@ -167,8 +167,8 @@ const Pop = () => {
         <Box className="first_box" w="800px">
             <HStack spacing={4} align="center">
                 <div className="Sub">
-                    <Button onClick={onBritPopOpen} style={{padding: '0px 30px' }}>브릿</Button>
-                    <CommonModal isOpen={isBritPopOpen} onClose={onBritPopClose} title="브릿">
+                    <Button onClick={onBritPopOpen} style={{padding: '0px 30px' }}>케이</Button>
+                    <CommonModal isOpen={isBritPopOpen} onClose={onBritPopClose} title="케이팝">
                     <BritPopModalBody />
                     </CommonModal>
                 </div>
@@ -215,8 +215,8 @@ const Pop = () => {
             </td><hr/>
         </tr>
         <tr>
-            <td><img src="/pop_m5.webp"  id="albumcover"/>
-            <div id="song">Wonderwall<br/><span>Oasis</span></div>
+            <td><img src="/pop_m5.png"  id="albumcover"/>
+            <div id="song">Butter<br/><span>BTS</span></div>
             <div class="play"><img onClick={()=> window.location.href = 'https://www.youtube.com/playlist?list=PLCqnvhwU67MYaW79d9ymkxjp26uC1xRmT'} src="sound1.png" id="m5"/><span>play</span></div>
             </td><hr/> 
         </tr>
