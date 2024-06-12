@@ -63,8 +63,6 @@
 
 ### Front
 <div>
-<img alt="Html" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> 
-<img alt="Css" src ="https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/> 
 <img alt="JavaScript" src ="https://img.shields.io/badge/JavaScriipt-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=black"/> 
 <img alt="React" src ="https://img.shields.io/badge/React-61DAFB.svg?&style=for-the-badge&logo=React&logoColor=black"/></div>
 
@@ -82,7 +80,7 @@
 ## 기여한 것
 - **서성원**: 프로젝트 관리 및 기획, 프론트 구현 및 배포
 - **이찬이**: 프론트 구현
-- **박준용**: db 통계 계산 및 배포
+- **박준용**: 결과 저장 및 배포
 - **신채은**: 음악 db 저장 및 배포
 - **김지혜**: UX/UI 디자인
 
