@@ -58,6 +58,13 @@
   </tr>
 </table>
 
+## 기여한 것
+- **서성원**: 프로젝트 관리 및 기획, 프론트 구현 및 배포
+- **이찬이**: 프론트 구현
+- **박준용**: 결과 저장 및 배포
+- **신채은**: 음악 db 저장 및 배포
+- **김지혜**: UX/UI 디자인
+
 ## 사용 기술
 
 ### Front
@@ -76,11 +83,4 @@
 <a href="https://www.notion.so/TEAM-82bbc3c1894246c9afcdb507448f6cd9" target="_blank"><img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/>
 <a href="https://www.figma.com/design/MWk0m8IiRdCRySQzntmyIW/%EC%9D%8C%EC%95%85-mbti?node-id=0-1&t=EolFZL5pfBozHZmx-0" target="_blank"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
 </a></div>
-
-## 기여한 것
-- **서성원**: 프로젝트 관리 및 기획, 프론트 구현 및 배포
-- **이찬이**: 프론트 구현
-- **박준용**: 결과 저장 및 배포
-- **신채은**: 음악 db 저장 및 배포
-- **김지혜**: UX/UI 디자인
 
