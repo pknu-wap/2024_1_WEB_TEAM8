@@ -20,10 +20,9 @@
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/seongwon030" target="_blank"> 
        <img src="https://avatars.githubusercontent.com/u/105052068?v=4" width="120px;"/>   
         <br />
-        <a href="" title="Code">seongwon030 </a>
+        <a href="https://github.com/seongwon030" title="Code">seongwon030 </a>
     </td>
     <td align="center">
       <a href="https://github.com/chanxami" target="_blank">
