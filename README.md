@@ -25,22 +25,19 @@
         <a href="https://github.com/seongwon030" title="Code">seongwon030 </a>
     </td>
     <td align="center">
-      <a href="https://github.com/chanxami" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/158177151?v=4" width="120px;"/> 
         <br />
-        <a href="" title="Code">chanxami </a>
+        <a href="https://github.com/chanxami" title="Code">chanxami </a>
     </td>
     <td align="center">
-      <a href="https://github.com/Chaeeun1021" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/92985089?v=4" width="120px;"/> 
         <br />
-        <a href="" title="Code">Chaeeun1021 </a>
+        <a href="https://github.com/Chaeeun1021" title="Code">Chaeeun1021 </a>
     </td>
     <td align="center">
-      <a href="https://github.com/wnsmir" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/163817041?v=4" width="120px;"/> 
         <br />
-        <a href="" title="Code">wnsmir </a>
+        <a href="https://github.com/wnsmir" title="Code">wnsmir </a>
     </td> 
   </tr>
   <tr>
